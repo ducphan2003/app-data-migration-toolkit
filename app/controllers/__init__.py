@@ -1,0 +1,1 @@
+from app.controllers.migrate import create_migrate_controllers

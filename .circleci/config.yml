@@ -1,0 +1,206 @@
+version: 2.1
+orbs:
+  kubernetes: circleci/kubernetes@1.3.1
+jobs:
+  general-version:
+    docker:
+      - image: ieltslms/base
+    steps:
+      - checkout
+      - run:
+          name: version
+          command: |
+            mkdir workspace
+            export BRANCH='main'
+            export TAG_VERSION='1.0.0'
+            export COMMIT_TITLE="$(git log -1 --format=%s)"
+            echo $BRANCH
+            export NEXT_VERSION=$(echo $(if [[ "$(echo $COMMIT_TITLE | grep -E 'Merge branch .*(hotfix|hot-fix)')" ]]; then autotag -n -m hotfix.$(git rev-parse --short HEAD).$(date +%Y%m%d); else autotag -n; fi) | grep -E '\d+.\d+.\d+.*');
+            export TAG_VERSION=${NEXT_VERSION:-$TAG_VERSION}
+            echo $TAG_VERSION
+            echo "export VERSION=\"$TAG_VERSION\"" >> workspace/bash.env
+            if [ $TAG_VERSION == "1.0.0" ]; then 
+              git log $BRANCH --oneline > CHANGELOG.md
+              echo "export CHANGELOG=\"$(base64 -w 0 CHANGELOG.md)\"" >> workspace/bash.env
+            else 
+              git log $(git describe --tags $(git rev-list --tags --max-count=1))..$BRANCH --oneline > CHANGELOG.md; 
+              echo "export CHANGELOG=\"$(base64 -w 0 CHANGELOG.md)\"" >> workspace/bash.env
+            fi
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - bash.env
+  tag-version:
+    docker:
+      - image: ieltslms/base
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: |
+          cat /tmp/workspace/bash.env >> $BASH_ENV
+      - run:
+          name: tag version
+          command: |
+            echo $VERSION
+            echo $CHANGELOG > /tmp/encodechangelog
+            base64 -d /tmp/encodechangelog > CHANGELOG.md
+            export DATALOG=$(sed ':a;N;$!ba;s/"//g;s/\n/\\r\\n- /g' CHANGELOG.md)
+            export DATA="{\"tag_name\":\"v$VERSION\",\"target_commitish\":\"main\",\"name\":\"v$VERSION\",\"body\":\"## CHANGELOG\r\n\r\n- ${DATALOG}\",\"draft\":false,\"prerelease\":false,\"generate_release_notes\":false}"
+            echo "$DATA"
+            curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" https://api.github.com/repos/ielts-lms/$CI_PROJECT_NAME/releases -d "$DATA"
+  build-dockerimage-production:
+    docker:
+      - image: cimg/base:stable
+    environment:
+      PIPELINE_NUMBER: << pipeline.number >>
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: |
+          cat /tmp/workspace/bash.env >> $BASH_ENV
+      - checkout
+      - setup_remote_docker:
+          version: docker24
+      - run:
+          name: docker login
+          command: docker login -u $DOCKER_USER --password $DOCKER_PASSWORD
+      - run:
+          name: docker buildx
+          command: |
+            echo "image $VERSION"
+            if [[ "$CIRCLE_BRANCH" == "main" ]]; then
+              echo "build $CI_GROUP_NAME/$CI_PROJECT_NAME:$VERSION"
+              if [[ -f env.production ]]; then
+                cp -rf env.production .env
+              fi
+              DOCKER_BUILDKIT=1 docker buildx build -t $CI_GROUP_NAME/$CI_PROJECT_NAME:$VERSION --push . 
+            fi
+  build-dockerimage-staging:
+    docker:
+      - image: cimg/base:stable
+    environment:
+      PIPELINE_NUMBER: << pipeline.number >>
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: docker24
+      - run:
+          name: docker login
+          command: docker login -u $DOCKER_USER --password $DOCKER_PASSWORD
+      - run:
+          name: docker buildx
+          command: |
+            echo "image STAGING"
+            if [[ "$CIRCLE_BRANCH" == "staging" || "$CIRCLE_BRANCH" == "develop"  ]]; then
+              echo "build $CI_GROUP_NAME/$CI_PROJECT_NAME:staging"
+              if [[ -f env.staging ]]; then
+                cp -rf env.staging .env
+              fi
+              DOCKER_BUILDKIT=1 docker buildx build -t $CI_GROUP_NAME/$CI_PROJECT_NAME:staging --push . 
+            fi
+  deploy-staging:
+    docker:
+      - image: cimg/base:stable
+    environment:
+      PIPELINE_NUMBER: << pipeline.number >>
+    steps:
+      - run:
+          name: deploy
+          command: |
+            echo "pipeline: $PIPELINE_NUMBER"
+            if [[ "$CIRCLE_BRANCH" == "staging" || "$CIRCLE_BRANCH" == "develop" ]]; then
+              echo "deploy Staging"
+              echo "$SSH_STAGING" > /tmp/ssh_staging
+              base64 -d /tmp/ssh_staging > /tmp/ssh_key_staging
+              chmod 600 /tmp/ssh_key_staging
+              ssh -i /tmp/ssh_key_staging -o StrictHostKeyChecking=no -p $SSH_PORT_STAGING "$SSH_USER_STAGING@$SSH_HOST_STAGING" "cd /app/ielts-lms/$CI_PROJECT_NAME;docker pull $CI_GROUP_NAME/$CI_PROJECT_NAME:staging; docker compose up $CI_PROJECT_NAME -d"
+            else
+              echo "branch fail"
+            fi
+  deploy-production:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - kubernetes/install-kubectl
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: |
+          cat /tmp/workspace/bash.env >> $BASH_ENV
+      - checkout
+      - run:
+          name: deploy
+          command: |
+            echo "VERSION: $VERSION"
+            export DATE=`date +%s`
+            if [[ "$CIRCLE_BRANCH" == "main" ]]; then
+              if [[ $K8S_DEPLOY == "true" ]]; then
+                if [ -n "$K8S_KUBECONFIG" ]; then
+                   mkdir -p "$HOME"/.kube
+                   echo -n "$K8S_KUBECONFIG" | base64 --decode > "$HOME"/.kube/config
+                   kubectl get node
+                   ls -la ./provision/k8s/production/
+                   sed 's/_VERSION_/'"$VERSION"'/g; s/CI_PROJECT_NAME/'"$CI_PROJECT_NAME"'/g; s/CI_GROUP_NAME/'"$CI_GROUP_NAME"'/g; s/NAMESPACE/'"$NAMESPACE"'/g; s/_DATE_/'"$DATE"'/g;' ./provision/k8s/production/*.yaml > deployment.yaml
+                   cat deployment.yaml
+                   kubectl apply -f deployment.yaml
+                fi
+              else
+                echo "deploy Production"
+                echo "$SSH_PRODUCTION" > /tmp/ssh_production
+                base64 -d /tmp/ssh_production > /tmp/ssh_key_production
+                chmod 600 /tmp/ssh_key_production
+                ssh -i /tmp/ssh_key_production -o StrictHostKeyChecking=no -p $SSH_PORT_PRODUCTION "$SSH_USER_PRODUCTION@$SSH_HOST_PRODUCTION" "cd /app/ielts-lms/$CI_PROJECT_NAME;bash deploy_script.sh $VERSION"
+              fi
+            else
+              echo "branch fail"
+            fi
+workflows:
+  build-and-deploy:
+    jobs:
+      - general-version:
+          filters:
+            branches:
+              only:
+                - main
+      - build-dockerimage-production:
+          requires:
+           - general-version
+          filters:
+            branches:
+              only:
+                - main
+      - build-dockerimage-staging:
+          filters:
+            branches:
+              only:
+                - staging
+                - develop  
+      - deploy-staging:
+          requires:
+           - build-dockerimage-staging
+          filters:
+            branches:
+              only:
+                - staging
+                - develop
+      - approve-deploy:
+          type: approval
+          requires:
+            - build-dockerimage-production
+          filters:
+            branches:
+              only:
+                - main
+      - deploy-production:
+          requires:
+           - approve-deploy
+          filters:
+            branches:
+              only:
+                - main
+      - tag-version:
+          requires:
+           - deploy-production
+          filters:
+            branches:
+              only:
+                - main

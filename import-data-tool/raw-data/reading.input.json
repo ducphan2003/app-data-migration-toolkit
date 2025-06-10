@@ -1,0 +1,1356 @@
+{
+  "id": 1714,
+  "type": 1,
+  "mode": 0,
+  "title": "Orange 19 Reading - Test 2",
+  "status": "published",
+  "sort": null,
+  "time": 60,
+  "is_test": null,
+  "simplified_id": null,
+  "limit_submit": null,
+  "thumbnail": null,
+  "quiz_code": "",
+  "description": null,
+  "content": null,
+  "parts": [
+    {
+      "id": 1822,
+      "quiz_id": 1714,
+      "passage": 1,
+      "title": "Part 1",
+      "sort": 1,
+      "time": null,
+      "content": "<h3>READING PASSAGE 1</h3>\n<p>You should spend about 20 minutes on Questions 1 - 13 which are based on Reading Passage 1 below.</p>\n<h2 style=\"text-align: center;\"><span class=\"fontstyle2\"><span data-sheets-root=\"1\">The Industrial Revolution in Britain</span></span></h2>\n<p style=\"text-align: left;\">The Industrial Revolution began in Britain in the mid-1700s and by the 1830s and 1840s had spread to many other parts of the world, including the United States. In Britain, it was a period when a largely rural, agrarian* society was transformed into an industrialised, urban one. Goods that had once been crafted by hand started to be produced in mass quantities by machines in factories, thanks to the invention of steam power and the introduction of new machines and manufacturing techniques in textiles, iron-making and other industries.</p>\n<p>The foundations of the Industrial Revolution date back to the early 1700s, when the English inventor Thomas Newcomen designed the first modern steam engine. Called the 'atmospheric steam engine', Newcomen's invention was originally used to power machines that pumped water out of mines. In the 1760s, the Scottish engineer James Watt started to adapt one of Newcomen's models, and succeeded in making it far more efficient. Watt later worked with the English manufacturer Matthew Boulton to invent {[a new steam engine driven by both the forward and backward strokes of the piston, while the gear mechanism it was connected to produced rotary motion.][1]}It was a key innovation that would allow steam power to spread across British industries.</p>\n<p>{[The demand for coal, which was a relatively cheap energy source, grew rapidly during the Industrial Revolution, as it was needed to run not only the factories used to produce manufactured goods, but also steam-powered transportation.][2]}In the early 1800s, the English engineer Richard Trevithick built a steam-powered locomotive, and by 1830 goods and passengers were being transported between the industrial centres of Manchester and Liverpool. {[In addition, steam-powered boats and ships were widely used to carry goods along Britain's canals as well as across the Atlantic.][8]}</p>\n<p>Britain had produced textiles like wool, linen and cotton, for hundreds of years, but prior to the Industrial Revolution, the British textile business was a true 'cottage industry', with {[the work performed in small workshops or even homes by individual spinners, weavers and dyers.][3]}Starting in the mid-1700s, innovations like the spinning jenny and the power loom made weaving cloth and spinning yarn and thread much easier. {[With these machines, relatively little labour was required to produce cloth,][4]}and the new, mechanised textile factories that opened around the country were quickly able to meet customer demand for cloth both at home and abroad.&nbsp;</p>\n<p>The British iron industry also underwent major change as it adopted new innovations. Chief among the new techniques was the smelting of iron ore with coke (a material made by heating coal) instead of the traditional charcoal. {[This method was cheaper and produced metals that were of a higher quality,][5-9]}{[enabling Britain's iron and steel production to expand in response to demand created by the Napoleonic Wars (1803-15) and the expansion of the railways from the 1830s.][6-9]}</p>\n<p>The latter part of the Industrial Revolution also saw key advances in communication methods, as people increasingly saw the need to communicate efficiently over long distances. {[In 1837, British inventors William Cooke and Charles Wheatstone patented the first commercial telegraphy system. In the 1830s and 1840s, Samuel Morse and other inventors worked on their own versions in the United States.][10]}Cooke and Wheatstone's system was soon used for railway signalling in the UK. As the speed of the new locomotives increased, it was essential to have a fast and effective means of avoiding collisions.</p>\n<p>The&nbsp;impact of the Industrial Revolution on people's lives was immense. Although many people in Britain had begun moving to the cities from rural areas before the Industrial Revolution, this accelerated dramatically with industrialisation, as the rise of large factories turned smaller towns into major cities in just a few decades. This rapid urbanisation brought significant challenges, as {[overcrowded cities suffered from pollution and inadequate sanitation.][7]}</p>\n<p>{[Although industrialisation increased the country's economic output overall and improved the standard of living for the middle and upper classes, many poor people continued to struggle.][11]}Factory workers had to work long hours in dangerous conditions for extremely low wages. These conditions along with the rapid pace of change fuelled opposition to industrialisation. A group of British workers who became known as 'Luddites' were British weavers and textile workers who objected to the increased use of mechanised looms and knitting frames. {[Many had spent years learning their craft, and they feared that unskilled machine operators were robbing them of their livelihood.][12]}A few desperate weavers began breaking into factories and smashing textile machines. They called themselves Luddites after Ned Ludd, a young apprentice who was rumoured to have wrecked a textile machine in 1779.</p>\n<p>The first major instances of machine breaking took place in 1811 in the city of Nottingham, and the practice soon spread across the country. Machine-breaking Luddites attacked and burned factories, and in some cases they even exchanged gunfire with company guards and soldiers. The workers wanted employers to stop installing new machinery, but the British government responded to the uprisings by making machine-breaking punishable by death. {[The unrest finally reached its peak in April 1812, when a few Luddites were shot during an attack on a mill near Huddersfield. In the days that followed, other Luddites were arrested, and dozens were hanged or transported to Australia.][13]}By 1813, the Luddite resistance had all but vanished.&nbsp;</p>\n<hr>\n<p>* agrarian: relating to the land, especially the use of land for farming.</p>",
+      "simplified_content": null,
+      "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+      "date_created": "2024-07-14T07:25:51.875+07:00",
+      "date_updated": "2024-09-10T18:22:31.896+07:00",
+      "explanations": [],
+      "questions": [
+        {
+          "id": 10867,
+          "quiz_id": 0,
+          "type": "FILL-IN-THE-BLANK",
+          "question_type": "FILL_BLANK",
+          "title": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 1-7 on your answer sheet. ",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 1,
+          "order": 1,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" style=\"width: 96.2582%;\" data-ace-table-col-widths=\"100\"><colgroup><col style=\"width: 100%;\" width=\"100\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-PiOydQylVoYtPWx5rsalKxMxghg\">{[C&acirc;u 1:</div>\n<div class=\"ace-line ace-line old-record-id-R5sedehI0ojkBPxh0B6lreCOgrh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-EZtBdvVlOoxV2uxZQcPlT3i7gJY\">Trong động cơ hơi nước của Watt v&agrave; Boulton, chuyển động của _________ được kết nối với hệ thống b&aacute;nh răng.</div>\n<div class=\"ace-line ace-line old-record-id-SGGsdZEQMoWb3wxIxzolozh3ggf\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-BYW6dfOvQo1qzuxvVMGlMLrrgWf\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QulJdZfwaoA8P9xwsySlMbQ5gYU\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: of the + NOUN (<em>NOUN l&agrave;m Object của Preposition 'OF'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-TcLod723ro7MNtx5eY1lXMPJgCe\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-GIWzdlZiloQ8FNxsLJxlxDqeg5d\" data-list=\"bullet\">\n<div><strong>Watt and Boulton </strong>~ Watt later worked with the English manufacturer Matthew Boulton</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-ZhZLd09RkogDhsxS1d5lDWFwgNb\" data-list=\"bullet\">\n<div><strong>steam engine </strong>~ to invent a new steam engine</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-DPDIdflTEoIcT8x8o9QloOp3gEb\" data-list=\"bullet\">\n<div><strong>gear system</strong> ~ gear mechanism</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-E5BadK6s7oiFq8xpGmFlkyaPgSe\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-E9WYdI2svok7TKxN4bml5hiOgxh\">B&agrave;i đọc chỉ r&otilde; \"động cơ hơi nước mới được điều khiển bởi cả h&agrave;nh tr&igrave;nh tiến v&agrave; l&ugrave;i của <u><strong>piston</strong></u>, trong khi bộ phận b&aacute;nh răng được kết nối để tạo ra chuyển động quay\" (<em>a new steam engine driven by both the forward and backward strokes of the </em><u><em>piston</em></u><em>, while the gear mechanism it was connected to produced rotary motion</em>).</div>\n<div class=\"ace-line ace-line old-record-id-QW39d2nTsojISNxJY49lOG24g8b\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: piston</div>\n<div class=\"ace-line ace-line old-record-id-Q1vBdKqdfovo1OxgkgJl3kd4gGf\">Trong động cơ hơi nước của Watt v&agrave; Boulton, chuyển động của <u><strong>piston</strong></u><u> </u>được kết nối với hệ thống b&aacute;nh răng. (<em>In Watt and Boulton's steam engine, the movement of the </em><u><em>piston</em></u><em> was linked to a gear system</em>).][1]}</div>\n<div class=\"ace-line ace-line old-record-id-QjvSdxpePorkPXxL123lqVvJgbf\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-QjfXdjMwoo1GeHxV0RhlyW9Dg5b\">{[C&acirc;u 2:</div>\n<div class=\"ace-line ace-line old-record-id-Q1drdYDr6oXvDHxAU4plun7Bg9g\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-M4ZvdCrsdonNn5xBzP8liRZPgKM\">Cần một nguồn cung cấp _______ lớn hơn để vận h&agrave;nh động cơ hơi nước.</div>\n<div class=\"ace-line ace-line old-record-id-HudGdNXBsop8LVxb61SlGy7wgsg\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-E6WFdPbrEo9T9lxHdLtl6jSrgsf\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-GQykdkjDroOZaHxLnfml7YTsgZd\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: supply of + NOUN (<em>NOUN l&agrave;m Object của Preposition 'OF'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-K2PUdikysotUuWxktBPlAZxBgSc\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-GTtzdPgH8ojBXHxEcqGl393BgSc\" data-list=\"bullet\">\n<div><strong>greater supply</strong> ~ demand for ... grew rapidly</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-BzXGdQB2Wo54qGx1LnVlBh2Ng1e\" data-list=\"bullet\">\n<div><strong>steam engines</strong> ~ steam power</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-R4qvdkT7WofFxWxYXkglvzLsgig\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-LpD0dWXlMo2a2yxKFlblRlt8gEA\">B&agrave;i đọc chỉ r&otilde; \"nhu cầu về <u><strong>than đ&aacute;</strong></u>, một nguồn năng lượng tương đối rẻ, tăng nhanh ch&oacute;ng trong thời kỳ C&aacute;ch mạng C&ocirc;ng nghiệp, v&igrave; n&oacute; cần thiết để vận h&agrave;nh kh&ocirc;ng chỉ c&aacute;c nh&agrave; m&aacute;y sản xuất h&agrave;ng h&oacute;a, m&agrave; c&ograve;n cả phương tiện giao th&ocirc;ng chạy bằng hơi nước\" (<em>The demand for </em><u><em>coal</em></u><em>, which was a relatively cheap energy source, grew rapidly during the Industrial Revolution, as it was needed to run not only the factories used to produce manufactured goods, but also steam-powered transportation</em>).</div>\n<div class=\"ace-line ace-line old-record-id-HwfCdfV1DoQ26gxxuYbl2khWghb\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: coal</div>\n<div class=\"ace-line ace-line old-record-id-CtBadR3yxoxMX5xLz9UlvuVEgeh\">Cần một nguồn cung cấp <u><strong>than đ&aacute;</strong></u> lớn hơn để vận h&agrave;nh động cơ hơi nước. (<em>A greater supply of </em><u><em>coal</em></u><em> was required to power steam engines</em>).][2]}</div>\n<div class=\"ace-line ace-line old-record-id-RQwPdrtweos77nxm8EqlspzdgVh\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KohfdPNORoaj03xcVn8lRMk8gqh\">{[C&acirc;u 3:</div>\n<div class=\"ace-line ace-line old-record-id-JKbxdbtlSos588xqQ2Dlsp8WgCh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-Mu9tdwMoEoZXjixvJAglllYGgmb\">Trước Cuộc C&aacute;ch Mạng C&ocirc;ng nghiệp, c&aacute;c thợ k&eacute;o sợi v&agrave; dệt vải l&agrave;m việc ở nh&agrave; v&agrave; trong _______.</div>\n<div class=\"ace-line ace-line old-record-id-I34bdSICloV2RZxRaFelncSHgwc\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-KFtWd3OQyolsVYx4v4flWRYfg3d\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Hlt6dKOHuoDnhTx8SYmlI37sgEf\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: in + NOUN (<em>NOUN l&agrave;m Object của Preposition 'IN'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Fy1SdFkQ9oZsJ6xq9zNlwMafgKf\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-RSfFdxH3VouCC7xHklaltGqWg9g\" data-list=\"bullet\">\n<div><strong>Before the Industrial Revolution</strong> ~ prior to the Industrial Revolution</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-BCy0ddxLYoYafFxRrX0lWv6Mgzb\" data-list=\"bullet\">\n<div><strong>spinners and weavers</strong> ~ individual spinners, weavers</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-BwD8dMP3koyaPxxM1btlfi4xgMc\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-EwPcd39BUozUiHxPSlUlBOfAgoh\">B&agrave;i đọc chỉ r&otilde; \"c&ocirc;ng việc được thực hiện trong c&aacute;c <u><strong>c&ocirc;ng xưởng</strong></u> hoặc thậm ch&iacute; tại nh&agrave; bởi c&aacute;c thợ k&eacute;o sợi, dệt vải v&agrave; nhuộm ri&ecirc;ng lẻ\" (<em>the work performed in small </em><u><em>workshops</em></u><em> or even homes by individual spinners, weavers and dyers</em>).</div>\n<div class=\"ace-line ace-line old-record-id-WSqGdZ7Olow09rxnZc1lnc56gbe\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: workshops</div>\n<div class=\"ace-line ace-line old-record-id-Och7dRkKxofhbxxFBwWl0dNigMh\">Trước C&aacute;ch mạng C&ocirc;ng nghiệp, c&aacute;c thợ k&eacute;o sợi v&agrave; dệt vải l&agrave;m việc ở nh&agrave; v&agrave; trong <u><strong>c&ocirc;ng xưởng</strong></u>. (<em>Before the Industrial Revolution, spinners and weavers worked at home and in </em><u><em>workshops</em></u>).][3]}</div>\n<div class=\"ace-line ace-line old-record-id-QHoNdzrtWopE4IxhJnVlUxbhgyh\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Bdy8dEIRgoD4lpxMkBXlQqNxgAb\">{[C&acirc;u 4:</div>\n<div class=\"ace-line ace-line old-record-id-VZdDdrcU8oIxdzxarQplKCilgve\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-GcIZd4UG0oO2K7xK7Pnl8LsbgXf\">Kh&ocirc;ng cần nhiều _______ để sản xuất vải một khi m&aacute;y k&eacute;o sợi v&agrave; khung dệt m&aacute;y đ&atilde; được ph&aacute;t minh.</div>\n<div class=\"ace-line ace-line old-record-id-BtF4dJdwModiezx40R8lzqNHgKe\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-L6FKd4BTvohgQix5Wugldl1Ageh\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Mzw1dKFXIoOY1Pxf4eIlKmsRghd\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: require + NOUN (<em>NOUN l&agrave;m Object của Transitive Verb &lsquo;REQUIRE&rsquo;</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-OhA0dOJVUopip6xhd7Jl76Ukgcc\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-LZ6Xd1dnVo4eHYxuCPmlON0oglg\" data-list=\"bullet\">\n<div><strong>spinning jenny and power loom</strong> ~ the spinning jenny and the power loom</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QfF8d8lFdoaFghxT0paljrQ2gHh\" data-list=\"bullet\">\n<div><strong>were invented</strong> ~ made weaving cloth and spinning yarn and thread much easier</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-UR90d0owBoHmgcxrHDClyxI5gce\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JGEzdvAI9oFdUHx6TzhlChHCgEd\">B&agrave;i đọc chỉ r&otilde; \"Với những m&aacute;y m&oacute;c n&agrave;y, chỉ cần một lực lượng <u><strong>lao động</strong></u> tương đối &iacute;t để sản xuất vải\" (<em>With these machines, relatively little </em><u><em>labour</em></u><em> was required to produce cloth</em>).</div>\n<div class=\"ace-line ace-line old-record-id-G10cdeZYko8XuPxKPhylAE1jgDc\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: labour</div>\n<div class=\"ace-line ace-line old-record-id-Dnd1dPUn8ohxJkxe9TPlK9pFgXf\">Kh&ocirc;ng cần nhiều <strong>lao động</strong> để sản xuất vải một khi m&aacute;y k&eacute;o sợi v&agrave; khung dệt m&aacute;y đ&atilde; được ph&aacute;t minh (<em>Not as much </em><u><em>labour</em></u><em> was needed to produce cloth once the spinning jenny and power loom were invented</em>).][4]}</div>\n<div class=\"ace-line ace-line old-record-id-G5YNd0tHqoaRfAxqDJKlFXFqgcm\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-VTosdd3d3orbj7xsKrOlCepqgpf\">{[C&acirc;u 5:</div>\n<div class=\"ace-line ace-line old-record-id-KUzedh8xUoxaAgxI4nLlYShlgbg\"><strong>Bước 1</strong>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-Va7Qdev8FoyE2hxd0B3laNrVg7B\">Việc nấu chảy quặng sắt với than cốc tạo ra vật liệu c&oacute; _______ tốt hơn.</div>\n<div class=\"ace-line ace-line old-record-id-XjWhdSlvyoco40x7OX6levF3gLb\"><strong>Bước 2</strong>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-MGR0dln9OoIGJrxh7t6lxEh9gHf\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-JLXEdoa3QoDnB3xpE33lzEWqgiR\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: better + NOUN (<em>NOUN được bổ nghĩa bởi Adjective &lsquo;BETTER&rsquo;</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-QBpedFYPFo9seBxRrRrlFjxlglg\"><strong>Bước 3</strong>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-XfPwdLIK1o1v0NxFm2qlV7w5gIL\" data-list=\"bullet\">\n<div><strong>Smelting of iron ore with coke</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-PJW9dzqhqoDN0Fxq73MlWeHhgV9\"><strong>Bước 4</strong>: So s&aacute;nh v&agrave; đối chiếu: B&agrave;i đọc chỉ r&otilde; \"Phương ph&aacute;p n&agrave;y rẻ hơn v&agrave; sản xuất ra kim loại c&oacute; <u><strong>chất lượng</strong></u> cao hơn\" (<em>This method was cheaper and produced metals that were of a higher </em><u><em>quality</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-SQqddVnYqoCAuHxND5ulTbJQgke\"><strong>Bước 5</strong>: Đ&aacute;p &aacute;n: quality</div>\n<div class=\"ace-line ace-line old-record-id-JkVRd06l2o0dFAxNbmNlhgDBgqb\">Việc nấu chảy quặng sắt với than cốc tạo ra vật liệu c&oacute; <u><strong>chất lượng</strong></u> tốt hơn. (<em>Smelting of iron ore with coke resulted in material that was better </em><u><em>quality</em></u>).][5]}</div>\n<div class=\"ace-line ace-line old-record-id-TDj2dyFbKoUCugxXNeclB92HgBb\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Eduod1HVyogjbgx7x3Fls2engsc\">{[C&acirc;u 6:</div>\n<div class=\"ace-line ace-line old-record-id-QaS6dQ7KKowO6dxNAmAlrtjOgvB\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-CCVvdrYfIoOwnZxG6VUlEFM3gLf\">Nhu cầu về sắt tăng l&ecirc;n c&ugrave;ng với sự ph&aacute;t triển của _______.</div>\n<div class=\"ace-line ace-line old-record-id-D8f5d4Q1foYc2ex17MLlo7gDgNc\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-STLJdX6DwoBWMCxHQnflFIf5gQb\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-IEWTdDXZJoXWZyxajgnlZRVLgHd\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: of the + NOUN (<em>NOUN l&agrave;m Object của Preposition 'OF'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-L8ZkdpvOpoeborxk9qSlBGiKg8d\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<div class=\"ace-line ace-line old-record-id-RvtbdBGeSo4qzUxYdWolrsntghh\"><strong>Demand for iron increased</strong> ~ iron and steel production to expand in response to demand</div>\n<div class=\"ace-line ace-line old-record-id-OfHGdcFKmoKi1wxsbyzlpDOrgIf\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-PuUOdA5oLoJnuoxEg5nlcaskgSg\">B&agrave;i đọc chỉ r&otilde; \"sản xuất sắt v&agrave; th&eacute;p của Anh mở rộng để đ&aacute;p ứng nhu cầu tạo ra bởi Chiến tranh Napoleon (1803-15) v&agrave; sự mở rộng của <u><strong>đường sắt</strong></u> từ những năm 1830\" (<em>Britain's iron and steel production to expand in response to demand created by the Napoleonic Wars (1803-15) and the expansion of the </em><u><em>railways</em></u><em> from the 1830s</em>).</div>\n<div class=\"ace-line ace-line old-record-id-KB6Ed2ywLoGH6QxzoU4l3naTgrg\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: railways</div>\n<div class=\"ace-line ace-line old-record-id-KqDwddAueohnjYxgPCwlrCNfgvh\">Nhu cầu về sắt tăng l&ecirc;n c&ugrave;ng với sự ph&aacute;t triển của <u><strong>đường sắt</strong></u> (<em>Demand for iron increased with the growth of the </em><u><em>railways</em></u>).][6]}</div>\n<div class=\"ace-line ace-line old-record-id-BYqRdAlAsopM8AxKA9Xlbwqfggb\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WIgndfbS3o2nN2x1aSUldvtogtg\">{[C&acirc;u 7:</div>\n<div class=\"ace-line ace-line old-record-id-CTfCdiqvJoXpRlxB6Etlavbng1b\"><strong>Bước 1</strong>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-Ko5udQudfoG22txPXqhlz8EVgTh\">C&aacute;c th&agrave;nh phố mới th&igrave; bẩn thỉu, đ&ocirc;ng đ&uacute;c v&agrave; thiếu thốn _______.</div>\n<div class=\"ace-line ace-line old-record-id-JWz9dYqD6oGJOlxdKBjlL1FZgi4\"><strong>Bước 2</strong>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-KULcdFltvoBFhYx8u0WlkSOXgFb\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-GI24dCfg0oEuy4xEX56lWDdygug\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: sufficient + NOUN (<em>NOUN được bổ nghĩa bởi Adjective &lsquo;SUFFICIENT&rsquo;</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-GEiQdVjDHo2tsYxhjhelIyozg6e\"><strong>Bước 3</strong>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-H5SUdtumqopK1txlc4HlskZlgBb\" data-list=\"bullet\">\n<div><strong>new cities</strong> ~ overcrowded cities</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-HacEdpJtMo9jvhx88tpludEngBb\" data-list=\"bullet\">\n<div><strong>dirty</strong> ~ suffered from pollution</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-UOM4dhB2HorO6Dx4p7pl4nBPgRf\"><strong>Bước 4</strong>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-GImwdbk5roKngAxUBrvlf0qIgDe\">B&agrave;i đọc chỉ r&otilde; \"c&aacute;c th&agrave;nh phố đ&ocirc;ng đ&uacute;c bị &ocirc; nhiễm v&agrave; thiếu <strong>vệ sinh</strong> đầy đủ\" (<em>overcrowded cities suffered from pollution and inadequate </em><u><em>sanitation</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-Tp4adAjmWoMmY9xmcMRlfGfagpf\"><strong>Bước 5:</strong> Đ&aacute;p &aacute;n: sanitation</div>\n<div class=\"ace-line ace-line old-record-id-LJbPdyIzmoaCAIxeUgtlHkWvgwd\">C&aacute;c th&agrave;nh phố mới bị &ocirc; nhiễm, đ&ocirc;ng đ&uacute;c v&agrave; thiếu <strong>vệ sinh</strong> đầy đủ. (<em>The new cities were dirty, crowded and lacked sufficient </em><u><em>sanitation</em></u>).][7]}</div>\n<div class=\"ace-line ace-line old-record-id-KCHydY3PQofCITxjsTjl87togVd\">&nbsp;</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<div class=\"ace-line ace-line old-record-id-TGwudUjWwoAFiwxmZyIlOb2VgQc\">&nbsp;</div>\n</div>",
+          "description": "<h2>Questions 1 - 7:</h2>",
+          "gap_fill_in_blank": "<h3 style=\"text-align: center;\"><span class=\"fontstyle0\">Britain's </span><span class=\"fontstyle0\">Industrial </span><span class=\"fontstyle0\">Revolution</span></h3>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.8632%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<h4><strong>Steam&nbsp;<span class=\"fontstyle0\" style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif;\">power</span></strong></h4>\n<p>&bull;&nbsp;Newcomen's steam engine was used in mines to remove water.</p>\n<p>&bull;&nbsp;In Watt and Boulton's steam engine, the movement of the {[piston][1]}&nbsp;was linked to a gear system.</p>\n<p>&bull; A greater supply of {[coal][2]}&nbsp;was required to power steam engines.</p>\n<h4><strong><span class=\"fontstyle0\">Textile&nbsp;</span><span class=\"fontstyle0\">indu</span><span class=\"fontstyle0\">str</span></strong><span class=\"fontstyle0\"><strong>y</strong></span></h4>\n<p>&bull; Before the Industrial Revolution, spinners and weavers worked at home and in {[workshops][3]}</p>\n<p>&bull; Not as much {[labour | labor][4]}&nbsp;was needed to produce cloth once the spinning jenny and power loom were invented.</p>\n<h4><strong><span class=\"fontstyle0\" style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">Iron </span><span class=\"fontstyle0\" style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">industry</span></strong></h4>\n<p>&bull; Smelting of iron ore with coke resulted in material that was better {[quality][5]}</p>\n<p>&bull; Demand for iron increased with the growth of the {[railway | railways][6]}</p>\n<h4><strong><span style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">Communications</span></strong></h4>\n<p>&bull; Cooke and Wheatstone patented the first telegraphy system.</p>\n<p>&bull; The telegraphy system was used to prevent locomotives colliding.</p>\n<h4><strong><span style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">Urbanisation</span></strong></h4>\n<p>&bull; Small towns turned into cities very quickly.</p>\n<p>&bull; The new cities were dirty. crowded and lacked sufficient {[sanitation][7]}&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+          "single_choice_radio": null,
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:25:51.895+07:00",
+          "date_updated": "2024-09-10T18:22:31.913+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10868,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 2,
+          "order": 8,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-FkZAd5pKnoA46bxDmMyl5DBggbg\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-ANSPdRhoZofn9LxQxeNlnL63gic\">Mạng lưới k&ecirc;nh đ&agrave;o của Anh đ&atilde; ph&aacute;t triển nhanh ch&oacute;ng để c&oacute; thể vận chuyển nhiều h&agrave;ng h&oacute;a hơn trong nước.</div>\n<div class=\"ace-line ace-line old-record-id-PESZdUCmzo7TiuxbqdLlkTDZg8g\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-BPVodSb3uo71l3xaJPklQQ9Bg0e\" data-list=\"bullet\">\n<div><strong>Britain's canals</strong> ~ canal network</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-JOWZdFoApoufD7xkvnRltif6g8g\" data-list=\"bullet\">\n<div><strong>carry goods</strong> ~ goods could be transported</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-IdgtdwgSCossLAxzHHolgYJjgLg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-IqoBdmlDuop0IMxtDYtlKG1hgrb\">B&agrave;i đọc đề cập đến việc \"t&agrave;u thuyền chạy bằng hơi nước được sử dụng rộng r&atilde;i để vận chuyển h&agrave;ng h&oacute;a dọc theo c&aacute;c k&ecirc;nh đ&agrave;o của Anh\". Tuy nhi&ecirc;n, b&agrave;i đọc kh&ocirc;ng hề nhắc đến th&ocirc;ng tin \"mạng lưới <u><strong>k&ecirc;nh đ&agrave;o ph&aacute;t triển nhanh ch&oacute;ng</strong></u>\" (<em>canal network grew rapidly</em>).</div>\n<div class=\"ace-line ace-line old-record-id-Omq3doUbcoU9xbxF4TIlrG4Ugjc\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: NOT GIVEN</div>\n<div class=\"ace-line ace-line old-record-id-LSDZdWatwoiTHGxjLDelarccgOb\">&nbsp;</div>\n</div>",
+          "description": "<h2>Questions 8 - 13:</h2>\n<p>Do the following statements agree with the information given in Reading Passage 1?</p>\n<p>In boxes 8-13 on your answer sheet, write</p>\n<p><strong>TRUE</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the statement agrees with the information</p>\n<p><strong>FALSE</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the statement contradicts the information</p>\n<p><strong>NOT</strong>&nbsp;<strong>GIVEN</strong>&nbsp;&nbsp;&nbsp;&nbsp; if there is no information on this</p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Britain's canal network grew rapidly so that more goods could be transported around the country.",
+              "answer": "NOT GIVEN"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "c2afe8a2-9330-4394-a11c-5a6c0d52d9d0",
+          "date_created": "2024-07-14T07:25:51.925+07:00",
+          "date_updated": "2024-08-24T22:37:09.96+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10869,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 3,
+          "order": 9,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-CcaPdcCMxoe0NvxLBe1lc00ggvf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-B0hkdAvvfoji2rx6qXVle1akgAb\">Chi ph&iacute; trong ng&agrave;nh c&ocirc;ng nghiệp sắt tăng l&ecirc;n khi kỹ thuật luyện quặng sắt bằng than cốc được đưa v&agrave;o sử dụng.</div>\n<div class=\"ace-line ace-line old-record-id-ZFgNdcVeUoQlDjxjwn4lMCxzgpw\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-J2W1dU9UhoSBlOxYM5TlhGZRgvb\" data-list=\"bullet\">\n<div><strong>cheaper</strong> ~ costs rose</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Wwovd1OrYo4zRsxovvmlaeWYgsg\" data-list=\"bullet\">\n<div><strong>this method</strong> ~ technique of smelting iron ore with coke</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-ZpAgdDAjPoK3wzxGpIxlKs7Yg0c\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-GWiEdQsV6oXE8yxqx2Wlz7jQgcb\">B&agrave;i đọc chỉ r&otilde; \"<u><strong>phương ph&aacute;p n&agrave;y rẻ hơn</strong></u> v&agrave; sản xuất ra kim loại c&oacute; chất lượng cao hơn\". Điều n&agrave;y tr&aacute;i ngược với th&ocirc;ng tin trong c&acirc;u hỏi l&agrave; \"<u><strong>Chi ph&iacute;</strong></u> trong ng&agrave;nh c&ocirc;ng nghiệp sắt <u><strong>tăng l&ecirc;n</strong></u> khi kỹ thuật luyện quặng sắt bằng than cốc được đưa v&agrave;o sử dụng\" <em>(Costs in the iron industry rose when the technique of smelting iron ore with coke was introduced.).</em></div>\n<div class=\"ace-line ace-line old-record-id-ZVILd4yKVoQplHxzAjil0NYbgxb\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: FALSE</div>\n<div class=\"ace-line ace-line old-record-id-Vf48dTPWgozViFxiW9Slrbwng2e\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-TGwudUjWwoAFiwxmZyIlOb2VgQc\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Costs in the iron industry rose when the technique of smelting iron ore with coke was introduced.",
+              "answer": "FALSE"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:25:51.948+07:00",
+          "date_updated": "2024-07-30T11:50:02.35+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10870,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 4,
+          "order": 10,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-EmJbdFAc4oaYMyx8yMVluHZEgFg\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-Npqvd71SboAWBOxvQl5lkvV4gad\">Hệ thống th&ocirc;ng tin li&ecirc;n lạc của Samuel Morse đ&aacute;ng tin cậy hơn hệ thống do William Cooke v&agrave; Charles Wheatstone ph&aacute;t triển.</div>\n<div class=\"ace-line ace-line old-record-id-YD0tduChJol5ZfxrQ3flcL6RgDh\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-OQJdd6EIMouOBVxRswylYgRwgRd\" data-list=\"bullet\">\n<div><strong>Samuel Morse ~ </strong>t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Hrpad39uBolM3Gx8qk0lEWrRgXd\" data-list=\"bullet\">\n<div><strong>William Cooke and Charles Wheatstone </strong>~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-L4q0dRsjdodTwhxQwNvlh5WDggc\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Vvd5dvhOZoEICbxMIqIlGXBrgmd\">B&agrave;i đọc đề cập đến việc \"William Cooke v&agrave; Charles Wheatstone đ&atilde; c&oacute; bằng s&aacute;ng chế cho hệ thống điện b&aacute;o thương mại đầu ti&ecirc;n\" v&agrave; \"Samuel Morse c&ugrave;ng với c&aacute;c nh&agrave; ph&aacute;t minh kh&aacute;c đ&atilde; ph&aacute;t triển phi&ecirc;n bản của ri&ecirc;ng họ ở Hoa Kỳ&rdquo;. Tuy nhi&ecirc;n, b&agrave;i đọc kh&ocirc;ng hề nhắc đến th&ocirc;ng tin <strong>\"</strong><u><strong>hệ thống của Morse đ&aacute;ng tin cậy hơn</strong></u><strong>\"</strong> <em>(Morse's system was more reliable).</em></div>\n<div class=\"ace-line ace-line old-record-id-Jqw8dmikcowumKxiWttlwNm6ggh\"><u><strong>Bước 4:</strong></u><strong> </strong>Đ&aacute;p &aacute;n: NOT GIVEN</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Samuel Morse's communication system was more reliable than that developed by William Cooke and Charles Wheatstone.",
+              "answer": "NOT GIVEN"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:25:51.97+07:00",
+          "date_updated": "2024-07-30T12:05:30.73+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10871,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 5,
+          "order": 11,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-WKledfW2soaoWnxbba9lJYdYgXc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-Xbr2dLx0Botl22x0e47lrfTcgZT\">Lợi &iacute;ch kinh tế của c&ocirc;ng nghiệp h&oacute;a chỉ giới hạn ở một số tầng lớp nhất định trong x&atilde; hội.</div>\n<div class=\"ace-line ace-line old-record-id-N5gBdgDFWo2yCAxYcr7lzhfPgZg\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-AvJ6dNNfooPtrkxm0nVl237wg4b\" data-list=\"bullet\">\n<div><strong>economic output</strong> ~ economic benefits</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-EpXqdVYTeoi1IUx6iVelxdEygHg\" data-list=\"bullet\">\n<div><strong>improved the standard of living for the middle and upper classes</strong> ~ limited to certain sectors of society</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-PXJtdbyFUofOKKxXgRxlaw7fgxb\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-XOGzdSErooIJCHx6kG7l5kwUgYd\">B&agrave;i đọc chỉ r&otilde; \"c&ocirc;ng nghiệp h&oacute;a tăng sản lượng kinh tế của đất nước n&oacute;i chung v&agrave; <u><strong>cải thiện mức sống cho tầng lớp trung lưu v&agrave; thượng lưu, nhưng nhiều người ngh&egrave;o th&igrave; vẫn c&ograve;n gặp kh&oacute; khăn</strong></u>\". Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u hỏi \"lợi &iacute;ch kinh tế của c&ocirc;ng nghiệp h&oacute;a <u><strong>chỉ giới hạn ở một số tầng lớp nhất định trong x&atilde; hội</strong></u>\" <em>(The economic benefits of industrialisation were limited to certain sectors of society).</em></div>\n<div class=\"ace-line ace-line old-record-id-HCsLd42x9oavICx6aYJlqrSRgZc\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: TRUE</div>\n<div class=\"ace-line ace-line old-record-id-Iq43dTTc3otvCpx1W00loXW4god\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "The economic benefits of industrialisation were limited to certain sectors of society.",
+              "answer": "TRUE"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:25:51.991+07:00",
+          "date_updated": "2024-07-30T12:05:30.771+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10872,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 6,
+          "order": 12,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-QZ1xdSqMtoKnT3xQUAllLf9Cglc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-FYrMdfWaZoZMkkxH2W6lQnTigKh\">Một số thợ dệt l&agrave;nh nghề tin rằng việc sử dụng c&aacute;c m&aacute;y dệt mới sẽ dẫn đến hậu quả (nhiều người) mất việc l&agrave;m.</div>\n<div class=\"ace-line ace-line old-record-id-G6Zmdf5HioPajWxPdDGlk8CogDe\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-UO55dugY6oKsa1xE7LflJYR3gzf\" data-list=\"bullet\">\n<div><strong>many had spent years learning their craft</strong> ~ skilled weavers</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-IG5OdDJuzoAvnDxCfDSlyibTgXe\" data-list=\"bullet\">\n<div><strong>Robbing them of their livelihood ~ </strong>lead to job losses</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-CzcPd5ienotP5CxKxhNlHw8igGb\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-KG9QdMLOWociWDxK9wHle4mwgah\">B&agrave;i đọc chỉ r&otilde; \"nhiều người đ&atilde; d&agrave;nh nhiều năm để học nghề, v&agrave; họ lo sợ rằng <u><strong>những người vận h&agrave;nh m&aacute;y m&oacute;c kh&ocirc;ng c&oacute; tay nghề đang &ldquo;đạp đổ miếng cơm&rdquo; của họ</strong></u>\". Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u hỏi l&agrave; \"một số thợ dệt l&agrave;nh nghề tin rằng &ldquo;một số thợ dệt l&agrave;nh nghề tin rằng <u><strong>việc sử dụng c&aacute;c m&aacute;y dệt mới sẽ dẫn đến hậu quả (nhiều người) mất việc l&agrave;m</strong></u>\" <em>(some skilled weavers believed that the introduction of the new textile machines would lead to job losses)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-ZBYUdZYWmotZ5axj4sSlmjlEgZf\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: TRUE</div>\n<div class=\"ace-line ace-line old-record-id-AOOrdb75OokkzxxPiIslLGBrggb\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Some skilled weavers believed that the introduction of the new textile machines would lead to job losses.",
+              "answer": "TRUE"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:25:52.01+07:00",
+          "date_updated": "2024-07-30T12:05:30.75+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10873,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "TRUE_FALSE",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 7,
+          "order": 13,
+          "part_id": 1822,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-ARBmdgW8noxA1Mx5adDlXht6gHr\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-Aastd3lG5owNjtxFEKcl7TYEgfh\">Người d&acirc;n địa phương c&oacute; sự cảm th&ocirc;ng đối với những người Luddite bị bắt gần Huddersfield.</div>\n<div class=\"ace-line ace-line old-record-id-GdpKdBTe1o8fbWxo3Lzlq5AvgEh\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-JJNYdhhFdoAYuUxVOXtlDk71g0b\" data-list=\"bullet\">\n<div><strong>Luddites were arrested </strong>~ Luddites who were arrested</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-UIfCd5MbooPQU4xLpQ9lfKVhgGc\" data-list=\"bullet\">\n<div><strong>near Huddersfield</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-IzFkddjfnoygngxnEwrlSgQAgqg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-BAdVdqr2ComGEqxjFB8lB5gfgKe\">B&agrave;i đọc đề cập đến việc &ldquo;một số người Luddite đ&atilde; bị bắn trong một cuộc tấn c&ocirc;ng v&agrave;o một nh&agrave; m&aacute;y gần Huddersfield\" v&agrave; \"những ng&agrave;y sau đ&oacute;, những người Luddite kh&aacute;c bị bắt\". Tuy nhi&ecirc;n, b&agrave;i đọc kh&ocirc;ng hề nhắc đến th&ocirc;ng tin \"<u><strong>người d&acirc;n địa phương c&oacute; sự cảm th&ocirc;ng</strong></u>\" <em>(sympathy among local people).</em></div>\n<div class=\"ace-line ace-line old-record-id-IHVndBd7boyzjfxlHooliVQvgLR\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: NOT GIVEN</div>\n<div class=\"ace-line ace-line old-record-id-AlrZdsD1Ioshq8xJ7B9lcRgqgff\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "There was some sympathy among local people for the Luddites who were arrested near Huddersfield.",
+              "answer": "NOT GIVEN"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "TRUE"
+            },
+            {
+              "option": "FALSE"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:25:52.028+07:00",
+          "date_updated": "2024-07-30T11:50:02.635+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        }
+      ],
+      "vocabs": [],
+      "listen_from": null,
+      "listen_to": null,
+      "instruction": null
+    },
+    {
+      "id": 1823,
+      "quiz_id": 1714,
+      "passage": 2,
+      "title": "Part 2",
+      "sort": 2,
+      "time": null,
+      "content": "<h3>READING PASSAGE 2</h3>\n<p>You should spend about 20 minutes on Questions 14 - 26 which are based on Reading Passage 2 below.</p>\n<h2 style=\"text-align: center;\"><span class=\"fontstyle2\"><strong><span data-sheets-root=\"1\">Athletes and stress</span></strong></span></h2>\n<p><span class=\"fontstyle2\"><strong>A.</strong> </span>It isn't easy being a professional athlete. Not only are the physical demands greater than&nbsp;most people could handle, athletes also face intense psychological pressure during competition. {[This is something that British tennis player Emma Raducanu wrote about on social media following her withdrawal from the 2021 Wimbledon tournament.][16]}{[ Though the young player had been doing well in the tournament, she began having difficulty regulating her breathing and heart rate during a match, which she later attributed to 'the accumulation of the excitement and the buzz'][23-24]}.</p>\n<p><span class=\"fontstyle2\"><strong>B.</strong>&nbsp;</span>For athletes, some level of performance stress is almost unavoidable. But there are many different factors that dictate just how people's minds and bodies respond to stressful events. Typically, stress is the result of an exchange between two factors: demands and resources. An athlete may feel stressed about an event if they feel the demands on them are greater than they can handle. {[These demands include the high level of physical and mental effort required to succeed, and also the athlete's concerns about the difficulty of the event, their chance of succeeding, and any potential dangers such as injury.][19]}Resources, on the other hand, are a person's ability to cope with these demands. These include factors such as the competitor's degree of confidence, how much they believe they can control the situation's outcome, and whether they're looking forward to the event or not.</p>\n<p><span class=\"fontstyle2\"><strong>C.</strong> </span>Each new demand or change in circumstances affects whether a person responds positively or negatively to stress. Typically, the more resources a person feels they have in handling the situation, the more positive their stress response. This positive stress response is called a challenge state. But should the person feel there are too many demands placed on them, the more likely they are to experience a negative stress response - known as a threat state. {[Research shows that the challenge states lead to good performance, while threat states lead to poorer performance.][17]}So, in Emma Raducanu's case, a much larger audience, higher expectations and facing a more skilful opponent, may all have led her to feel there were greater demands being placed on her at Wimbledon - but she didn't have the resources to tackle them. This led to her experiencing a threat response.</p>\n<p><span class=\"fontstyle2\"><strong>D.</strong></span> {[Our challenge and threat responses essentially influence how our body responds to stressful situations, as both affect the production of adrenaline and cortisol - also known as 'stress hormones'.][14]}During a challenge state, adrenaline increases the amount of blood pumped from the heart and expands the blood vessels, which allows more energy to be delivered to the muscles and brain. This increase of blood and decrease of pressure in the blood vessels has been consistently related to superior sport performance in everything from cricket batting, to golf putting and football penalty taking. But during a threat state, cortisol inhibits the positive effect of adrenaline, resulting in tighter blood vessels, higher blood pressure, slower psychological responses, and a faster heart rate. In short, a threat state makes people more anxious - they make worse decisions and perform more poorly. {[In tennis players, cortisol has been associated with more unsuccessful serves and greater anxiety][20]}.</p>\n<p><strong><span class=\"fontstyle0\">E.</span></strong> That said, anxiety is also a common experience for athletes when they're under pressure. Anxiety can increase heart rate and perspiration, cause heart palpitations, muscle tremors and shortness of breath, as well as headaches, nausea, stomach pain, weakness and a desire to escape in more extreme cases. Anxiety can also reduce concentration and self-control and cause overthinking. {[The intensity with which a person experiences anxiety depends on the demands and resources they have.][25]}Anxiety may also manifest itself in the form of excitement or nervousness depending on the stress response. {[Negative stress responses can be damaging to both physical and mental health - and repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression.][26]}</p>\n<p><strong><span class=\"fontstyle0\">F. </span></strong>But there are many ways athletes can ensure they respond positively under pressure. {[Positive stress responses can be promoted through the language that they and others - such as coaches or parents - use.][15-18]}{[Psychologists can also help athletes change how they see their physiological responses - such as helping them see a higher heart rate as excitement, rather than nerves.][18-21]}{[Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat.][15-22]}Visualisation may involve the athlete recreating a mental picture of a time when they performed well, or picturing themselves doing well in the future. This can help create a feeling of control over the stressful event. Recreating competitive pressure during training can also help athletes learn how to deal with stress. An example of this might be scoring athletes against their peers to create a sense of competition. This would increase the demands which players experience compared to a normal training session, while still allowing them to practise coping with stress.&nbsp;</p>",
+      "simplified_content": null,
+      "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+      "date_created": "2024-07-14T07:34:53.822+07:00",
+      "date_updated": "2024-09-10T18:22:31.987+07:00",
+      "explanations": [],
+      "questions": [
+        {
+          "id": 10874,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "MATCHING_INFO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 1,
+          "order": 14,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-YoeYdBKOBodJf4xCPe4l9Ypygvh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-M6P3drhu4oadTTxBji1lRKyxgct\">Đề cập đến hai hợp chất h&oacute;a học c&oacute; ảnh hưởng đến hiệu suất.</div>\n<div class=\"ace-line ace-line old-record-id-AaFfdGgSQobhkixvSGCltkmTgpd\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-HPR1do027o7GdjxgP9Nl4w9MgFe\" data-list=\"bullet\">\n<div><strong>Adrenaline and cortisol </strong>~ two chemical compounds</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-TZo2doQfYoPdiJxlUxjlrYv1gYd\" data-list=\"bullet\">\n<div><strong>Influence how our body responds</strong> ~ impact on performance</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-MeEHdWT6PoxOVExvuzYlcpHjgcc\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-NejldV0ioo3SiPxqog9lc5CUgWx\">Đoạn D chỉ r&otilde;: \"Phản ứng của ch&uacute;ng ta với thử th&aacute;ch v&agrave; c&aacute;c mối đe dọa th&igrave; về cơ bản ảnh hưởng đến c&aacute;ch <u><strong>cơ thể đối ph&oacute; với c&aacute;c t&igrave;nh huống căng thẳng</strong></u> v&igrave; cả hai đều ảnh hưởng đến việc sản xuất <u><strong>adrenaline v&agrave; cortisol</strong></u> - c&ograve;n được gọi l&agrave; 'hormone căng thẳng'.\"</div>\n<div class=\"ace-line ace-line old-record-id-KJgPdlWjuo7lxOxhE2olTuOdgmd\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn D đ&atilde; <em>\"đề cập đến hai hợp chất h&oacute;a học c&oacute; ảnh hưởng đến hiệu suất\"</em>.</div>\n<div class=\"ace-line ace-line old-record-id-SvVPdfR42oHvqtxNp6vlYPrtgQg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: D</div>\n<div class=\"ace-line ace-line old-record-id-Mpdzdz497ogeZFxZsonlylIAgBe\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-LSDZdWatwoiTHGxjLDelarccgOb\">&nbsp;</div>\n</div>",
+          "description": "<h2><span class=\"fontstyle0\">Quest</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">ons </span><span class=\"fontstyle2\">14</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle2\">- 18</span><span class=\"fontstyle2\">:</span></h2>\n<p><span class=\"fontstyle3\">Reading Passage&nbsp;</span><span class=\"fontstyle3\">2 </span><span class=\"fontstyle3\">has </span><span class=\"fontstyle3\">s</span><span class=\"fontstyle3\">ix p</span><span class=\"fontstyle3\">aragraphs, </span><strong><span class=\"fontstyle4\">A</span><span class=\"fontstyle4\">-</span></strong><span class=\"fontstyle4\"><strong>F</strong>. </span><span class=\"fontstyle3\">Which paragraph </span><span class=\"fontstyle3\">co</span><span class=\"fontstyle3\">ntain</span><span class=\"fontstyle3\">s </span><span class=\"fontstyle3\">the fo</span><span class=\"fontstyle3\">ll</span><span class=\"fontstyle3\">ow</span><span class=\"fontstyle3\">i</span><span class=\"fontstyle3\">ng </span><span class=\"fontstyle3\">i</span><span class=\"fontstyle3\">nformation? </span></p>\n<p><span class=\"fontstyle0\">Write </span><span class=\"fontstyle0\">t</span><span class=\"fontstyle0\">h</span><span class=\"fontstyle0\">e correct </span><span class=\"fontstyle0\">l</span><span class=\"fontstyle0\">etter, </span><strong><span class=\"fontstyle5\">A</span><span class=\"fontstyle5\">-</span><span class=\"fontstyle5\">F</span></strong><span class=\"fontstyle5\">, </span><span class=\"fontstyle0\">in </span><span class=\"fontstyle0\">boxes </span><span class=\"fontstyle0\">14 </span><span class=\"fontstyle0\">- 18</span><span class=\"fontstyle0\">&nbsp;on your answer s</span><span class=\"fontstyle0\">h</span><span class=\"fontstyle0\">eet. </span></p>\n<p><em><span class=\"fontstyle4\"><strong>NB</strong>&nbsp;</span><span class=\"fontstyle0\">Y</span><span class=\"fontstyle0\">ou may </span><span class=\"fontstyle0\">use </span><span class=\"fontstyle0\">any </span><span class=\"fontstyle0\">l</span><span class=\"fontstyle0\">e</span><span class=\"fontstyle0\">tt</span><span class=\"fontstyle0\">er </span><span class=\"fontstyle0\">more than </span><span class=\"fontstyle0\">once.</span>&nbsp;</em></p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "reference to two chemical compounds which impact on performance",
+              "answer": "D"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "A"
+            },
+            {
+              "option": "B"
+            },
+            {
+              "option": "C"
+            },
+            {
+              "option": "D"
+            },
+            {
+              "option": "E"
+            },
+            {
+              "option": "F"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:34:53.847+07:00",
+          "date_updated": "2024-09-10T18:22:32.006+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10875,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "MATCHING_INFO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 2,
+          "order": 15,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-EHajdOcmRod0TGxapChlnuN5gid\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-JBXndyrFcoIYRlxBEx1l9KdIghV\">Những v&iacute; dụ về c&aacute;c chiến lược để giảm thiểu t&aacute;c động của stress.</div>\n<div class=\"ace-line ace-line old-record-id-ONmcdDvtJoWoJuxsm0Fl295Kgag\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-TnJvdmTjeohmQExGm6wlbuxtgYc\" data-list=\"bullet\">\n<div><strong>Examples</strong> ~ such as</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-PjGDdFEcOoaDCSxqeuolcAiXgWh\" data-list=\"bullet\">\n<div><strong>Developing psychological skills</strong> ~ strategies</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-UUfsdSfn8ohqMRxOPCklweuxgng\" data-list=\"bullet\">\n<div><strong>Decrease physiological responses to threat</strong> ~ strategies for minimising the effects of stress</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-BYnOdrxAOo0WbXxh7UDlEOK0gKb\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Ub9AdSppDof9i6xwzrUlGolegSe\">Đoạn F chỉ r&otilde;: \"<u><strong>C&aacute;c phản ứng t&iacute;ch cực với stress c&oacute; thể được th&uacute;c đẩy</strong></u> <u><strong>th&ocirc;ng qua ng&ocirc;n ngữ</strong></u> m&agrave; họ v&agrave; những người xung quanh - như l&agrave; huấn luyện vi&ecirc;n hay phụ huynh - sử dụng. C&aacute;c nh&agrave; t&acirc;m l&yacute; học cũng c&oacute; thể gi&uacute;p vận động vi&ecirc;n <u><strong>thay đổi c&aacute;ch m&agrave; họ nh&igrave;n nhận c&aacute;c phản ứng sinh l&yacute; của m&igrave;nh</strong></u> - <u><strong>v&iacute; dụ như</strong></u> gi&uacute;p họ xem nhịp tim cao hơn l&agrave; sự phấn kh&iacute;ch, thay v&igrave; lo lắng.<u><strong> Ph&aacute;t triển c&aacute;c kỹ năng t&acirc;m l&yacute;</strong></u>, <u><strong>v&iacute; dụ như</strong></u> h&igrave;nh dung trong đầu, cũng c&oacute; thể gi&uacute;p giảm phản ứng sinh l&yacute; đối với mối đe dọa.\"</div>\n<div class=\"ace-line ace-line old-record-id-YnEAdPzeTo3IrbxX8u3lBdfXgSh\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn F đ&atilde; đưa ra<em> &ldquo;những v&iacute; dụ về chiến lược để giảm thiểu t&aacute;c động của stress\"</em>.</div>\n<div class=\"ace-line ace-line old-record-id-MgJtd8gQLo5r73xWSbtl2CEvgVf\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: F</div>\n<div class=\"ace-line ace-line old-record-id-DlLAd6pmpovDJxxWyT5l20ddgHp\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "examples of strategies for minimising the effects of stress",
+              "answer": "F"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "A"
+            },
+            {
+              "option": "B"
+            },
+            {
+              "option": "C"
+            },
+            {
+              "option": "D"
+            },
+            {
+              "option": "E"
+            },
+            {
+              "option": "F"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:34:53.865+07:00",
+          "date_updated": "2024-07-31T09:41:19.483+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10876,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "MATCHING_INFO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 3,
+          "order": 16,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-QKeldJYUkohnyBx8VPnl1fTdgQf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-N259dzK9co3TLCxOXAhlrGMHgVh\">C&aacute;ch một vận động vi&ecirc;n đ&atilde; kể lại về trải nghiệm của m&igrave;nh với stress.</div>\n<div class=\"ace-line ace-line old-record-id-Y4C7diKRyoM6qbxDLKnl9aIlgSh\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-OCXedrx3ioZsscxxng8lG1HagSh\" data-list=\"bullet\">\n<div><strong>Emma Raducanu wrote about on social media </strong>~ sportsperson accounted for</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-VrQBdSSu8obQlLx3OR3lGVnqgOf\" data-list=\"bullet\">\n<div><strong>difficulty regulating her breathing and heart rate </strong>~ their own experience of stress</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-NVhQdWON0oWPGhxys86l57O6gM0\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Othud1vLtoequ8xchVSl3GeEgGh\">Đoạn A chỉ r&otilde;: \"Đ&acirc;y l&agrave; điều m&agrave; tay vợt người Anh Emma Raducanu đ&atilde; viết tr&ecirc;n mạng x&atilde; hội sau khi r&uacute;t lui khỏi giải đấu Wimbledon 2021. Mặc d&ugrave; tay vợt trẻ đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu gặp <u><strong>kh&oacute; khăn trong việc điều h&ograve;a hơi thở v&agrave; nhịp tim</strong></u> trong một trận đấu, điều m&agrave; sau đ&oacute; <u><strong>c&ocirc; cho l&agrave; do 'sự t&iacute;ch tụ của sự phấn kh&iacute;ch v&agrave; kh&ocirc;ng kh&iacute; s&ocirc;i động'.</strong></u>\"</div>\n<div class=\"ace-line ace-line old-record-id-Gl80dLNs0oWG2hx7RLkljbV0gXe\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn A đ&atilde; đề cập đến<em> &ldquo;c&aacute;ch một vận động vi&ecirc;n đ&atilde; kể lại về trải nghiệm của m&igrave;nh với stress\"</em>.</div>\n<div class=\"ace-line ace-line old-record-id-FYcJd4PwMoYvoZxz6o7ltzoDgrb\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: A</div>\n<div class=\"ace-line ace-line old-record-id-N4Ggdd21hoXaHXxisX0lKoglgyc\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "how a sportsperson accounted for their own experience of stress",
+              "answer": "A"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "A"
+            },
+            {
+              "option": "B"
+            },
+            {
+              "option": "C"
+            },
+            {
+              "option": "D"
+            },
+            {
+              "option": "E"
+            },
+            {
+              "option": "F"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:34:53.887+07:00",
+          "date_updated": "2024-07-31T09:41:19.621+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10877,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "MATCHING_INFO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 4,
+          "order": 17,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-GjxFdkb6noVWmPxScrGluzVyglf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-TW7adFvHJodL8rxbiUZlkWuQg1e\">Kết quả nghi&ecirc;n cứu chỉ ra mối li&ecirc;n hệ giữa phản ứng (của cơ thể) với stress v&agrave; m&agrave;n thể hiện của vận động vi&ecirc;n.</div>\n<div class=\"ace-line ace-line old-record-id-H28qdQYy3o0l4fxX3DQl4SRHgqh\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Opojd7rO9oDes8xvYCblSnFmghf\" data-list=\"bullet\">\n<div><strong>Research shows</strong> ~ study results indicating</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-KGxodS3zuonUgexZQzolYr1bgwe\" data-list=\"bullet\">\n<div><strong>Challenge states lead to good performance, while threat states lead to poorer performance</strong> ~ links between stress responses and performance</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Xpddd0YXtoQhsZxO4VylrNlAg1b\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Io0bdha34oUgJdxUgXSlsaNsgtc\">Đoạn C chỉ r&otilde;: \"Nghi&ecirc;n cứu cho thấy <u><strong>t&acirc;m thế đ&oacute;n nhận thử th&aacute;ch</strong></u> sẽ dẫn đến <u><strong>m&agrave;n thể hiện tốt</strong></u>, c&ograve;n <u><strong>t&acirc;m thế e ngại rủi ro</strong></u> sẽ dẫn đến <u><strong>m&agrave;n thể hiện k&eacute;m hơn</strong></u>\".</div>\n<div class=\"ace-line ace-line old-record-id-KYQ8dvRj8or4LdxABTVlOhhtgTf\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn C đ&atilde; đề cập đến <em>\"kết quả nghi&ecirc;n cứu chỉ ra mối li&ecirc;n hệ giữa phản ứng (của cơ thể) với stress v&agrave; m&agrave;n thể hiện (của vận động vi&ecirc;n)\"</em>.</div>\n<div class=\"ace-line ace-line old-record-id-IB1zdWUXFokSYHxKKvflE3atglg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: C</div>\n<div class=\"ace-line ace-line old-record-id-VLa3dl0HRo4Kn4xTHYFl55Xogxf\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "study results indicating links between stress responses and performance",
+              "answer": "C"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "A"
+            },
+            {
+              "option": "B"
+            },
+            {
+              "option": "C"
+            },
+            {
+              "option": "D"
+            },
+            {
+              "option": "E"
+            },
+            {
+              "option": "F"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:34:53.905+07:00",
+          "date_updated": "2024-07-31T09:41:19.717+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10878,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "MATCHING_INFO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 5,
+          "order": 18,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-GqJXd76vIoBxpAxFgTwl4VgJgob\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-SuqldQjfEoOnOmxz1FWlPfgxgfd\">Đề cập đến những người c&oacute; thể ảnh hưởng đến c&aacute;ch m&agrave; vận động vi&ecirc;n nh&igrave;n nhận về phản ứng (của cơ thể) với stress.</div>\n<div class=\"ace-line ace-line old-record-id-Kd7SdFuQIoKwvUxEQvEly1nbgod\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-QrGCd50JyobhKYxCALHl0aeYg9b\" data-list=\"bullet\">\n<div><strong>Coaches or parents</strong> ~ people who can influence</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-J7mtdB12LoiDKpxwTz4lO9vbgWd\" data-list=\"bullet\">\n<div><strong>see </strong>~ perceive</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Wl19dHGO1ofj1Bx5psmleMQ7gVG\" data-list=\"bullet\">\n<div><strong>their physiological responses</strong> ~ their stress responses</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-GQdVdqEz2o5y7RxZC1jlUMhogTg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-HJdodttpeoGL6bxSFv6lWKwfglf\">Đoạn F chỉ r&otilde;: \"Phản ứng căng thẳng t&iacute;ch cực c&oacute; thể được th&uacute;c đẩy th&ocirc;ng qua ng&ocirc;n ngữ m&agrave; họ v&agrave; những người kh&aacute;c - như l&agrave; <u><strong>huấn luyện vi&ecirc;n hay phụ huynh</strong></u> - sử dụng. C&aacute;c nh&agrave; t&acirc;m l&yacute; học cũng c&oacute; thể gi&uacute;p vận động vi&ecirc;n thay đổi c&aacute;ch họ nh&igrave;n nhận c&aacute;c phản ứng sinh l&yacute; của m&igrave;nh.\"</div>\n<div class=\"ace-line ace-line old-record-id-BDdDdsTJEoKPobxuV6jlJ3yxgxh\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn F đ&atilde; <em>\"Đề cập đến những người c&oacute; thể ảnh hưởng đến c&aacute;ch m&agrave; vận động vi&ecirc;n nh&igrave;n nhận về phản ứng (của cơ thể) với stress\"</em>.</div>\n<div class=\"ace-line ace-line old-record-id-ZVmndOSEIoPgsTxtFHTlAhWOgde\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: F</div>\n<div class=\"ace-line ace-line old-record-id-TVYIdEkc5oQDYdxWHFtlsPopg5g\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "mention of people who can influence how athletes perceive their stress responses",
+              "answer": "F"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "A"
+            },
+            {
+              "option": "B"
+            },
+            {
+              "option": "C"
+            },
+            {
+              "option": "D"
+            },
+            {
+              "option": "E"
+            },
+            {
+              "option": "F"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:34:53.924+07:00",
+          "date_updated": "2024-07-31T09:41:19.798+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10879,
+          "quiz_id": 0,
+          "type": "FILL-IN-THE-BLANK",
+          "question_type": "FILL_BLANK",
+          "title": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 6 - 9 on your answer sheet. ",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 6,
+          "order": 19,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" style=\"width: 98.7839%;\" data-ace-table-col-widths=\"100\"><colgroup><col style=\"width: 100%;\" width=\"100\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-GHiRdoZb1oMfevxDH90l3UEtg7d\">{[C&acirc;u 19:</div>\n<div class=\"ace-line ace-line old-record-id-JljJdDg06oD0gkxOlHvlPXidgff\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-OUFQdKCBcoBv8sxLzuhlCI8bg0e\">&Aacute;p lực thi đấu đến từ nhiều y&ecirc;u cầu khắt khe đối với vận động vi&ecirc;n, v&iacute; dụ, (họ phải) đối ph&oacute; với nguy cơ _______ c&oacute; thể xảy ra.</div>\n<div class=\"ace-line ace-line old-record-id-CO0CdLuCxoyob8xQjvBl4YMqgXf\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-LSWrdmrzGo19SexkM1Alg87sgNb\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QuqXdM1DmoC4r1xrb3rljMDCgFb\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: risk of + NOUN (<em>NOUN l&agrave;m Object của Preposition 'OF'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-MUkYdbs91otG5MxRsFhlxb74gGh\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VBoBdtod9oiug0x6OOtl8qtJg6d\" data-list=\"bullet\">\n<div><strong>Performance stress</strong> ~ demands</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-OEE1dkdytou2nixeYXPl6alQgAb\" data-list=\"bullet\">\n<div><strong>possible risk</strong> ~ potential dangers</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-YCksdQzQMoT2NoxgTeNlO224geg\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-YwNddD8knoIiNAxSPnCl21pBgEe\">B&agrave;i đọc chỉ r&otilde; \"những y&ecirc;u cầu n&agrave;y đến từ việc họ phải đặt ra sự nỗ lực hết sức cả về thể chất lẫn tinh thần để gi&agrave;nh chiến thắng, v&agrave; đến từ việc họ phải đối mặt với nỗi lo về độ kh&oacute; của cuộc khi, phần trăm chiến thắng, v&agrave; cả những rủi ro về <u><strong>chấn thương</strong></u>\" (<em>These demands include the high level of physical and mental effort required to succeed, and also the athlete's concerns about the difficulty of the event, their chance of succeeding, and any potential dangers such as </em><u><em>injury</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-JxnGd2LmwoEuTpxee15lxxhIg9f\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: injury</div>\n<div class=\"ace-line ace-line old-record-id-LKqQd044bohwV1xW6AdlgbhcgRR\">&Aacute;p lực thi đấu đến từ nhiều y&ecirc;u cầu khắt khe đối với vận động vi&ecirc;n, v&iacute; dụ, (họ phải) đối ph&oacute; với nguy cơ <u><strong>chấn thương</strong></u> c&oacute; thể xảy ra.. (<em>Performance stress involves many demands on the athlete, for example, coping with the possible risk of </em><u><em>injury</em></u>).][19]}</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KN1mdZ3r5ofZVbxuRTPl78BPg33\">{[C&acirc;u 20:</div>\n<div class=\"ace-line ace-line old-record-id-TJuxdH8EOo4clBxbTL3lVh0kg3d\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-Nls4dvPnxoEfmHxm7kllmfr5gih\">Cortisol c&oacute; thể khiến c&aacute;c cầu thủ tennis tạo ra &iacute;t hơn _______ tốt.</div>\n<div class=\"ace-line ace-line old-record-id-OvSpd6jBQo8teExemu8lVoTegPe\"><u><strong>Bước 2</strong></u>:</div>\n<div class=\"ace-line ace-line old-record-id-PMMXdqoeGoXVNWxJ35nl93kRgPc\">X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IGKedfs7TowDJGxGxH8lwm6CgAn\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-OfyxdVR6voqO2gxGyyClWCCCgkc\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: good + NOUN (<em>NOUN được bổ nghĩa bởi Adjective &lsquo;GOOD&rsquo;</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-GKg4dFRhcoJVhBxasyHl9SFkg9z\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-BMTRdYSaSouJA2x5LrYlkZprgXe\" data-list=\"bullet\">\n<div><strong>Cortisol</strong> ~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-R4Crd9mRCoc0ovxubvmlwfSCg2f\" data-list=\"bullet\">\n<div><strong>tennis players</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-JbjcdbraXo6uHvxwEailQjtGg3e\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-I4u0dCZetoCgOrxryp6lkMnkg7c\">B&agrave;i đọc chỉ r&otilde; \"Ở c&aacute;c cầu thủ tennis, cortisol đ&atilde; dẫn đến nhiều <u><strong>c&uacute; giao b&oacute;ng</strong></u> kh&ocirc;ng th&agrave;nh c&ocirc;ng hơn v&agrave; cảm gi&aacute;c lo lắng tăng l&ecirc;n\" (<em>In tennis players, cortisol has been associated with more unsuccessful </em><u><em>serves</em></u><em> and greater anxiety</em>).</div>\n<div class=\"ace-line ace-line old-record-id-ZeNJd1K7HoiLqFxYHqGlp7OvgWg\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: serves</div>\n<div class=\"ace-line ace-line old-record-id-Cf2odGdq5ouXNdx3Xt4l91VUg6e\">Cortisol c&oacute; thể khiến c&aacute;c cầu thủ tennis tạo ra &iacute;t <u><strong>c&uacute; giao b&oacute;ng</strong></u> tốt hơn. (<em>Cortisol can cause tennis players to produce fewer good </em><u><em>serves</em></u>).][20]}</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KkX5d0szEoFnmkxyrG4lrdkWghd\">{[C&acirc;u 21:</div>\n<div class=\"ace-line ace-line old-record-id-SxXNd4fVUoCU08x9mOXlFp6hgk5\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-DnbadXWpnoHaGbxtttWlFacWg4g\">C&aacute;c nh&agrave; t&acirc;m l&yacute; học c&oacute; thể gi&uacute;p c&aacute;c vận động vi&ecirc;n xem phản ứng sinh l&yacute; của m&igrave;nh như l&agrave; kết quả của một cảm x&uacute;c t&iacute;ch cực, v&iacute; dụ như _______.</div>\n<div class=\"ace-line ace-line old-record-id-UH3BdSsQ0owjm1xr72xlMqufgef\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-ADS3dFWMKoFDxLx2wiSlweyUgBd\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QdXQdyZyDotYCwxsEfdlBz6xgsg\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: such as + NOUN (<em>NOUN l&agrave;m Object của Preposition &lsquo;SUCH AS&rsquo;</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-YjBAdHajUoaXWyxVwqBl3xzygbd\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-OMLvdcH3OoJIUUxekfOljNxhgbh\" data-list=\"bullet\">\n<div><strong>Psychologists </strong>~ từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-XsS5dBx7soNMZBxD9xHliuPwgfg\" data-list=\"bullet\">\n<div><strong>physiological responses</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-RRYQdUwhOos1YHxSjoclEB0KgOc\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-BZGGdNQ6CoWkbqxgnwSlhX2igBb\">B&agrave;i đọc chỉ r&otilde; \"C&aacute;c nh&agrave; t&acirc;m l&yacute; học cũng c&oacute; thể gi&uacute;p c&aacute;c vận động vi&ecirc;n thay đổi c&aacute;ch họ nh&igrave;n nhận c&aacute;c phản ứng sinh l&yacute; của m&igrave;nh - chẳng hạn như gi&uacute;p họ xem nhịp tim cao hơn l&agrave; <u><strong>sự phấn kh&iacute;ch</strong></u>, thay v&igrave; lo lắng\" <em>(Psychologists can also help athletes change how they see their physiological responses - such as helping them see a higher heart rate as </em><u><em>excitement</em></u><em>, rather than nerves</em>).</div>\n<div class=\"ace-line ace-line old-record-id-RSprdipD0oM2VuxPrThlMu4ygUc\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: excitement</div>\n<div class=\"ace-line ace-line old-record-id-S7GWdQgyUo504CxjZBAl916Cgkh\">C&aacute;c nh&agrave; t&acirc;m l&yacute; học c&oacute; thể gi&uacute;p c&aacute;c vận động vi&ecirc;n xem phản ứng sinh l&yacute; của họ như l&agrave; t&aacute;c động của cảm x&uacute;c t&iacute;ch cực như <u><strong>sự phấn kh&iacute;ch</strong></u>. (<em>Psychologists can help athletes to view their physiological responses as the effect of a positive feeling such as </em><u><em>excitement</em></u>).][21]}</div>\n<div class=\"ace-line ace-line old-record-id-XkhGda82boxaNXxUVInlfmz6gTh\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-CfxPdyhwRoTHskxld9NlTi1Ogkg\">{[C&acirc;u 22:</div>\n<div class=\"ace-line ace-line old-record-id-Xoidd1VeDoQnWqxDAXUlNniFggn\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-BkFZd9e0RoFMZNxIx5clIK4ngoe\">_______ l&agrave; một v&iacute; dụ về kỹ thuật t&acirc;m l&yacute; c&oacute; thể giảm căng thẳng cho vận động vi&ecirc;n.</div>\n<div class=\"ace-line ace-line old-record-id-UCVwdSSasonz7xxjqnyl4pLug9g\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-AizrddwlGoF9QfxG6DrlSsIQgXT\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-VGYfdJv6ZoO1ymxhbRYl3HyegZe\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: NOUN is an example of (<em>NOUN l&agrave;m Subject của c&acirc;u</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-IJladqsO6ogzHPxWqVZlZC3Ogag\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-HQTpd9nNLogHk2x2rRzlLbuygUd\" data-list=\"bullet\">\n<div><strong>psychological technique </strong>~ Developing psychological skills</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Sz59d4x8XoC5fhx4yJClbmrygPf\" data-list=\"bullet\">\n<div><strong>reduce an athlete's stress responses</strong> ~ decrease physiological responses to threat</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-BsExdpUKHokwI9x0XlglCt91gsf\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-HaT5dirYQo23aHxhxw6lekFxgGb\">B&agrave;i đọc chỉ r&otilde; \"Ph&aacute;t triển c&aacute;c kỹ năng t&acirc;m l&yacute;, chẳng hạn như <u><strong>h&igrave;nh dung trong đầu</strong></u>, cũng c&oacute; thể gi&uacute;p giảm phản ứng sinh l&yacute; đối với mối đe dọa\" (<u><em>Visualisation</em></u><em>, can also help decrease physiological responses to threat</em>).</div>\n<div class=\"ace-line ace-line old-record-id-KxvFdzApvoNuivxtFZDlKjdOgVg\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: visualization</div>\n<div class=\"ace-line ace-line old-record-id-UsApdaLZKoLr9KxwB3XlyAqCg1S\"><u><strong>H&igrave;nh dung trong đầu</strong></u> l&agrave; một v&iacute; dụ về kỹ thuật t&acirc;m l&yacute; c&oacute; thể giảm phản ứng căng thẳng của vận động vi&ecirc;n (<u><em>Visualisation</em></u><em> is an example of a psychological technique which can reduce an athlete's stress responses</em>).][22]}</div>\n<div class=\"ace-line ace-line old-record-id-OXGud4eCAoeQsCxSlwGlXbzsgkd\">&nbsp;</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<div class=\"ace-line ace-line old-record-id-BiRXdiNCQoWWi0xOurSlUB3Rggf\">&nbsp;</div>\n</div>",
+          "description": "<h2><span class=\"fontstyle0\">Quest</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">ons </span><span class=\"fontstyle2\">19</span><span class=\"fontstyle2\">&nbsp;</span><span class=\"fontstyle2\">- 22</span><span class=\"fontstyle2\">:</span></h2>",
+          "gap_fill_in_blank": "<ul>\n<li>Performance stress involves many demands on the athlete, for example, coping with the possible risk of {[injury][19]}</li>\n<li>Cortisol can cause tennis players to produce fewer good {[serves][20]}</li>\n<li>Psychologists can help athletes to view their physiological responses as the effect of a positive feeling such as {[excitement][21]}</li>\n<li>{[Visualization | Visualisation][22]}&nbsp;is an example of a psychological technique which can reduce an athlete's stress responses.&nbsp;</li>\n</ul>",
+          "single_choice_radio": null,
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:34:53.949+07:00",
+          "date_updated": "2024-09-10T18:22:32.034+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10880,
+          "quiz_id": 0,
+          "type": "MULTIPLE",
+          "question_type": "MULTIPLE_CHOICE_MANY",
+          "title": "Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text?",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 7,
+          "order": 23,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": null,
+          "description": "<h2><span class=\"fontstyle0\">Questions 23 - 24:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 23 - 24 on your answer sheet.</span>&nbsp;</p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": null,
+          "mutilple_choice": [
+            {
+              "text": "the stage at which she dropped out of the tournament",
+              "correct": false,
+              "order": 1
+            },
+            {
+              "text": "symptoms of her performance stress at the tournament",
+              "correct": true,
+              "order": 2,
+              "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Pd1pdkBc8oHNYVxi05zlQZQRgsb\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UABfdWd0coVaBxxxmqCl0y0og1d\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-XyHtdatA0o784bxZpsyluL68g8d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VBa5df6H5osRnRx6Nxalr3eMgWb\" data-list=\"bullet\">\n<div><strong>Having difficulty regulating her breathing and heart rate </strong>~ symptoms of her performance stress</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Gi9SdBgd2opR5yxZ39QlAbZsgQh\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Lqsld04j2oztPjxMSaAlTLHMgJd\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu <u><strong>gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở</strong></u> v&agrave; <u><strong>nhịp tim</strong></u> trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do 'ngột ngạt trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động.\"</div>\n<div class=\"ace-line ace-line old-record-id-A3D7d6EPAoIaVCxL6melfNEegAh\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u B \"đề cập đến c&aacute;c<strong> </strong><u><strong>triệu chứng của căng thẳng</strong></u> của nữ vận động vi&ecirc;n n&agrave;y khi thể hiện trong những trận đấu lớn&rdquo;<em> (having difficulty regulating her breathing and heart rate).</em></div>\n<div class=\"ace-line ace-line old-record-id-L5T8d4LIyosvohxnQrWlu4fwgMg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: B</div>\n<div class=\"ace-line ace-line old-record-id-Nuf6dhxmXoVnThxlrCAlG9Nhgwh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-Rudnd0n9noYBsgxo7HOl966dgJ0\"><u><strong>Đ&aacute;p &aacute;n E</strong></u>: <em><strong>Phản ứng của c&ocirc;ng ch&uacute;ng</strong></em> đối với c&aacute;c b&agrave;i đăng tr&ecirc;n mạng x&atilde; hội của Emma Raducanu về trải nghiệm tại Wimbledon =&gt; Đoạn A chỉ đề cập đến việc &ldquo;c&ocirc; ấy đăng b&agrave;i tr&ecirc;n mạng x&atilde; hội&rdquo;, kh&ocirc;ng n&oacute;i về phản ứng của c&ocirc;ng ch&uacute;ng đối với c&aacute;c b&agrave;i đăng đ&oacute;.</div>\n</div>"
+            },
+            {
+              "text": "measures which she had taken to manage her stress levels",
+              "correct": false,
+              "order": 3
+            },
+            {
+              "text": "aspects of the Wimbledon tournament which increased her stress levels",
+              "correct": true,
+              "order": 4,
+              "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-QLBWdmG1ZocjlAxcJb0lwgvbgvg\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-QPiZdUOEEoHoqPxeKpblHv4jgxg\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-CL4HdoHNWoNKJ8xyekclFJ5xgYg\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Fg7kduNqVoUKLQxztx0lpTTEgLf\" data-list=\"bullet\">\n<div><strong>attributed </strong>~ increased</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-A9iddtnlaozP0ZxLAXdlTOGBgIg\" data-list=\"bullet\">\n<div><strong>the excitement and the buzz </strong>~ aspects</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Xf7fdbKvOo1HmQxcqRVlOFDTgfd\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-QB3EdWGp9o2UlPxuJDdliigPgGe\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; tay vợt trẻ Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở v&agrave; nhịp tim trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do '<u><strong>sự ngột ngại trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động</strong></u>'.\"</div>\n<div class=\"ace-line ace-line old-record-id-RiUKdLfTCo5StfxUj3ol3UFvgoe\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u D \"<u><strong>đề cập đến c&aacute;c kh&iacute;a cạnh l&agrave;m tăng mức độ căng thẳng của Emma Raducanu tại giải Wimbledon</strong></u>\" (<em>aspects which increased her stress levels</em>).</div>\n<div class=\"ace-line ace-line old-record-id-EdMLdqmLdo3f75xcyDTl70kRgAg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: D</div>\n<div class=\"ace-line ace-line old-record-id-INVpd7rdYoMlJyxEiWtlNywMgjb\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-SIYndsJ92ospQjxkBG5lOjO3gth\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: C&aacute;c <em><strong>biện ph&aacute;p</strong></em> Emma Raducanu đ&atilde; thực hiện để <em><strong>kiểm so&aacute;t mức độ căng thẳng</strong></em> =&gt; Đoạn A chỉ đề cập đến việc Emma Raducanu bị căng thẳng chứ kh&ocirc;ng đề cập đến bất kỳ biện ph&aacute;p n&agrave;o c&ocirc; đ&atilde; thực hiện để kiểm so&aacute;t căng thẳng.</div>\n</div>"
+            },
+            {
+              "text": "reactions to her social media posts about her experience at Wimbledon",
+              "correct": false,
+              "order": 5
+            }
+          ],
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:34:53.97+07:00",
+          "date_updated": "2024-09-10T18:22:32.059+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10881,
+          "quiz_id": 0,
+          "type": "MULTIPLE",
+          "question_type": "MULTIPLE_CHOICE_MANY",
+          "title": "Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 8,
+          "order": 25,
+          "part_id": 1823,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": null,
+          "description": "<h2><span class=\"fontstyle0\">Questions 25 - 26:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 25 - 26 on your answer sheet.</span>&nbsp;</p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": null,
+          "mutilple_choice": [
+            {
+              "text": "the factors which determine how severe it may be",
+              "correct": true,
+              "order": 1,
+              "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-FRzGdnOQroxO6LxvDE4ldZgPgeN\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UOKqdSKgHojRONxzWY4lhujqgob\">T&igrave;m ra HAI nhận định về chứng lo &acirc;u được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-SXG7dWJIHoxyeHxZhBiloLTygSD\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-EIKPdLwpVoGnjYxRulmlSdiBgjc\" data-list=\"bullet\">\n<div><strong>The intensity </strong>~ how severe</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-OuESdXwcFoUaFgxE33PlpNkngfd\" data-list=\"bullet\">\n<div><strong>depends on</strong> ~ the factors which determine</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-MdtXdIcUHopOr1xghqZlSYDdgSf\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JZNodpuMQoG18rx3WejlSgzMgWh\">B&agrave;i đọc chỉ r&otilde;: \"<u><strong>Mức độ</strong></u> m&agrave; một người mắc <u><strong>chứng lo &acirc;u phụ thuộc</strong></u> v&agrave;o thứ m&agrave; <u><strong>họ được y&ecirc;u cầu phải l&agrave;m</strong></u> v&agrave;<u><strong> nguồn lực</strong></u> m&agrave; họ c&oacute;\"</div>\n<div class=\"ace-line ace-line old-record-id-QKYydzv65oQuxyxGgVZl68W6gdf\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u A: \"<u><strong>đề cập đến c&aacute;c yếu tố quyết định mức độ nghi&ecirc;m trọng của lo lắng</strong></u>&rdquo;<em> </em>(<em>the factors which determine how severe it may be</em>)</div>\n<div class=\"ace-line ace-line old-record-id-AjTGdoFBKo74nmxXNpfl9rHmgEb\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: A</div>\n<div class=\"ace-line ace-line old-record-id-YDzSdTzupoC6HPxy1pdl5NLtgdd\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-TDDJdgsQco8eA9xqw44liG6wgwh\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: <em><strong>Triệu chứng</strong></em> n&agrave;o thường gặp nhất =&gt; Đoạn E liệt k&ecirc; nhiều triệu chứng của lo lắng nhưng kh&ocirc;ng chỉ ra triệu chứng n&agrave;o l&agrave; phổ biến nhất.</div>\n</div>"
+            },
+            {
+              "text": "how long it takes for its effects to become apparent",
+              "correct": false,
+              "order": 2
+            },
+            {
+              "text": "which of its symptoms is most frequently encountered",
+              "correct": false,
+              "order": 3
+            },
+            {
+              "text": "the types of athletes who are most likely to suffer from it",
+              "correct": false,
+              "order": 4
+            },
+            {
+              "text": "the harm that can result if athletes experience it too often",
+              "correct": true,
+              "order": 5,
+              "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-PmoSdiIDEowvazxBxZplsLIxgAd\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-KYL1d6ZQAomiJSxIxTUlCsX9gFh\">T&igrave;m ra HAI sự kiện về lo lắng được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-VsrrdcfXzofQxFxxot9lFKIGg7d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IM1BdMUntooQHyxUHhPlt3TYgRT\" data-list=\"bullet\">\n<div><strong>Repeated episodes </strong>~ experience it too often</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AdYTdSUGMofPNfxAUSrlpyIhgae\" data-list=\"bullet\">\n<div><strong>anxiety coupled with negative responses </strong>~ the harm</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Zldodhjhmoc6LRxq3NMlspFtgXb\" data-list=\"bullet\">\n<div><strong>increase risk</strong> ~ result</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-O0G5dnYiDoFommxRxtIlTR43gvg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-L7qadTT2HoQ4aHx1dIFlZYeagch\">B&agrave;i đọc chỉ r&otilde;: \"C&aacute;c phản ứng căng thẳng ti&ecirc;u cực c&oacute; thể g&acirc;y hại cho cả sức khỏe thể chất v&agrave; tinh thần - v&agrave; c&aacute;c <u><strong>đợt lo lắng lặp đi lặp lại</strong></u> k&egrave;m theo c&aacute;c <u><strong>phản ứng ti&ecirc;u cực</strong></u> c&oacute; thể l&agrave;m tăng <u><strong>nguy cơ mắc bệnh tim v&agrave; trầm cảm</strong></u>.\"</div>\n<div class=\"ace-line ace-line old-record-id-RPS7d0qYwo3kahxUJPklWzahgNc\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u E rằng <em>\"</em><u><strong>t&aacute;c hại c&oacute; thể xảy ra nếu vận động vi&ecirc;n trải qua n&oacute; qu&aacute; thường xuy&ecirc;n</strong></u><em>\"</em> (<em>repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression</em>)</div>\n<div class=\"ace-line ace-line old-record-id-VZNcd2kNVoWD04xwURolJAKcgce\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: E</div>\n<div class=\"ace-line ace-line old-record-id-LNctdm6ijoM120xHObxl6sMBgKh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-C4DJdUb45ozAUdxfnorlEiAvgyc\"><u><strong>Đ&aacute;p &aacute;n D</strong></u>: <em><strong>Loại vận động vi&ecirc;n</strong></em> n&agrave;o c&oacute; khả năng <em><strong>bị ảnh hưởng </strong></em>(bởi lo lắng) <em><strong>nhiều nhất</strong></em> =&gt; Đoạn E kh&ocirc;ng đề cập đến việc loại vận động vi&ecirc;n n&agrave;o dễ bị ảnh hưởng nhất.</div>\n</div>"
+            }
+          ],
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:34:53.988+07:00",
+          "date_updated": "2024-09-10T18:22:32.093+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        }
+      ],
+      "vocabs": [],
+      "listen_from": null,
+      "listen_to": null,
+      "instruction": null
+    },
+    {
+      "id": 1824,
+      "quiz_id": 1714,
+      "passage": 3,
+      "title": "Part 3",
+      "sort": 3,
+      "time": null,
+      "content": "<h3>READING PASSAGE 3</h3>\n<p>You should spend about 20 minutes on Questions 27 - 40 which are based on Reading Passage 3 below.</p>\n<h2 dir=\"ltr\" style=\"text-align: center;\"><span data-sheets-root=\"1\">An inquiry into the existence of the gifted child&nbsp;</span></h2>\n<p dir=\"ltr\">Let us start by looking at a modern 'genius', Maryam Mirzakhani, who died at the early age of 40. {[She was the only woman to win the Fields Medal - the mathematical equivalent of a Nobel prize.][27]}It would be easy to assume that someone as special as Mirzakhani must have been one of those 'gifted' children, those who have an extraordinary ability in a specific sphere of activity or knowledge. But look closer and a different story emerges. Mirzakhani was born in Tehran, Iran. She went to a highly selective girls' school but {[math wasn't her interest - reading was.][28]}She loved novels and would read anything she could lay her hands on. {[As for math, she did rather poorly at it for the first couple of years in her middle school, but became interested when her elder brother told her about what he'd learned. He shared a famous math problem from a magazine that fascinated her - and she was hooked.][29]}</p>\n<p dir=\"ltr\">{[In adult life it is clear that she was curious, excited by what she did and also resolute in the face of setbacks.][30]}One of her comments sums it up. {['Of course, the most rewarding part is the \"Aha\" moment, the excitement of discovery and enjoyment of understanding something new ...][31]}But most of the time, doing mathematics for me is like being on a long hike with no trail and no end in sight.' {[That trail took her to the heights of original research into mathematics.][32]}</p>\n<p dir=\"ltr\">Is her background unusual? Apparently not. {[Most Nobel prize winners were unexceptional in childhood.][33]}{[Einstein was slow to talk as a baby. He failed the general part of the entry test to Zurich Polytechnic - though they let him in because of high physics and math scores. He struggled at work initially, but he kept plugging away and eventually rewrote the laws of Newtonian mechanics with his theory of relativity.][34]}</p>\n<p dir=\"ltr\">There has been a considerable amount of research on high performance over the last century that suggests it goes way beyond tested intelligence. On top of that, research is clear that brains are flexible, new neural pathways can be created, and IQ isn't fixed. For example, just because you can read stories with hundreds of pages at the age of five doesn't mean you will still be ahead of your contemporaries in your teens.</p>\n<p dir=\"ltr\">{[While the jury is out on giftedness being innate and other factors potentially making the difference, what is certain is that the behaviours associated with high levels of performance are replicable and most can be taught][35]} - even traits such as curiosity.</p>\n<p dir=\"ltr\">According to my colleague Prof. Deborah Eyre, with whom I've collaborated on the book Great Minds and How to Grow Them, the latest neuroscience and psychological research suggests most individuals can reach levels of performance associated in school with the gifted and talented. {[However, they must be taught the right attitudes and approaches to their learning and develop the attributes of high performers - curiosity, persistence and hard work,][38]}for example - an approach Eyre calls 'high performance learning'. Critically, they need the right support in developing those approaches at home as well as at school.</p>\n<p dir=\"ltr\">Prof Anders Ericsson, an eminent education psychologist at Florida State University, US, is the co-author of Peak: Secrets from the New Science of Expertise. After research going back to 1980 into diverse achievements, from music to memory to sport, {[he doesn't think unique and innate talents are at the heart of performance.][39]}Deliberate practice, that stretches you every step of the way, and around 10,000 hours of it, is what produces the goods. It's not a magic number - the highest performers move on to doing a whole lot more, of course. Ericsson's memory research is particularly interesting because random students, trained in memory techniques for the study, went on to outperform others thought to have innately superior memories - those who you might call gifted.&nbsp;</p>\n<p dir=\"ltr\">But it is perhaps the work of Benjamin Bloom, another distinguished American educationist working in the 1980s, that gives the most pause for thought. Bloom's team looked at a group of extraordinarily high achieving people in disciplines as varied as ballet, swimming, piano, tennis, math, sculpture and neurology. He found a pattern of parents encouraging and supporting their children, often in areas they enjoyed themselves. Bloom's outstanding people had worked very hard and consistently at something they had become hooked on when at a young age, and their parents all emerged as having strong work ethics themselves.</p>\n<p dir=\"ltr\">Eyre says we know how high performers learn. From that she has developed a high performing learning approach. She is working on this with a group of schools, both in Britain and abroad. Some spin-off research, which looked in detail at 24 of the 3,000 children being studied who were succeeding despite difficult circumstances, found something remarkable. Half were getting free school meals because of poverty, more than half were living with a single parent, and four in five were living in disadvantaged areas. {[Interviews uncovered strong evidence of an adult or adults in the child's life who valued and supported education, either in the immediate or extended family or in the child's wider community.][40]}Children talked about the need to work hard at school, to listen in class and keep trying.</p>\n<p dir=\"ltr\">Let us end with Einstein, the epitome of a genius. He clearly had curiosity, character and determination. He struggled against rejection in early life but was undeterred. Did he think he was a genius or even gifted? {[He once wrote: 'It's not that I'm so smart, it's just that I stay with problems longer. Most people say it is the intellect which makes a great scientist. They are wrong: it is character.][37-36]}</p>",
+      "simplified_content": null,
+      "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+      "date_created": "2024-07-14T07:42:02.063+07:00",
+      "date_updated": "2025-02-21T15:56:22.433+07:00",
+      "explanations": [],
+      "questions": [
+        {
+          "id": 10882,
+          "quiz_id": 0,
+          "type": "FILL-IN-THE-BLANK",
+          "question_type": "FILL_BLANK",
+          "title": "Complete the summary using the list of phrases, A- K, below. Write the correct letter, A- K, in boxes 27 - 32 on your answer sheet. ",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 1,
+          "order": 27,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"true\">\n<table class=\"ace-table\" style=\"width: 98.9242%;\" data-ace-table-col-widths=\"100\"><colgroup><col style=\"width: 100%;\" width=\"100\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-DCztdQ3NXoxxBAxEgaZl7Dcwg5b\">{[C&acirc;u 27:</div>\n<div class=\"ace-line ace-line old-record-id-KnfIdVwV2oEqrwxQ51dlwOzngFd\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-SFmed76pXoPKe0xNe1mlTi2zgTg\">Maryam Mirzakhani được coi l&agrave; ______ trong lĩnh vực to&aacute;n học v&igrave; b&agrave; l&agrave; người phụ nữ duy nhất gi&agrave;nh được Huy chương Fields danh gi&aacute; - một kỷ lục m&agrave; b&agrave; giữ cho đến tận khi b&agrave; qua đời.</div>\n<div class=\"ace-line ace-line old-record-id-LjY6dd1W3oDgjgxWXNBlZSnogSc\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Snb2drn0uok1YSxXIrllpeNdggb\" data-list=\"bullet\">\n<div><strong>Loại từ: </strong>NOUN hoặc ADJECTIVE</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-FDAOdI4pEo3Kgqx4bm1lWaQBg0f\" data-list=\"bullet\">\n<div><strong>Dấu hiệu: </strong>is regarded as + NOUN/ ADJECTIVE <em>(NOUN/ ADJECTIVE bổ nghĩa cho Subject &lsquo;MARYAM MIRZAKHANI&rsquo;)</em></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-N1VAdkIZlooVBWxxTxvl0HH9gse\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-XT70dsO6Qo6JAuxURpalwMiwgxe\" data-list=\"bullet\">\n<div><strong>Maryam Mirzakhani ~ </strong>t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Cg8Sd2zKJocOjixe3BFlkj3hgNb\" data-list=\"bullet\">\n<div><strong>only woman to win ~ </strong>only female holder</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-FKxNdcquvo30fqxGTvNlK3h7gwd\" data-list=\"bullet\">\n<div><strong>Fields Medal ~ </strong>t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-BxKOdx6DYotEBYxsxQilmtlugQv\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-N7UXdP3A2o8KsRxN3oVlMGTzgqd\">B&agrave;i đọc chỉ r&otilde; \"B&agrave; l&agrave; người phụ nữ <u><strong>duy nhất</strong></u> gi&agrave;nh được Huy chương Fields - tương đương với giải Nobel trong lĩnh vực to&aacute;n học\" <em>(She was the </em><u><em>only</em></u><em> woman to win the Fields Medal - the mathematical equivalent or a Nobel prize)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-LAjudvJj1oege6xaC1wl3Mg5g7d\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: H. unique</div>\n<div class=\"ace-line ace-line old-record-id-VnvDdRGlEoz1fQxSJtmlOFRBg6d\">Maryam Mirzakhani được coi l&agrave; <u><strong>độc nhất</strong></u> trong lĩnh vực to&aacute;n học v&igrave; b&agrave; l&agrave; người phụ nữ duy nhất gi&agrave;nh được Huy chương Fields danh gi&aacute; - một kỷ lục m&agrave; b&agrave; giữ cho đến tận khi b&agrave; qua đời <em>(Maryam Mirzakhani is regarded as </em><u><em>unique</em></u><em> in the field of mathematics because she was the only female holder of the prestigious Fields Medal - a record that she retained at the time of her death).</em>][27]}</div>\n<div class=\"ace-line ace-line old-record-id-Y3PVdmyNFoZNR5xKjm4ly67bg6n\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-LwqTdTuR8orTxQxnjw2lcIyFgWf\">{[C&acirc;u 28:</div>\n<div class=\"ace-line ace-line old-record-id-NLyUdzA7qoRyDbxUfDGlTDWBgce\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-N4XxdKhnjoKTd4xb5GVlFcUfgje\">Tuy nhi&ecirc;n, m&ocirc;n to&aacute;n lại kh&ocirc;ng mấy ___________ đối với b&agrave; khi c&ograve;n nhỏ.</div>\n<div class=\"ace-line ace-line old-record-id-T7xRdpmZaoKX80xBOwnl0ymxgUh\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-CPx6dHO43oKMVbxQqWrleBtgghg\" data-list=\"bullet\">\n<div><strong>Loại từ: </strong>NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-VtgOd72XlopV0VxhkWJlLKc0goe\" data-list=\"bullet\">\n<div><strong>Dấu hiệu: </strong>held + NOUN <em>(NOUN l&agrave; Object của Transitive Verb &lsquo;HELD&rsquo;)</em></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-T1budKV0FogDjAxCB8mlkVSsgrg\" data-list=\"bullet\">\n<div><em><strong>Lưu &yacute;: </strong></em><em>NOUN n&ecirc;n ở dạng Uncountable (v&igrave; theo sau &lsquo;LITTLE&rsquo;)</em></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-DmAQdqAKMogP9hxkXeLlk9FfgZd\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-G2yAdeOlno88DpxrZ1PldOIMgig\" data-list=\"bullet\">\n<div><strong>maths ~ </strong>từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-PvTodjWzco71H3xzGEalAcimglb\" data-list=\"bullet\">\n<div><strong>wasn't ~ </strong>held little</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-WL5wdL1SsodwRIxxvEklayYbgwg\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-HxFOdPCyYov3kMxdEzMlE3Z5gab\">B&agrave;i đọc chỉ r&otilde; \"to&aacute;n học kh&ocirc;ng phải l&agrave; <u><strong>sở th&iacute;ch</strong></u> của b&agrave; ấy - đọc s&aacute;ch mới l&agrave; sở th&iacute;ch\" <em>(math wasn't her </em><u><em>interest </em></u><em>- reading was)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-A5TkdxqY6oqs4HxgBAolmPm2gRe\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: A. appeal</div>\n<div class=\"ace-line ace-line old-record-id-BjnadDoKqo7CADxd7IilXXSMgib\">Tuy nhi&ecirc;n, m&ocirc;n to&aacute;n lại kh&ocirc;ng mấy <u><strong>hấp dẫn</strong></u> đối với b&agrave; khi c&ograve;n nhỏ (However, maths held little <u><em>appeal</em></u><em> </em>for her as a child)][28]}</div>\n<div class=\"ace-line ace-line old-record-id-YZDzdUtjqorSP6x8JMClOPpCgAh\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-V0LgdhntSoRGCXxro6zlMijrgAu\">{[C&acirc;u 29:</div>\n<div class=\"ace-line ace-line old-record-id-BBCZdWUvpoN0aXxueAGlO264gzh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-JrrudFYeyoKvvoxdmWxlfnTqgoG\">v&agrave; thực tế th&agrave;nh t&iacute;ch của b&agrave; c&ograve;n dưới mức trung b&igrave;nh cho đến khi b&agrave; bị ___________ bởi một c&acirc;u đố kh&oacute; m&agrave; một trong những anh chị em của b&agrave; đ&atilde; cho xem.</div>\n<div class=\"ace-line ace-line old-record-id-TkFydulZloSpJ2xE4JflaN2Uglf\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Dlofd6PgBozCyOxLstQll865ggf\" data-list=\"bullet\">\n<div><em><strong>Loại từ: VERB </strong></em><em>(Past Participle - V3/VED) </em></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-UspadgYBNoF3WoxVryblqyjDg5g\" data-list=\"bullet\">\n<div><em><strong>Dấu hiệu:</strong></em><em> was + V3/VED (VERB bổ nghĩa cho chủ ngữ \"she\")</em></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-PrIHdmgSPojLFGx8zyJl9IiDgag\" data-list=\"bullet\">\n<div><strong>Lưu &yacute;: </strong>từ kh&oacute;a cũng c&oacute; thể l&agrave; ADJECTIVE thuần, nhưng ở ph&iacute;a sau c&ograve;n c&oacute; Preposition &lsquo;BY&rsquo; -&gt; dấu hiệu của bị động</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-ZcT5dQPqYo1KMFxtdNLlMbkrgPe\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-AmsIdyTnhojnL8xSjlQlz5mTgVd\" data-list=\"bullet\">\n<div><strong>did rather poorly ~ </strong>performance was below average</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-T5GvdDJwHoEIIUxUTWSl937zgSa\" data-list=\"bullet\">\n<div><strong>elder brother ~ </strong>siblings</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-YbO7d66xdoTuSUxaEWTlH1t4gBc\" data-list=\"bullet\">\n<div><strong>famous math problem ~ </strong>difficult puzzle<strong> </strong></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-YwMtdjJCLoFWg6xYqMmlvFdXgyh\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-NEAid3ZHsopn8Mxy2wxlXFRtgBg\">B&agrave;i đọc chỉ r&otilde; \"Về m&ocirc;n to&aacute;n, b&agrave; ấy học kh&aacute; k&eacute;m trong v&agrave;i năm đầu ở trường trung học, nhưng c&ocirc; ấy bắt đầu trở n&ecirc;n <u><strong>hứng th&uacute;</strong></u> khi anh trai kể cho b&agrave; ấy nghe về những g&igrave; anh đ&atilde; học. Anh ấy chia sẻ một b&agrave;i to&aacute;n nổi tiếng từ một tạp ch&iacute; khiến b&agrave; ấy <u><strong>say m&ecirc;</strong></u> - v&agrave; b&agrave; ấy <u><strong>bị cuốn h&uacute;t</strong></u>\" <em>(As for math, she did rather poorly at it for the first couple of years in her middle school, but became </em><u><em>interested</em></u><em> when her elder brother told her about what he'd learned. He shared a famous math problem from a magazine that </em><u><em>fascinated</em></u><em> her - and she was </em><u><em>hooked</em></u><em>).</em></div>\n<div class=\"ace-line ace-line old-record-id-NeMzdoKsyoMuykx5b7ilKMzzg6b\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: C. intrigued</div>\n<div class=\"ace-line ace-line old-record-id-WmpSd4rc3oToBJxun6LlTbX9gyJ\">v&agrave; thực tế th&agrave;nh t&iacute;ch của b&agrave; c&ograve;n dưới mức trung b&igrave;nh cho đến khi b&agrave; <u><strong>bị hấp dẫn</strong></u> bởi một c&acirc;u đố kh&oacute; m&agrave; một trong những anh chị em của b&agrave; đ&atilde; cho xem <em>(and in fact her performance was below average until she was </em><u><em>intrigued</em></u><em> by a difficult puzzle that one of her siblings showed her)</em>.][29]}</div>\n<div class=\"ace-line ace-line old-record-id-Nyxfda4z1o7raYxUHLElcbL1gHQ\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-JhfOdMPeVodC3TxL5fElUcvsgTI\">{[C&acirc;u 30:</div>\n<div class=\"ace-line ace-line old-record-id-FQxldMcgooXb6Fx89mNlir8Yguc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-HOvPdaZVrolanaxYklJlquIjg5e\">Sau n&agrave;y, với tư c&aacute;ch l&agrave; một nh&agrave; to&aacute;n học chuy&ecirc;n nghiệp, b&agrave; c&oacute; một tinh thần ham học hỏi v&agrave; đ&atilde; chứng minh được m&igrave;nh l&agrave; người ___________ khi mọi thứ kh&ocirc;ng su&ocirc;n sẻ.</div>\n<div class=\"ace-line ace-line old-record-id-Hw9SddupKoNCZCxLZcklMEEqgJ4\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-GMPKdRv7BoA8VrxSJQvlOiRAgah\" data-list=\"bullet\">\n<div><strong>Loại từ: </strong>ADJECTIVE</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-RdvkdOYxOoR0jCxHTvulCwzzgmh\" data-list=\"bullet\">\n<div><strong>Dấu hiệu: </strong>proved herself to be + ADJECTIVE <em>(ADJECTIVE bổ nghĩa cho chủ ngữ \"she\")</em></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Ofrbd7ReboDcPzxCXSAls1V7gsd\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-UoSndBEUPo9kDExxAAdlvWEhgsd\" data-list=\"bullet\">\n<div><strong>curious ~ </strong>inquiring mind</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-SUApdv5abon1vgxLoYDlxqf4gny\" data-list=\"bullet\">\n<div><strong>in the face of setbacks ~ </strong>things did not go smoothly<strong> </strong></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-N1XGdk6Nsoflq3xXhw6lES9FgYd\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-VaDods8p8oWpV9xdddvla0logIe\">B&agrave;i đọc chỉ r&otilde; \"Khi trưởng th&agrave;nh, c&oacute; thể thấy r&otilde; l&agrave; b&agrave; ấy t&ograve; m&ograve;, phấn kh&iacute;ch với những g&igrave; b&agrave; ấy l&agrave;m v&agrave; cũng <u><strong>ki&ecirc;n cường</strong></u> đối mặt với những thất bại\" <em>(In adult life it is clear that she was curious, excited by what she did and also </em><u><em>resolute</em></u><em> in the face of setbacks).</em></div>\n<div class=\"ace-line ace-line old-record-id-WPbidJUAroQFMuxsrBQlRG7igdc\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: B. determined</div>\n<div class=\"ace-line ace-line old-record-id-ZKNydILjWoRsTsxGcKGlohX4g6V\">Sau n&agrave;y, với tư c&aacute;ch l&agrave; một nh&agrave; to&aacute;n học chuy&ecirc;n nghiệp, b&agrave; c&oacute; một tinh thần ham học hỏi v&agrave; đ&atilde; chứng minh được m&igrave;nh l&agrave; người <u><strong>ki&ecirc;n t&acirc;m</strong></u> khi mọi thứ kh&ocirc;ng su&ocirc;n sẻ <em>(Later, as a professional mathematician, she had an inquiring mind and proved herself to be </em><u><em>determined </em></u><em>when things did not go smoothly).</em>][30]}</div>\n<div class=\"ace-line ace-line old-record-id-Qc17dpRUZou2jJxUs7floa1Ugke\">&nbsp;</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Eqhgd6iGko9NzsxinbblMaY3gAg\">{[C&acirc;u 31:</div>\n<div class=\"ace-line ace-line old-record-id-WJSGduaMqo1bg9xaVcglY4Dzgaf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-W7jbdjEpToF2FtxxQ4zlFalegDc\">B&agrave; n&oacute;i rằng b&agrave; c&oacute; được ___________ lớn nhất từ việc tạo ra những kh&aacute;m ph&aacute; mang t&iacute;nh đột ph&aacute;.</div>\n<div class=\"ace-line ace-line old-record-id-GtaYdfBzootybwxmuFHldbrmg6J\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Igb0dNoGroJrCJxggWHlkmoHgAg\" data-list=\"bullet\">\n<div><strong>Loại từ: </strong>NOUN<strong> </strong></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-C2LsdExi3oXxqkxbjpHleB3Pgnb\" data-list=\"bullet\">\n<div><strong>Dấu hiệu: </strong></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-JbMedFBxmoeH0qxyI31l5NJDgRS\" data-list=\"bullet\">\n<div>Got + NOUN <em>(NOUN l&agrave; Object của Transitive Verb &lsquo;GET&rsquo;)</em></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-RMVudnoB0oyaZ3x9ijnlCOFvgKh\" data-list=\"bullet\">\n<div>The Greatest + NOUN<em> (NOUN được bổ nghĩa bởi ADJECTIVE &lsquo;GREAT&rsquo;) </em></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-RdVldqLL6opKbixujzElVSyHg1e\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-GLG9d9ZMVoHgATxrCzglXIpMgmc\" data-list=\"bullet\">\n<div><strong>comment ~ </strong>said</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-CII7dtqiGopOJLx0TmTluRntggl\" data-list=\"bullet\">\n<div><strong>Most ~ </strong>greatest</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-TwS2dRryhog57FxJAsslFEgIgGf\" data-list=\"bullet\">\n<div><strong>Discovery ~ </strong>ground-breaking discoveries</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Hmj6dGPPqos83bxGBkClHYCbgdI\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-YWq3ddM1fobSOhxMhJVlYjoHg9w\">B&agrave;i đọc chỉ r&otilde; \"Một trong những b&igrave;nh luận của b&agrave; ấy l&agrave; &lsquo;tất nhi&ecirc;n, <u><strong>xứng đ&aacute;ng nhất</strong></u> l&agrave; khoảnh khắc 'Aha', ch&iacute;nh l&agrave; sự phấn kh&iacute;ch của kh&aacute;m ph&aacute; v&agrave; niềm vui của việc hiểu được một điều g&igrave; đ&oacute; mới&rsquo;\" <em>(One of her comments sums it up. 'Of course, </em><u><em><strong>the most rewarding part</strong></em></u><em><strong> </strong></em><em>is the \"Aha\" moment, the excitement of discovery and enjoyment of understanding something new).</em></div>\n<div class=\"ace-line ace-line old-record-id-FBL8dSo8roMojMxB2U1lJanGgvd\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: J. satisfaction</div>\n<div class=\"ace-line ace-line old-record-id-GLs1dWwvpoHSomxn1n8lOTJJglc\">B&agrave; n&oacute;i rằng b&agrave; c&oacute; được <u><strong>sự h&agrave;i l&ograve;ng</strong></u> lớn nhất từ việc tạo ra những kh&aacute;m ph&aacute; mang t&iacute;nh đột ph&aacute; <em>(She said she got the greatest </em><u><em>satisfaction</em></u><em> from making ground-breaking discoveries).</em>][31]}</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Gy0YdJDu1o2moqxZqVPlPI2qgPd\">{[C&acirc;u 32:</div>\n<div class=\"ace-line ace-line old-record-id-Rz0VdyPfeoLU5XxvWb6lZEVxgGf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-GhjrdZljBofgi3xrXOflnfEygqe\">V&agrave; thực tế b&agrave; đ&atilde; chịu tr&aacute;ch nhiệm cho một số nghi&ecirc;n cứu to&aacute;n học cực kỳ ___________.</div>\n<div class=\"ace-line ace-line old-record-id-B5cndBgYQoMVf6xwEdXlwuIpgzh\"><u><strong>Bước 2:</strong></u> X&aacute;c định từ loại dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-N0ONdXPmvoL9fbxWo2ul41opgqd\" data-list=\"bullet\">\n<div><strong>Loại từ: </strong>ADJECTIVE</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-LbRzdmUPsoED90xwBEFlRdIhgod\" data-list=\"bullet\">\n<div><strong>Dấu hiệu: </strong>extremely + ADJECTIVE <em>(ADJECTIVE được bổ nghĩa bởi Adverb &lsquo;EXTREMELY&rsquo;)</em><strong> </strong></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-VzjOdRRhjoJ913x5Qk4lvLk9gzh\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-SOMTdVYb5ogEgZxa5d1lXYEBg0r\" data-list=\"bullet\">\n<div><strong>took her to ~ </strong>responsible for</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-O2sMdqkfSoPNjcxAjVNlMTwxgSf\" data-list=\"bullet\">\n<div><strong>heights of ~ </strong>extremely<strong> </strong></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-WqjIdDzKEokTvGx5DsaluYaQgvc\" data-list=\"bullet\">\n<div><strong>original research into mathematics ~ </strong>mathematical studies<strong> </strong></div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Qaggdg3qLo8wmTxPcLelmljFgxc\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-DUOddh4EUo9VbpxVxdGloZMzghg\">B&agrave;i đọc chỉ r&otilde; \"B&agrave;i đọc chỉ r&otilde; \"Con đường đ&oacute; đưa c&ocirc; ấy đến đỉnh cao của những nghi&ecirc;n cứu <u><strong>độc đ&aacute;o</strong></u> về to&aacute;n học\" <em>(That trail took her to the heights of </em><u><em>original</em></u><em> research into mathematics).</em></div>\n<div class=\"ace-line ace-line old-record-id-HRoydybmkogmnGxvbsIlGYnwgDh\"><u><strong>Bước 5:</strong></u> Đ&aacute;p &aacute;n: I. innovative</div>\n<div class=\"ace-line ace-line old-record-id-QJUud8Z5FoNSxxx9ClVlrN8Cgof\">V&agrave; thực tế b&agrave; đ&atilde; chịu tr&aacute;ch nhiệm cho một số nghi&ecirc;n cứu to&aacute;n học cực kỳ <u><strong>t&acirc;n tiến</strong></u> <em>(and in fact she was responsible for some extremely </em><u><em>innovative</em></u><em> mathematical studies)</em>][32]}</div>\n<div class=\"ace-line ace-line old-record-id-RUwbdiS4Oo4MkVxzw7XlYp9VgVd\">&nbsp;</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+          "description": "<h2>Questions 27 - 32:</h2>",
+          "gap_fill_in_blank": "<h3 style=\"text-align: left;\"><strong>List of words</strong></h3>\n<table dir=\"ltr\" style=\"width: 99.9543%;\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\" data-sheets-root=\"1\" data-sheets-baot=\"1\"><colgroup><col style=\"width: 50.184%;\" width=\"100\"><col style=\"width: 49.9091%;\" width=\"100\"></colgroup>\n<tbody>\n<tr>\n<td><strong>A </strong>appeal</td>\n<td><strong>B </strong>determined</td>\n</tr>\n<tr>\n<td><strong>C </strong>intrigued</td>\n<td><strong>D </strong>single</td>\n</tr>\n<tr>\n<td><strong>E </strong>achievement</td>\n<td><strong>F </strong>devoted</td>\n</tr>\n<tr>\n<td><strong>G </strong>involved</td>\n<td><strong>H </strong>unique</td>\n</tr>\n<tr>\n<td><strong>I </strong>innovative</td>\n<td><strong>J </strong>satisfaction</td>\n</tr>\n<tr>\n<td><strong>K </strong>intent</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<h3 style=\"text-align: center;\"><strong><span class=\"fontstyle0\">Maryam Mirzakhani</span></strong></h3>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 99.8632%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">\n<p style=\"text-align: left;\">Maryam Mirzakhani is regarded as {[H][27]} in the field of mathematics because she was the only female holder of the prestigious Fields Medal - a record that she retained at the time of her death. However, maths held little {[A][28]} for her as a child and in fact her performance was below average until she was {[C][29]} by a difficult puzzle that one of her siblings showed her.</p>\n<p style=\"text-align: left;\">Later, as a professional mathematician, she had an inquiring mind and proved herself to be {[B][30]}&nbsp;when things did not go smoothly. She said she got the greatest {[J][31]}&nbsp;from making ground-breaking discoveries and&nbsp;in fact she was responsible for some extremely {[I][32]}&nbsp;mathematical studies.&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+          "single_choice_radio": null,
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:42:02.085+07:00",
+          "date_updated": "2024-09-10T18:22:32.169+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10883,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "YES_NO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 2,
+          "order": 33,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-XRRjd6yX2omFvAxH0vZl7v0Lg2g\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UXnFdvkBOokCgmxypohlFYjTg8e\">Nhiều người đoạt được c&aacute;c giải thưởng danh gi&aacute; về tr&iacute; tuệ, hồi nhỏ chỉ c&oacute; th&agrave;nh t&iacute;ch ở mức trung b&igrave;nh.</div>\n<div class=\"ace-line ace-line old-record-id-JH7WdV2Soo4NPSxMLE8lJN40g8b\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Mf0kdgfSOoLK4yxYZ6YlsMibgyh\" data-list=\"bullet\">\n<div><strong>Nobel prize</strong> ~ prestigious intellectual prizes</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QCksddKoro4IY5xa04blmz0bg4f\" data-list=\"bullet\">\n<div><strong>unexceptional in childhood</strong> ~ average standard when young</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-SEbHdeXOkoUDt8xNgRrlZHAigbb\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-OgsBdryi6osqPsxTz40lCq0qghd\">B&agrave;i đọc chỉ r&otilde; \"hầu hết những người đoạt giải Nobel <u><strong>đều kh&ocirc;ng c&oacute; g&igrave; nổi bật khi c&ograve;n nhỏ</strong></u>\". Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u hỏi \"Nhiều người đoạt được c&aacute;c giải thưởng danh gi&aacute; về tr&iacute; tuệ, <u><strong>hồi nhỏ chỉ c&oacute; th&agrave;nh t&iacute;ch ở mức trung b&igrave;nh</strong></u> <em>(Many people who ended up winning prestigious intellectual prizes </em><u><em>only reached an average standard when young</em></u><em>)</em></div>\n<div class=\"ace-line ace-line old-record-id-Utwid60x8oEUonxwLctlCrD1gkh\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: YES</div>\n<div class=\"ace-line ace-line old-record-id-JegKdpvlyoy1rrxdB6tlbpw6g6b\">&nbsp;</div>\n</div>",
+          "description": "<h2>Questions 33 - 37:</h2>\n<p>Do the following statements agree with the information given in Reading Passage 3?</p>\n<p>In boxes 33-37 on your answer sheet, write</p>\n<p><strong>YES</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if the statement agrees with the information</p>\n<p><strong>NO</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if the statement contradicts the information</p>\n<p><strong>NOT</strong>&nbsp;<strong>GIVEN</strong>&nbsp;&nbsp;&nbsp;&nbsp; if there is no information on this</p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Many people who ended up winning prestigious intellectual prizes only reached an average standard when young.",
+              "answer": "YES"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "YES"
+            },
+            {
+              "option": "NO"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "c2afe8a2-9330-4394-a11c-5a6c0d52d9d0",
+          "date_created": "2024-07-14T07:42:02.11+07:00",
+          "date_updated": "2024-08-24T22:37:10.277+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10884,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "YES_NO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 3,
+          "order": 34,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-K4WMdW4AjoHUA4xkVOOlqM8igdf\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-DVSDdDbVOoJfbVx80jZlOZOkgwc\">Những thất bại của Einstein khi c&ograve;n trẻ l&agrave; do &ocirc;ng thiếu sự tự tin.</div>\n<div class=\"ace-line ace-line old-record-id-Vv35d99SBo8JAaxpVk9l6KibgHb\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-MMnkdIUNko9JBQxkxDll0KHLgmf\" data-list=\"bullet\">\n<div><strong>Einstein</strong> ~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-DkMxdb40EoPTvQxGAfFlEChygnd\" data-list=\"bullet\">\n<div><strong>slow to talk as a baby, failed the general part of the entry test, struggled at work initially </strong>~ failures as a young man</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-XEWLdhUtuoyOnixNQs6lC0glgvh\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-QqkgdJTRmoxBeix56a3licUfgCg\">B&agrave;i đọc đề cập đến việc &ldquo;Einstein chậm n&oacute;i khi c&ograve;n nhỏ, trượt phần thi đầu v&agrave;o phổ th&ocirc;ng của trường B&aacute;ch khoa Zurich, v&agrave; gặp kh&oacute; khăn l&uacute;c mới đi l&agrave;m<strong>\"</strong>. Tuy nhi&ecirc;n, b&agrave;i đọc kh&ocirc;ng hề nhắc đến th&ocirc;ng tin &ldquo;<u><strong>do &ocirc;ng ta thiếu tự tin</strong></u><strong>&rdquo;</strong> trong c&acirc;u hỏi. <em>(Einstein's failures as a young man were </em><u><em>due to his lack of confidence</em></u><em>.)</em></div>\n<div class=\"ace-line ace-line old-record-id-OL7nd8H3HoYa5hxhXd7lxecogVe\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: NOT GIVEN</div>\n<div class=\"ace-line ace-line old-record-id-Sw9cdB02ToUcSAxWMucljsJNglb\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Einstein's failures as a young man were due to his lack of confidence.",
+              "answer": "NOT GIVEN"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "YES"
+            },
+            {
+              "option": "NO"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:42:02.134+07:00",
+          "date_updated": "2024-07-31T09:57:30.717+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10885,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "YES_NO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 4,
+          "order": 35,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-MSujdVXXwob9hHxduq8lc5FRg0b\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-ZaysdzZzvo7KtDx7anfl3T4fgMf\">(Người ta) kh&oacute; m&agrave; c&oacute; được sự đồng thuận về việc liệu một số trẻ em c&oacute; thực sự l&agrave; thi&ecirc;n t&agrave;i bẩm sinh hay kh&ocirc;ng.</div>\n<div class=\"ace-line ace-line old-record-id-LGLxdGNedoS3LIxaF5clacNhgx8\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-MoPGdmhJ7obJ6fxQ1GXlftPbgmh\" data-list=\"bullet\">\n<div><strong>jury is out</strong> ~ difficult to reach agreement</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-NnCZdP9btoHPw8xJ9DJlmIBhgqd\" data-list=\"bullet\">\n<div><strong>giftedness being innate</strong> ~ children are actually born gifted</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-On10d1RGjoQkCTxc8GDluyMDg9f\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-LWepdfVt3oubGCx0DeUl8Jhvggb\">B&agrave;i đọc chỉ r&otilde; \"Trong khi <u><strong>vẫn c&ograve;n nhiều tranh c&atilde;i</strong></u> liệu rằng t&agrave;i năng c&oacute; phải l&agrave; do bẩm sinh hay kh&ocirc;ng, v&agrave; c&ograve;n yếu tố n&agrave;o kh&aacute;c tạo n&ecirc;n sự kh&aacute;c biệt hay kh&ocirc;ng. Tuy nhi&ecirc;n, c&oacute; một điều chắc chắn l&agrave;: những h&agrave;nh vi m&agrave; dẫn đến th&agrave;nh t&iacute;ch xuất sắc đều c&oacute; thể học tập v&agrave; r&egrave;n luyện được\". Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u hỏi \"(người ta) <u><strong>kh&oacute; m&agrave; c&oacute; được sự đồng thuận</strong></u> về việc liệu rằng một số trẻ em c&oacute; thực sự l&agrave; thi&ecirc;n t&agrave;i bẩm sinh kh&ocirc;ng\" trong c&acirc;u hỏi. <em>(It is </em><u><em>difficult to reach agreement</em></u><em> on whether some children are actually born gifted.)</em></div>\n<div class=\"ace-line ace-line old-record-id-P2rhdaOO4oDBddxgm1clLcxDgwb\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: YES</div>\n<div class=\"ace-line ace-line old-record-id-Le6WdFSTQoE9tCxRpBClyMWggne\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "It is difficult to reach agreement on whether some children are actually born gifted.",
+              "answer": "YES"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "YES"
+            },
+            {
+              "option": "NO"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:42:02.153+07:00",
+          "date_updated": "2024-07-31T09:57:30.753+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10886,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "YES_NO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 5,
+          "order": 36,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-GW4kd55bAonjVIxb2qklQcJggxc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi</div>\n<div class=\"ace-line ace-line old-record-id-QtKxd9Wl1oJdVuxGCH4lBd1Lg9c\">Einstein cảm thấy buồn về c&aacute;ch c&ocirc;ng ch&uacute;ng nh&igrave;n nhận th&agrave;nh tựu cả đời của &ocirc;ng.</div>\n<div class=\"ace-line ace-line old-record-id-WPMad37sGow4WHxj9arlqJP6glg\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-CAM5dQ2twoZISBxs6unluXoXgid\" data-list=\"bullet\">\n<div><strong>Einstein</strong> ~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-ACS3dP29HoYhqrxde17lV4pQg2d\" data-list=\"bullet\">\n<div><strong>most</strong><strong> people say</strong> ~ public's view of his life's work</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-KcLBd0nTEoaPZBxv2SelJAwrgHc\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-F47NdB59VoeVUMxtilplKFpngmf\">B&agrave;i đọc đề cập đến việc Einstein nh&igrave;n nhận nhiều người đ&atilde; c&oacute; quan điểm sai khi cho rằng tr&iacute; tuệ l&agrave; điều l&agrave;m n&ecirc;n một nh&agrave; khoa học, v&agrave; theo &ocirc;ng t&iacute;nh c&aacute;ch mới l&agrave;m n&ecirc;n điều đ&oacute;, nhưng kh&ocirc;ng hề nhắc đến th&ocirc;ng tin <strong>\"</strong><u><strong>Einstein cảm thấy buồn</strong></u><strong>\"</strong> trong c&acirc;u hỏi.<em> (</em><u><em>Einstein was upset</em></u><em><strong> </strong></em><em>by the public's view of his life's work.)</em></div>\n<div class=\"ace-line ace-line old-record-id-GEd5dX6K9oOFkIxEaPXlLww2gKb\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: NOT GIVEN</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Einstein was upset by the public's view of his life's work.",
+              "answer": "NOT GIVEN"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "YES"
+            },
+            {
+              "option": "NO"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:42:02.202+07:00",
+          "date_updated": "2024-07-31T09:57:30.783+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10887,
+          "quiz_id": 0,
+          "type": "SINGLE-SELECTION",
+          "question_type": "YES_NO",
+          "title": "",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 6,
+          "order": 37,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Sm3TdXe7iowkURxMAmHlz4mRgKc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-QErbdcDaaoJiwaxfPdqlBJzeg3f\">Einstein cho rằng th&agrave;nh c&ocirc;ng của &ocirc;ng l&agrave; do tốc độ giải quyết c&aacute;c vấn đề khoa học.</div>\n<div class=\"ace-line ace-line old-record-id-IktXdA5bDoQz5IxpYlfl3loEgYc\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VhPadbOTyoWdvwx3r7Pl4QUogGd\" data-list=\"bullet\">\n<div><strong>Einstein</strong> ~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-IGBCd6Q1uoUbfbxFAPNl2UsRgBe\" data-list=\"bullet\">\n<div><strong>He once wrote</strong> ~ put his success down to</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-XVP2dwdLzoQLbdxRFAbl3o81gbe\" data-list=\"bullet\">\n<div><strong>stay with problems longer</strong> ~ speed at which he dealt with scientific questions</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-U6hcd5DLboHdekxv8VWlRZLCgwe\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JlWYdmn7DoDlpZxNc6nll2UZgUh\">B&agrave;i đọc chỉ r&otilde; Einstein n&oacute;i \"Kh&ocirc;ng phải t&ocirc;i th&ocirc;ng minh đến thế, m&agrave; l&agrave; t&ocirc;i <u><strong>ki&ecirc;n tr&igrave; với vấn đề l&acirc;u hơn</strong></u>\". Điều n&agrave;y tr&aacute;i ngược với th&ocirc;ng tin trong c&acirc;u hỏi \"Einstein <u><strong>cho rằng th&agrave;nh c&ocirc;ng của &ocirc;ng l&agrave; do tốc độ</strong></u> giải quyết c&aacute;c vấn đề khoa học\" trong c&acirc;u hỏi. <em>(Einstein </em><u><em>put his success down to the speed</em></u><em> at which he dealt with scientific questions.)</em></div>\n<div class=\"ace-line ace-line old-record-id-VdtbdO2Zwo24bFx78nWlqJI5gzf\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n: NO</div>\n<div class=\"ace-line ace-line old-record-id-N7K5dfrrwoL07rxuBSplnppzgZd\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": null,
+          "selection": [
+            {
+              "text": "Einstein put his success down to the speed at which he dealt with scientific questions.",
+              "answer": "NO"
+            }
+          ],
+          "mutilple_choice": null,
+          "selection_option": [
+            {
+              "option": "YES"
+            },
+            {
+              "option": "NO"
+            },
+            {
+              "option": "NOT GIVEN"
+            }
+          ],
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:42:02.232+07:00",
+          "date_updated": "2024-07-31T09:57:30.824+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10888,
+          "quiz_id": 0,
+          "type": "SINGLE-RADIO",
+          "question_type": "MULTIPLE_CHOICE_ONE",
+          "title": "What does Eyre believe is needed for children to equal 'gifted' standards?",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 7,
+          "order": 38,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-LCOBdFZk3opk5LxazKSlIUiGgxf\"><u><strong>Bước 1</strong></u>: Hiểu v&agrave; t&igrave;m keywords trong c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-IMBZdlhpfotNfaxsq19l8TGtggf\">Theo Eyre, trẻ em cần đ&aacute;p ứng những điều kiện g&igrave; để đạt đến ti&ecirc;u chuẩn của một &lsquo;thi&ecirc;n t&agrave;i&rsquo; <em>(&lsquo;gifted&rsquo; standards&rsquo;)</em>?</div>\n<div class=\"ace-line ace-line old-record-id-OCTkd90jEoIu9LxrLsdlYxKVgXd\"><u><strong>Bước 2:</strong></u> T&igrave;m th&ocirc;ng tin dựa tr&ecirc;n keywords:</div>\n<div class=\"ace-line ace-line old-record-id-BQfqd2cZUoHXoOxyan0lJxh9gYc\">B&agrave;i đọc chỉ r&otilde;: &ldquo;C&aacute;c nghi&ecirc;n cứu mới nhất về thần kinh học v&agrave; t&acirc;m l&yacute; học cho thấy hầu hết mọi người đều c&oacute; thể đạt được mức độ th&agrave;nh t&iacute;ch tương đương với những học sinh được coi l&agrave; thi&ecirc;n t&agrave;i xuất sắc trong trường học. Tuy nhi&ecirc;n, họ cần được dạy th&aacute;i độ v&agrave; phương ph&aacute;p học tập đ&uacute;ng đắn, đồng thời ph&aacute;t triển c&aacute;c phẩm chất của học sinh xuất sắc &ndash; chẳng hạn như <strong>t&iacute;nh t&ograve; m&ograve;</strong>, ki&ecirc;n tr&igrave; v&agrave; chăm chỉ&rdquo;</div>\n<div class=\"ace-line ace-line old-record-id-IErudIpaxoAFbJxxMiElcAXIgKh\">=&gt; Th&ocirc;ng tin được in đậm đồng nghĩa với c&acirc;u C <em>(Sự nu&ocirc;i dưỡng tinh thần ham học hỏi)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-PEqwdpp65otMZJx76Nbl8RaJgYg\"><u><strong>Bước 3</strong></u>: Đ&aacute;p &aacute;n: C</div>\n<div class=\"ace-line ace-line old-record-id-JWSSdCNttot5zbxsQBzlAbMcgyd\"><u><strong>Bước 4:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-AEWCd6wKso1zA0xRrYPlVXUBgUg\">Đ&aacute;p &aacute;n A -&gt; Đoạn văn kh&ocirc;ng nhắc đến yếu tố &ldquo;kỷ luật nghi&ecirc;m khắc từ gi&aacute;o vi&ecirc;n&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-FEjgdAAbKoEYFGxhDUmlERDtgQc\">Đ&aacute;p &aacute;n B -&gt; Đoạn văn kh&ocirc;ng nhắc đến yếu tố &ldquo;hỗ trợ từ bạn b&egrave; c&ugrave;ng lớp&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-XTOadqtUBozGrbx0V9aliUGZg9d\">Đ&aacute;p &aacute;n D -&gt; Đoạn văn kh&ocirc;ng nhắc đến yếu tố &ldquo;quyết t&acirc;m đạt th&agrave;nh t&iacute;ch hơn c&aacute;c học sinh kh&aacute;c&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-OPT5dgqULoSg7zxAu7dlkLtNgTg\">&nbsp;</div>\n</div>",
+          "description": "<h2><span class=\"fontstyle0\">Questions 38 </span><span class=\"fontstyle2\">- 40:</span></h2>\n<p><span class=\"fontstyle0\">Choose the correct </span><span class=\"fontstyle0\">letter, </span><strong><span class=\"fontstyle3\">A, </span><span class=\"fontstyle4\">B</span><span class=\"fontstyle4\">, </span></strong><span class=\"fontstyle5\"><strong>C</strong> </span><span class=\"fontstyle4\">or </span><span class=\"fontstyle4\"><strong>D</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write </span><span class=\"fontstyle0\">the correct </span><span class=\"fontstyle0\">letter </span><span class=\"fontstyle0\">in boxes 38 - 40 on your answer sheet.</span></p>",
+          "gap_fill_in_blank": null,
+          "single_choice_radio": [
+            {
+              "text": "strict discipline from the teaching staff",
+              "correct": false
+            },
+            {
+              "text": "assistance from their peers in the classroom",
+              "correct": false
+            },
+            {
+              "text": "the development of a spirit of inquiry towards their studies",
+              "correct": true
+            },
+            {
+              "text": "the determination to surpass everyone else's achievements",
+              "correct": false
+            }
+          ],
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+          "date_created": "2024-07-14T07:42:02.259+07:00",
+          "date_updated": "2024-09-10T18:22:32.194+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10889,
+          "quiz_id": 0,
+          "type": "SINGLE-RADIO",
+          "question_type": "MULTIPLE_CHOICE_ONE",
+          "title": "What is the result of Ericsson's research?",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 8,
+          "order": 39,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Dyovd9VL5owlhjxINgGlMWyBgBd\"><u><strong>Bước 1</strong></u>: Hiểu v&agrave; t&igrave;m keywords trong c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-SeEPduCsloN0XSxo2belCyqQg1c\">Kết quả <em>(result)</em> nghi&ecirc;n cứu của Ericsson <em>(Ericsson's research)</em> l&agrave; g&igrave;?</div>\n<div class=\"ace-line ace-line old-record-id-BYaCddBeHoRutdxfXzplFjKcgrf\"><u><strong>Bước 2:</strong></u> T&igrave;m th&ocirc;ng tin dựa tr&ecirc;n keywords:</div>\n<div class=\"ace-line ace-line old-record-id-HWridXEf1o8sU2xIWDxlLxfFgsx\">B&agrave;i đọc chỉ r&otilde;: &ldquo;<strong>Ericsson kh&ocirc;ng nghĩ rằng t&agrave;i năng thi&ecirc;n bẩm l&agrave; một yếu tố cốt l&otilde;i quyết định hiệu suất</strong>. Thay v&agrave;o đ&oacute;, việc luyện tập c&oacute; chủ đ&iacute;ch, <em>li&ecirc;n tục th&aacute;ch thức bản th&acirc;n trong từng bước đi trong tầm 10,000 giờ đồng hồ, mới l&agrave; thứ tạo n&ecirc;n kết quả (loại đ&aacute;p &aacute;n D - chỉ l&agrave; tạo n&ecirc;n kết quả kh&ocirc;ng phải chuy&ecirc;n gia)</em>. Tất nhi&ecirc;n đ&acirc;y kh&ocirc;ng phải l&agrave; một con số thần k&igrave; g&igrave; cả, v&igrave; c&oacute; những người c&ograve;n bỏ ra nhiều thời gian hơn thế nữa. Nghi&ecirc;n cứu về tr&iacute; nhớ của Ericsson đ&atilde; cho thấy một điều rất th&uacute; vị: &Ocirc;ng lấy một nh&oacute;m sinh vi&ecirc;n b&igrave;nh thường, sau đ&oacute; chỉ dạy cho họ c&aacute;c kỹ thuật ghi nhớ, v&agrave; kết quả l&agrave; họ c&ograve;n nhớ tốt hơn những vốn được coi l&agrave; c&oacute; kỹ năng trời ph&uacute;&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-Ws11dkLJcob13yxqnwil1cdggUg\">=&gt; Th&ocirc;ng tin được in đậm đồng nghĩa với c&acirc;u B <em>(Việc sinh ra đ&atilde; c&oacute; một năng khiếu g&igrave; đ&oacute; kh&ocirc;ng phải yếu tố quyết định tạo n&ecirc;n một chuy&ecirc;n gia)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-MVE5df39woyliwxf9yQlF9oSgYc\"><u><strong>Bước 3</strong></u>: Đ&aacute;p &aacute;n: B</div>\n<div class=\"ace-line ace-line old-record-id-Fdv3dIZX8o5ZlFxjpd4lLbqlgIf\"><u><strong>Bước 4:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-W7CPd6I7coCMDlxNizslrdVrgOf\">Đ&aacute;p &aacute;n A -&gt; Đoạn văn kh&ocirc;ng nhắc đến việc &ldquo;những học sinh thi&ecirc;n t&agrave;i xuất ch&uacute;ng kh&ocirc;ng cần cải thiện kỹ năng ghi nhớ&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-SQlydeHn2oNNfYxW030l8FLPgQc\">Đ&aacute;p &aacute;n D -&gt; Đoạn văn kh&ocirc;ng nhắc việc &ldquo;d&agrave;nh thời gian cho hoạt động thể chất l&agrave; điều cốt yếu để n&acirc;ng cao hiệu suất &rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-NUFCdNy6loyJf7xNnFwlKG5RgKc\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": [
+            {
+              "text": "Very gifted students do not need to work on improving memory skills.",
+              "correct": false
+            },
+            {
+              "text": "Being born with a special gift is not the key factor in becoming expert.",
+              "correct": true
+            },
+            {
+              "text": "Including time for physical exercise is crucial in raising performance.",
+              "correct": false
+            },
+            {
+              "text": "10,000 hours of relevant and demanding work will create a genius.",
+              "correct": false
+            }
+          ],
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
+          "date_created": "2024-07-14T07:42:02.285+07:00",
+          "date_updated": "2024-07-31T09:57:30.894+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        },
+        {
+          "id": 10890,
+          "quiz_id": 0,
+          "type": "SINGLE-RADIO",
+          "question_type": "MULTIPLE_CHOICE_ONE",
+          "title": "In the penultimate paragraph, it is stated the key to some deprived children's success is",
+          "status": "published",
+          "content": "",
+          "content_writing": "",
+          "sort": 9,
+          "order": 40,
+          "part_id": 1824,
+          "time_to_think": null,
+          "listen_from": null,
+          "locate": null,
+          "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-VSyRdGdKMoCx1pxeCeZlhKtCgMV\"><u><strong>Bước 1</strong></u>: Hiểu v&agrave; t&igrave;m keywords trong c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-DowId9RN4olibax7vZVl2V0Gg3d\">Trong đoạn gần cuối <em>(penultimate paragraph)</em>, yếu tố ch&iacute;nh dẫn đến th&agrave;nh c&ocirc;ng <em>(key to success)</em> của một số trẻ em c&oacute; ho&agrave;n cảnh kh&oacute; khăn <em>(deprived children)</em> được chỉ ra l&agrave; g&igrave;?</div>\n<div class=\"ace-line ace-line old-record-id-IeRTdOqh1o7eYyxKP8slFO1ngQe\"><u><strong>Bước 2:</strong></u> T&igrave;m th&ocirc;ng tin dựa tr&ecirc;n keywords:</div>\n<div class=\"ace-line ace-line old-record-id-LlEcdxy9Bo0shdxTpDrl0OR9gGc\">B&agrave;i đọc chỉ r&otilde;: &ldquo;Eyre ph&aacute;t triển phương ph&aacute;p học hiệu quả dựa tr&ecirc;n c&aacute;ch học của người xuất sắc v&agrave; &aacute;p dụng ở nhiều trường học. Một nghi&ecirc;n cứu tập trung v&agrave;o 3000 đứa trẻ, v&agrave; c&oacute; đến 24 đứa c&oacute; th&agrave;nh t&iacute;ch cao d&ugrave; ho&agrave;n cảnh kh&oacute; khăn: một nửa ngh&egrave;o đến mức nh&agrave; trường phải t&agrave;i trợ những suất ăn miễn ph&iacute;, <em>hơn một nửa th&igrave; sống với cha/mẹ đơn th&acirc;n (loại đ&aacute;p &aacute;n B)</em>, v&agrave; đa số ở v&ugrave;ng qu&ecirc; ngh&egrave;o. Khi n&oacute;i chuyện với bọn trẻ, người ta mới vỡ lẽ ra rằng:<strong> xung quanh ch&uacute;ng đều c&oacute; &iacute;t nhất một người lớn lu&ocirc;n nhắc nhở v&agrave; động vi&ecirc;n ch&uacute;ng học h&agrave;nh - c&oacute; thể l&agrave; người th&acirc;n trong gia đ&igrave;nh, họ h&agrave;ng xa, hoặc ai đ&oacute; trong v&ugrave;ng</strong>. Bản th&acirc;n lũ trẻ cũng hiểu rằng muốn học giỏi th&igrave; phải chịu kh&oacute;, chăm ch&uacute; nghe thầy c&ocirc; giảng b&agrave;i, v&agrave; đừng nản ch&iacute; khi gặp kh&oacute; khăn.</div>\n<div class=\"ace-line ace-line old-record-id-XICadE5BCovAbYxLlp5lWne2gLb\">=&gt; Th&ocirc;ng tin được in đậm đồng nghĩa với c&acirc;u D <em>(Sự hướng dẫn của người n&agrave;o đ&oacute; m&agrave; nhận ra tầm quan trọng của việc học)</em>.</div>\n<div class=\"ace-line ace-line old-record-id-J9cVdsrZjo8IadxdPXPlTY1DgGe\"><u><strong>Bước 3</strong></u>: Đ&aacute;p &aacute;n: D</div>\n<div class=\"ace-line ace-line old-record-id-BtNFd31gdoqYgjxJ4q7lmiM8gDb\"><u><strong>Bước 4:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-VAG7dI3H4oISr0xkVV5lCCySgLf\">Đ&aacute;p &aacute;n A -&gt; Đoạn văn kh&ocirc;ng nhắc đến việc trẻ phải c&oacute; &ldquo;Chế độ ăn uống đầy đủ v&agrave; bổ dưỡng ở nh&agrave;&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-Dv3Edhb5soJ7F8x0VPLlr4fwgeb\">Đ&aacute;p &aacute;n C -&gt; Đoạn văn kh&ocirc;ng nhắc đến việc trẻ phải sống trong &ldquo;một cộng đồng được đầu tư về cơ sở vật chất gi&aacute;o&rdquo;.</div>\n<div class=\"ace-line ace-line old-record-id-AiSodde2PobzP5x0KsilzC0NgDe\">&nbsp;</div>\n</div>",
+          "description": null,
+          "gap_fill_in_blank": null,
+          "single_choice_radio": [
+            {
+              "text": "a regular and nourishing diet at home.",
+              "correct": false
+            },
+            {
+              "text": "the loving support of more than one parent.",
+              "correct": false
+            },
+            {
+              "text": "a community which has well-funded facilities for learning.",
+              "correct": false
+            },
+            {
+              "text": "the guidance of someone who recognises the benefits of learning.",
+              "correct": true
+            }
+          ],
+          "selection": null,
+          "mutilple_choice": null,
+          "selection_option": null,
+          "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+          "user_updated": "47909dc4-e807-40f9-9b25-cfe9f332e115",
+          "date_created": "2024-07-14T07:42:02.308+07:00",
+          "date_updated": "2025-02-21T15:56:22.491+07:00",
+          "instruction": null,
+          "writing_logical_frame": null,
+          "writing_graph_image": null,
+          "writing_graph_description": null,
+          "writing_graph_type": null,
+          "time_limit": null,
+          "audio_url": null,
+          "min_words": 0,
+          "max_words": 0
+        }
+      ],
+      "vocabs": [],
+      "listen_from": null,
+      "listen_to": null,
+      "instruction": null
+    }
+  ],
+  "tags": null,
+  "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+  "user_updated": "20e3add8-f7bd-488d-b669-d42f50e7f8e9",
+  "date_created": "2024-07-14T07:25:51.829+07:00",
+  "date_updated": "2025-06-09T16:38:06.591517+07:00",
+  "quiz_part": null,
+  "quiz_type": 4,
+  "mock_test_id": 46,
+  "mock_test_type": 1,
+  "listening": null,
+  "instruction": null,
+  "question": null,
+  "samples": null,
+  "vote_count": 77,
+  "total_submitted": 14508,
+  "writing_task_type": null,
+  "extra": {
+    "user_attempt_count": null
+  },
+  "speaking_part_type": null,
+  "speaking_topic_id": null,
+  "speaking_topic": null
+}

@@ -1,0 +1,61 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: CI_GROUP_NAME-CI_PROJECT_NAME
+  labels:
+    app: CI_GROUP_NAME-CI_PROJECT_NAME
+  namespace: NAMESPACE
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: CI_GROUP_NAME-CI_PROJECT_NAME
+  template:
+    metadata:
+      labels:
+        app: CI_GROUP_NAME-CI_PROJECT_NAME
+        date: "_DATE_"
+    spec:
+      tolerations:
+        - key: node.kubernetes.io/not-ready
+          operator: Exists
+          effect: NoExecute
+          tolerationSeconds: 2
+        - key: node.kubernetes.io/unreachable
+          operator: Exists
+          effect: NoExecute
+          tolerationSeconds: 2
+      terminationGracePeriodSeconds: 60
+      restartPolicy: Always
+      volumes:
+        - name: key-config-volume
+          configMap:
+            name: app-api-promting-key
+            defaultMode: 420
+      containers:
+        - name: CI_GROUP_NAME-CI_PROJECT_NAME
+          imagePullPolicy: Always
+          image: CI_GROUP_NAME/CI_PROJECT_NAME:_VERSION_
+          ports:
+            - containerPort: 8000
+          env:
+            - name: API_INFO__VERSION
+              value: production
+          resources:
+            limits:
+              cpu: 400m
+              memory: 768Mi
+            requests:
+              cpu: 200m
+              memory: 512Mi
+          volumeMounts:
+            - name: key-config-volume
+              readOnly: true
+              mountPath: /app/keys
+---

@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: CI_GROUP_NAME-CI_PROJECT_NAME
+  namespace: NAMESPACE
+spec:
+  selector:
+    app: CI_GROUP_NAME-CI_PROJECT_NAME
+  ports:
+    - port: 8080
+      targetPort: 8000
+      protocol: TCP
+      name: CI_GROUP_NAME-CI_PROJECT_NAME
+---

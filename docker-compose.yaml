@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app-api-promting:
+    image: ieltslms/app-api-promting:1.0.0
+    restart: always
+    ports:
+      - '18080:8080'
+    logging:
+      driver: fluentd
+      options:
+        fluentd-address: "localhost:24226"
+        fluentd-async-connect: "true"
+        tag: ieltslms-app-api-promting        
+    networks:
+      - lms
+
+networks:
+  lms:
+    external: true
+    name: lms

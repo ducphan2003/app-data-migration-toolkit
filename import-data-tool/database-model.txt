@@ -1,0 +1,84 @@
+Table quiz {
+  id integer [primary key, note: 'Unique identifier for quiz']
+  title varchar(255) [not null, note: 'Quiz title, e.g., "Orange 19 Reading - Test 2"']
+  type integer [not null, note: 'Quiz type: 1=Reading (legacy), 2=Listening (legacy), 9=Reading v2, 10=Listening v2']
+  time integer [not null, note: 'Total time limit in minutes for the entire quiz']
+  instruction_audio varchar(255) [note: 'Audio file ID for Listening quiz instructions, NULL for Reading']
+  status varchar(50) [default: 'published', note: 'Quiz status: draft, published, archived']
+  user_created varchar(255) [note: 'UUID of user who created the quiz']
+  date_created timestamp [note: 'Quiz creation timestamp']
+  user_updated varchar(255) [note: 'UUID of user who last updated the quiz']
+  date_updated timestamp [note: 'Last update timestamp']
+  order_number integer [note: 'Display order in quiz list']
+  vote_count integer [default: 0, note: 'Number of user votes/ratings for this quiz']
+  quiz_type integer [note: 'Internal quiz type classification']
+  mode integer [default: 0, note: 'Quiz mode: 0=normal, 1=practice, 2=test']
+  mock_test_type integer [note: 'Mock test classification type']
+  mock_test_id integer [note: 'Reference to parent mock test if applicable']
+  total_submitted integer [default: 0, note: 'Total number of submissions for this quiz']
+  practice_listing_priority integer [default: 0, note: 'Priority order in practice quiz listing']
+  is_public boolean [default: true, note: 'Whether quiz is publicly accessible']
+  is_test boolean [default: true, note: 'Whether this is a test quiz (true) or practice quiz (false)']
+}
+
+Table part {
+  id integer [primary key, note: 'Unique identifier for part']
+  title varchar(255) [not null, note: 'Part title, e.g., "READING PASSAGE 1", "Part 1"']
+  instruction text [note: 'Instructions with placeholders like {start_question}, {end_question}']
+  content text [note: 'HTML content for Reading passages, NULL for Listening parts']
+  file_id varchar(255) [note: 'Audio file ID for Listening parts, NULL for Reading']
+  user_created varchar(255) [note: 'UUID of user who created the part']
+  date_created timestamp [note: 'Part creation timestamp']
+  date_updated timestamp [note: 'Last update timestamp']
+  passage_id integer [note: 'Sequential passage number within quiz (1, 2, 3, etc.)']
+  question_count integer [note: 'Total number of questions in this part']
+}
+
+Table quiz_part {
+  id integer [primary key, note: 'Unique identifier for quiz-part relationship']
+  quiz_id integer [not null, note: 'Reference to quiz table']
+  part_id integer [not null, note: 'Reference to part table']
+  sort integer [not null, note: 'Order of parts within quiz (1, 2, 3, etc.)']
+}
+
+Table question_set {
+  id integer [primary key, note: 'Unique identifier for question set']
+  part_id integer [not null, note: 'Reference to part table']
+  question_type varchar(50) [not null, note: 'Type: GAP_FILLING, SINGLE_SELECTION, MULTIPLE_SELECTION']
+  question_count integer [not null, note: 'Number of questions in this set']
+  title varchar(255) [not null, note: 'Question set title, e.g., "Questions 1-7", "Questions 14-18"']
+  description text [note: 'Instructions for the entire question set']
+  content text [note: 'HTML content with embedded gap placeholders for GAP_FILLING types']
+  options json [note: 'Shared answer options for SINGLE_SELECTION types, e.g., [{"option":"A","text":"TRUE"}]']
+  allow_reuse boolean [default: false, note: 'Whether options can be used multiple times (for matching)']
+  max_selections integer [note: 'Maximum selections allowed for MULTIPLE_SELECTION types']
+  sort integer [not null, note: 'Order of question sets within part']
+  user_created varchar(255) [note: 'UUID of user who created the question set']
+  user_updated varchar(255) [note: 'UUID of user who last updated the question set']
+  date_created timestamp [note: 'Question set creation timestamp']
+  date_updated timestamp [note: 'Last update timestamp']
+}
+
+Table question {
+  id integer [primary key, note: 'Unique identifier for question']
+  question_set_id integer [not null, note: 'Reference to question_set table']
+  text text [note: 'Question text for standalone questions, NULL if embedded in question_set.content']
+  correct_answer varchar(255) [note: 'Single correct answer for SINGLE_SELECTION types']
+  correct_answers json [note: 'Array of acceptable answers for GAP_FILLING, e.g., ["piston"], ["labour","labor"]']
+  explain text [note: 'HTML explanation for the correct answer']
+  listen_from integer [note: 'Audio start time in seconds for Listening questions']
+  options json [note: 'Question-specific options for MULTIPLE_CHOICE_ONE types']
+  sort integer [not null, note: 'Order of question within question set']
+  user_created varchar(255) [note: 'UUID of user who created the question']
+  user_updated varchar(255) [note: 'UUID of user who last updated the question']
+  date_created timestamp [note: 'Question creation timestamp']
+  date_updated timestamp [note: 'Last update timestamp']
+}
+
+// Relationships
+Ref quiz_parts: quiz_part.quiz_id > quiz.id // many-to-one
+Ref part_quizzes: quiz_part.part_id > part.id // many-to-one
+
+Ref part_question_sets: question_set.part_id > part.id // many-to-one
+
+Ref question_set_questions: question.question_set_id > question_set.id // many-to-one

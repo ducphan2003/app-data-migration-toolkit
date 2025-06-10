@@ -1,0 +1,612 @@
+{
+  "id": 603,
+  "quiz_id": 530,
+  "passage": 2,
+  "title": "Section 2",
+  "sort": 2,
+  "time": null,
+  "content": "<p class=\"whitespace-pre-wrap break-words\"><strong>MUSEUM GUIDE:</strong> Good morning everyone, and welcome to the Museum of Farming Life. I understand it's your first visit here, so I'd like to give you some background information about the museum and then explain a little about what you can see during your visit.</p>\n<p class=\"whitespace-pre-wrap break-words\">{[So, where we're standing at the moment is the entrance to a large building that was <strong>constructed in 1880 as the home of a local businessman</strong>. ][11]}Alfred Palmer, of the Palmer biscuit factory. It was later sold and became a hall of residence for students in 1911, and a museum in 1951. In 2005, a modern extension was built to accommodate the museum's collections.</p>\n<p class=\"whitespace-pre-wrap break-words\">{[The museum's owned by the university, and apart from two rooms that are our offices, the university <strong>uses the main part of the building. You may see students going into the building for lessons, </strong>but it's not open to museum visitors, I'm afraid. It's a shame because the interior architectural features are outstanding, especially the room that used to be the library. ][12]}</p>\n<p class=\"whitespace-pre-wrap break-words\">Luckily, we've managed to keep entry to the museum free. This includes access to all the galleries, outdoor areas and the rooms for special exhibitions. We run activities for children and students, such as the museum club, for which there's no charge. {[ <strong>We do have a donation box just over there so feel free to give whatever amount you consider appropriate</strong>. ][13]}</p>\n<p class=\"whitespace-pre-wrap break-words\">{[We do have <strong>a cloakroom, if you'd like to leave your coats and bags somewhere</strong>. Unlike other museums, photography is allowed here, so you might like to keep your cameras with you. You might be more comfortable not carrying around heavy rucksacks, <strong>though keep your coats and jackets on as it's quite cold in the museum garden today</strong>.][14]}</p>\n<hr>\n<p class=\"whitespace-pre-wrap break-words\">I'd like to tell you about the different areas of the museum.</p>\n<p class=\"whitespace-pre-wrap break-words\">Just inside, and outside the main gallery, we have an area called Four Seasons. Here you can watch a four-minute animation of a woodland scene. {[ <strong>It was designed especially for the museum by a group of young people on a film studies course,</strong> and it's beautiful.][15]}Children absolutely love it, but then, so do adults.</p>\n<p class=\"whitespace-pre-wrap break-words\">The main gallery's called Town and Country. It includes a photographic collection of prize-winning sheep and shepherds. Leaving Town and Country, you enter Farmhouse Kitchen, which is ... well, self-explanatory. Here we have the oldest collection of equipment for making butter and cheese in the country. {[And <strong>this morning, a specialist cheesemaker will be giving demonstrations</strong> of how it's produced. You may even get to try some. ][16]}</p>\n<p class=\"whitespace-pre-wrap break-words\">After that, you can go in two directions. To the right is a staircase that takes you up to a landing from where you can look down on the galleries. To the left is a room called A Year on the Farm. There's lots of seating here as sometimes we use the room for school visits, so it's a good place to stop for a rest. {[<strong> If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum</strong>. ][17]}</p>\n<p class=\"whitespace-pre-wrap break-words\">The next area's called Wagon Walk. This contains farm carts from nearly every part of the country. It's surprising how much regional variation there was. Beside the carts are display boards with information about each one. {[<strong>The carts are old and fragile, so we ask you to keep your children close to you and ensure they don't climb on the carts</strong>. ][18]}</p>\n<p class=\"whitespace-pre-wrap break-words\">From Wagon Walk, you can either make your way back to reception or go out into the garden -- or even go back to take another look in the galleries. {[In the far corner of the garden is Bees are Magic, but <strong>we're redeveloping this area so you can't visit that at the moment</strong>. You can still buy our honey in the shop, though.][19]}</p>\n<p class=\"whitespace-pre-wrap break-words\">Finally, there's The Pond, which contains all kinds of interesting wildlife. {[ <strong>There are baby ducks that are only a few days old, as well as tiny frogs.</strong> The Pond isn't deep and there's a fence around it, so it's perfectly safe for children.][20]}</p>",
+  "simplified_content": null,
+  "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+  "date_created": "2023-12-30T22:14:18.88+07:00",
+  "date_updated": "2024-10-09T10:49:16.87+07:00",
+  "explanations": [],
+  "questions": [
+    {
+      "id": 2825,
+      "quiz_id": 0,
+      "type": "SINGLE-RADIO",
+      "question_type": "MULTIPLE_CHOICE_ONE",
+      "title": "The museum building was originally",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 1,
+      "order": 11,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 515,
+      "locate": null,
+      "explain": null,
+      "description": "<h2><strong>Questions 11 - 14:</strong></h2>\n<p>Choose the correct letter,&nbsp;<strong>A</strong>,&nbsp;<strong>B</strong>&nbsp;or&nbsp;<strong>C</strong>.</p>",
+      "gap_fill_in_blank": null,
+      "single_choice_radio": [
+        {
+          "text": "a factory.",
+          "correct": false
+        },
+        {
+          "text": "a private home.",
+          "correct": true
+        },
+        {
+          "text": "a hall of residence.",
+          "correct": false
+        }
+      ],
+      "selection": null,
+      "mutilple_choice": null,
+      "selection_option": null,
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "c2afe8a2-9330-4394-a11c-5a6c0d52d9d0",
+      "date_created": "2024-01-03T15:00:20.622+07:00",
+      "date_updated": "2024-08-24T16:50:11.188+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 2826,
+      "quiz_id": 0,
+      "type": "SINGLE-RADIO",
+      "question_type": "MULTIPLE_CHOICE_ONE",
+      "title": "The university uses part of the museum building as",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 2,
+      "order": 12,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 540,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": [
+        {
+          "text": "teaching rooms.",
+          "correct": true
+        },
+        {
+          "text": "a research library.",
+          "correct": false
+        },
+        {
+          "text": "administration offices.",
+          "correct": false
+        }
+      ],
+      "selection": null,
+      "mutilple_choice": null,
+      "selection_option": null,
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-01-03T15:00:20.647+07:00",
+      "date_updated": "2024-07-19T11:14:22.899+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 2827,
+      "quiz_id": 0,
+      "type": "SINGLE-RADIO",
+      "question_type": "MULTIPLE_CHOICE_ONE",
+      "title": "What does the guide say about the entrance fee?",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 3,
+      "order": 13,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 580,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": [
+        {
+          "text": "Visitors decide whether or not they wish to pay.",
+          "correct": true
+        },
+        {
+          "text": "Only children and students receive a discount.",
+          "correct": false
+        },
+        {
+          "text": "The museum charges extra for special exhibitions.",
+          "correct": false
+        }
+      ],
+      "selection": null,
+      "mutilple_choice": null,
+      "selection_option": null,
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-01-03T15:00:20.665+07:00",
+      "date_updated": "2024-07-19T11:34:29.162+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 2828,
+      "quiz_id": 0,
+      "type": "SINGLE-RADIO",
+      "question_type": "MULTIPLE_CHOICE_ONE",
+      "title": "What are visitors advised to leave in the cloakroom?",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 4,
+      "order": 14,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 590,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": [
+        {
+          "text": "cameras",
+          "correct": false
+        },
+        {
+          "text": "coats",
+          "correct": false
+        },
+        {
+          "text": "bags",
+          "correct": true
+        }
+      ],
+      "selection": null,
+      "mutilple_choice": null,
+      "selection_option": null,
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-01-03T15:00:20.682+07:00",
+      "date_updated": "2024-07-19T11:34:29.812+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 2829,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "What information does the speaker give about each of the following areas of the museum?  Choose SIX answers from the box and write the correct letter, A-H, next to Questions 15-20.",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 5,
+      "order": 15,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 674,
+      "locate": null,
+      "explain": null,
+      "description": "<h2><strong>Questions 15 - 20:</strong></h2>\n<p>What information does the speaker give about each of the following areas of the museum?</p>\n<p>Choose&nbsp;<strong>SIX</strong>&nbsp;answers from the box and write the correct letter,&nbsp;<strong>A-H</strong>, next to Questions 15-20.</p>\n<p>&nbsp;</p>\n<h3><strong>Information</strong></h3>\n<table style=\"border-collapse: collapse; width: 99.9543%;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<p><strong>A&nbsp;</strong>&nbsp;&nbsp;Parents must supervise their children.</p>\n<p><strong>B&nbsp;</strong>&nbsp;&nbsp;There are new things to see.</p>\n<p><strong>C&nbsp;</strong>&nbsp;&nbsp;It is closed today.</p>\n<p><strong>D&nbsp;</strong>&nbsp;&nbsp;This is only for school groups.</p>\n<p><strong>E&nbsp;</strong>&nbsp;&nbsp;There is a quiz for visitors.</p>\n<p><strong>F&nbsp;</strong>&nbsp;&nbsp;It features something created by students.</p>\n<p><strong>G&nbsp;</strong>&nbsp;&nbsp;An expert is here today.</p>\n<p><strong>H&nbsp;</strong> &nbsp;There is a one-way system.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<h3 style=\"text-align: center;\"><strong>Areas of museum</strong></h3>",
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "Four Seasons",
+          "answer": "F"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "c2afe8a2-9330-4394-a11c-5a6c0d52d9d0",
+      "date_created": "2024-01-03T15:02:01.51+07:00",
+      "date_updated": "2024-08-24T16:50:48.634+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 11284,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 6,
+      "order": 16,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 720,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "Farmhouse Kitchen",
+          "answer": "G"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-07-17T20:26:25.479+07:00",
+      "date_updated": "2024-07-19T11:34:30.214+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 11285,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 7,
+      "order": 17,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 755,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "A Year on the Farm",
+          "answer": "E"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-07-17T20:31:16.164+07:00",
+      "date_updated": "2024-07-19T11:34:30.572+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 11286,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 8,
+      "order": 18,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 780,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "Wagon Walk",
+          "answer": "A"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-07-17T20:31:16.191+07:00",
+      "date_updated": "2024-07-19T11:34:30.604+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 11287,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 9,
+      "order": 19,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 790,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "Bees are Magic",
+          "answer": "C"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-07-17T20:31:16.213+07:00",
+      "date_updated": "2024-07-19T11:34:30.631+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    },
+    {
+      "id": 11288,
+      "quiz_id": 0,
+      "type": "SINGLE-SELECTION",
+      "question_type": "MATCHING_INFO",
+      "title": "",
+      "status": "published",
+      "content": "",
+      "content_writing": "",
+      "sort": 10,
+      "order": 20,
+      "part_id": 603,
+      "time_to_think": null,
+      "listen_from": 817,
+      "locate": null,
+      "explain": null,
+      "description": null,
+      "gap_fill_in_blank": null,
+      "single_choice_radio": null,
+      "selection": [
+        {
+          "text": "The Pond",
+          "answer": "B"
+        }
+      ],
+      "mutilple_choice": null,
+      "selection_option": [
+        {
+          "option": "A"
+        },
+        {
+          "option": "B"
+        },
+        {
+          "option": "C"
+        },
+        {
+          "option": "D"
+        },
+        {
+          "option": "E"
+        },
+        {
+          "option": "F"
+        },
+        {
+          "option": "G"
+        },
+        {
+          "option": "H"
+        }
+      ],
+      "user_created": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "user_updated": "25f75627-cfcd-492d-add1-8f36b5e2aecb",
+      "date_created": "2024-07-17T20:31:16.233+07:00",
+      "date_updated": "2024-07-19T11:34:30.75+07:00",
+      "instruction": null,
+      "writing_logical_frame": null,
+      "writing_graph_image": null,
+      "writing_graph_description": null,
+      "writing_graph_type": null,
+      "time_limit": null,
+      "audio_url": null,
+      "min_words": 0,
+      "max_words": 0
+    }
+  ],
+  "vocabs": [],
+  "listen_from": 443,
+  "listen_to": 878,
+  "instruction": null
+}
