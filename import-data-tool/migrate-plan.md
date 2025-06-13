@@ -28,7 +28,7 @@
 ## Quy trình xử lý Backend
 
 ### 3. Prepare Data
-Chuyển data từ JSON cũ về cấu trúc AI có thể dễ dàng đọc được:
+Phân tích cấu trúc cũ và xác định các thông tin cần thiết:
 - Xác định vị trí các câu hỏi, câu trả lời từ cấu trúc JSON cũ
 - Xác định content (bài đọc) từ cấu trúc JSON cũ
 - Xác định instruction từ cấu trúc JSON cũ

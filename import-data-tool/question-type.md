@@ -1,5 +1,5 @@
 # Question Set Type
-MULTIPLE_CHOICE_ONE: Multiple choice with one answer
+SINGLE_CHOICE: Multiple choice with one answer
 MULTIPLE_CHOICE_MANY: Multiple choice with more than one answer
 SINGLE_CHOICE: Identifying Information (TRUE/FALSE/NOT GIVEN or YES/NO/NOT GIVEN)
 NOTE_COMPLETION: Drag-drop to complete structured notes
