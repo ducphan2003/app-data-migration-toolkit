@@ -76,10 +76,10 @@ Chuyển data từ bước 3 về dạng JSON:
      - Reject hoặc retry nếu có vấn đề
 
 2. **Thiết lập cơ sở dữ liệu**:
-   - Tạo bảng `import_proccess` để lưu trữ:
+   - Tạo bảng `migrate_process` để lưu trữ:
      - ID của quá trình import
      - Status của quá trình
-     - Result data
+     - Result của quá trình
      - Các thông tin log và error messages
 
 3. **Xây dựng các API Backend cơ bản**:

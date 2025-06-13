@@ -1,115 +1,20 @@
-TASK_TYPE_LRGR_TASK_1                       = "LR_GR_TASK_1"
-TASK_TYPE_UPGRADE_TASK_1                    = "UPGRADE_TASK_1"
-TASK_TYPE_TRCC_TASK_1                       = "TRCC_TASK_1"
-TASK_TYPE_BAND_SCORE_TASK_1                 = "BAND_SCORE_TASK_1"
-TASK_TYPE_LRGR_MAP_TASK_1                   = "LR_GR_MAP_TASK_1"
-TASK_TYPE_LRGR_PROCESS_TASK_1               = "LR_GR_PROCESS_TASK_1"
-TASK_TYPE_UPGRADE_MAP_TASK_1                = "UPGRADE_MAP_TASK_1"
-TASK_TYPE_UPGRADE_PROCESS_TASK_1            = "UPGRADE_PROCESS_TASK_1"
-TASK_TYPE_TRCC_MAP_TASK_1                   = "TRCC_MAP_TASK_1"
-TASK_TYPE_TRCC_PROCESS_TASK_1               = "TRCC_PROCESS_TASK_1"
-TASK_TYPE_BAND_SCORE_MAP_PROCESS_TASK_1     = "BAND_SCORE_MAP_PROCESS_TASK_1"
-TASK_TYPE_LRGR_TASK_2                       = "LR_GR"
-TASK_TYPE_LRGR_STEP_1_TASK_2                = "LR_GR_STEP_1"
-TASK_TYPE_LRGR_STEP_2_TASK_2                = "LR_GR_STEP_2"
-TASK_TYPE_LRGR_STEP_3_TASK_2                = "LR_GR_STEP_3"
-TASK_TYPE_UPGRADE_TASK_2                    = "UPGRADE"
-TASK_TYPE_TRCC_TASK_2                       = "TRCC"
-ACTION_PRE_TRCC_COMMENT_TASK_2              = "TRCC_TASK_2"
-TASK_TYPE_TRCC_CAUSE_SOLUTION_TASK_2        = "TRCC_CAUSE_SOLUTION"
-TASK_TYPE_TRCC_CAUSE_PROBLEM_TASK_2         = "TRCC_CAUSE_PROBLEM"
-TASK_TYPE_TRCC_PROBLEM_SOLUTION_TASK_2      = "TRCC_PROBLEM_SOLUTION"
-TASK_TYPE_TRCC_ADV_DISADV_TASK_2            = "TRCC_ADV_DISADV"
-TASK_TYPE_TRCC_NEG_POS_TASK_2               = "TRCC_NEG_POS"
-TASK_TYPE_TRCC_PART_QUESTION_TASK_2         = "TRCC_PART_QUESTION"
-TASK_TYPE_TRCC_TO_WHAT_EXTENT_TASK_2        = "TRCC_2_WHAT_EXTENT"
-TASK_TYPE_TRCC_DISCUSS_VIEWS_TASK_2         = "TRCC_DISCUSS_VIEWS"
-TASK_TYPE_BAND_SCORE_TASK_2                 = "BAND_SCORE"
-TASK_TYPE_LRGR_84                           = "LR_GR_84"
-TASK_TYPE_SUGGESTION_SPEAKING_84            = "SUGGESTION_SPEAKING_84"
-TASK_TYPE_TEACHER_GUIDELINE                 = "SUGGESTION"
-TASK_TYPE_SUGGESTION_PHRASE                 = "SUGGEST_PHRASE"
-TASK_TYPE_SUGGESTION_PHRASE_SPEAKING        = "SUGGEST_PHRASE_SPEAKING"
-TASK_TYPE_UPGRADE_SPEAKING_PART_1           = "UPGRADE_SPEAKING_PART_1"
-TASK_TYPE_LRGR_SPEAKING_PART_1              = "LRGR_SPEAKING_PART_1"
-TASK_TYPE_TACC_MAP_GENERAL_TASK_1           = "TACC_MAP_GENERAL_TASK_1"
-TASK_TYPE_TACC_PROCESS_GENERAL_TASK_1       = "TACC_PROCESS_GENERAL_TASK_1"
-TASK_TYPE_TACC_DATA_GENERAL_TASK_1          = "TACC_DATA_GENERAL_TASK_1"
-TASK_TYPE_TACC_TASK_1                       = "TACC_TASK_1"
-TASK_TYPE_TACC_MAP_TASK_1                   = "TACC_MAP_TASK_1"
-TASK_TYPE_TACC_PROCESS_TASK_1               = "TACC_PROCESS_TASK_1"  
 PG_TABLE_AI_TOKEN_LOG                       = "ai_token_log"
 PG_TABLE_MASTER_CONFIG                      = "master_config"
-TASK_TYPE_VERIFY_WRITING_ANSWER             = "verify_writing_answer"
-ACTION_TACC_VISION_GENERAL_TASK_1           = "TACC_VISION_GENERAL_TASK_1"
-TASK_TYPE_LRGR_STEP_1_TASK_1                = "LR_GR_STEP_1"
-TASK_TYPE_LRGR_STEP_2_TASK_1                = "LR_GR_STEP_2"
-TASK_TYPE_LRGR_STEP_3_TASK_1                = "LR_GR_STEP_3"
-TASK_TYPE_CORRECT_SPEAKING_PR               = "CORRECT_SPEAKING_PR"
-TASK_TYPE_BAND_SCORE_SPEAKING_LR_GRA        = "BAND_SCORE_SPEAKING_LR_GRA"
-TASK_TYPE_BAND_SCORE_SPEAKING_FC_PR         = "BAND_SCORE_SPEAKING_FC_PR"
-
-SKILL_TYPE_WRITING          = "WRITING"
-SKILL_TYPE_SPEAKING         = "SPEAKING"
-
-NO_COMMENT_FOR_TRCC_TASK_1  = ['No', 'No Comment']
-STATUS_PENDING              = 'pending'
-STATUS_FAILED               = 'failed'
-STATUS_PASSED               = 'passed'
-MIN_WORD_ALLOWED            = 120
-PROVIDER_LANGDETECTION      = "langdetect"
-PG_TABLE_CONFIGURATION      = "configuration"
-NO_COMMENT_FOR_TRCC_TASK_1  = ['No', 'No Comment']
-
-
-PROMPTING_REF_QUIZ_ANSWER           = "quiz.answer.id"
-PROMPTING_ACTION_VERIFY_QUIZ_ANSWER = "verify_quiz_answer"
-PROMPTING_VERIFYING_ENGLISH         = "Check whether the following paragraph is English text or not. If over 50 percent of the words are correct, return \"True\" and if more than 50 percent of the words are incorrect, return \"False\". Don't explain anything:"
-PROMPTING_VERIFYING_VIOLATION       = "Check the text for violations of community or disallowed content policies, or for requests you can't fulfill? If violated, return \"<bool>True</bool><reason>[Reason for violation]</reason>\", if not, return \"<bool>False</bool>\n<reason>[Reason for violation]</reason>\". Below the passage:"
-PROMPTING_SCORE_TASK_1              =  "Persona: You're an IELTS expert focusing on estimating students' TA (Task Archievement), CC (Coherence & Cohesion), GR (Grammatical Range and Accuracy), LR (Lexical Resource) score based on a report and the official band descriptors for these 4 criteria scores. Give me the band score of 4 criteria only and nothing else."
-PROMPT_CONVERTING_TRCC_FORMAT       = "PROMPT_CONVERTING_TRCC_FORMAT"
-PROMPT_CONVERTING_TACC_FORMAT       = "PROMPT_CONVERTING_TACC_FORMAT"
-
-LOGICAL_FRAMEWORK_TRCC_CAUSE_SOLUTION_TASK_2    = "LOGICAL_FRAMEWORK_TRCC_CAUSE_SOLUTION_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_ADV_DISADV_TASK_2        = "LOGICAL_FRAMEWORK_TRCC_ADV_DISADV_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_PROBLEM_SOLUTION_TASK_2  = "LOGICAL_FRAMEWORK_TRCC_PROBLEM_SOLUTION_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_CAUSE_PROBLEM_TASK_2     = "LOGICAL_FRAMEWORK_TRCC_CAUSE_PROBLEM_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_NEG_POS_TASK_2           = "LOGICAL_FRAMEWORK_TRCC_NEG_POS_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_PART_QUESTION_TASK_2     = "LOGICAL_FRAMEWORK_TRCC_PART_QUESTION_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_2_WHAT_EXTENT_TASK_2     = "LOGICAL_FRAMEWORK_TRCC_2_WHAT_EXTENT_TASK_2"
-LOGICAL_FRAMEWORK_TRCC_DISCUSS_VIEWS_TASK_2     = "LOGICAL_FRAMEWORK_TRCC_DISCUSS_VIEWS_TASK_2"
-LOGICAL_FRAMEWORK_TACC_DATA_GENERAL_TASK_1      = "LOGICAL_FRAMEWORK_TACC_DATA_GENERAL_TASK_1"
-LOGICAL_FRAMEWORK_TACC_MAP_GENERAL_TASK_1       = "LOGICAL_FRAMEWORK_TACC_MAP_GENERAL_TASK_1"
-LOGICAL_FRAMEWORK_TACC_PROCESS_GENERAL_TASK_1   = "LOGICAL_FRAMEWORK_TACC_PROCESS_GENERAL_TASK_1"
-LOGICAL_FRAMEWORK_TACC_DATA_TASK_1              = "LOGICAL_FRAMEWORK_TACC_DATA_TASK_1"
-LOGICAL_FRAMEWORK_TACC_MAP_TASK_1               = "LOGICAL_FRAMEWORK_TACC_MAP_TASK_1"
-LOGICAL_FRAMEWORK_TACC_PROCESS_TASK_1           = "LOGICAL_FRAMEWORK_TACC_PROCESS_TASK_1"
+PG_TABLE_MIGRATE_PROCESS                    = "migrate_process"
+PG_TABLE_PART                              = "part"
+PG_TABLE_QUESTION_SET                       = "question_set"
+PG_TABLE_QUIZ                              = "quiz"
+PG_TABLE_QUIZ_PART                         = "quiz_part"
+PG_TABLE_QUESTION                          = "question"
 
 VISION_TYPE_IMAGE       = "image"
 VISION_TYPE_DOCUMENT    = "document"
 PDF_FILE_TYPE           = "application/pdf"
 
 
-
-
 DEFAULT_VALUE       = "default"
 CONFIG_FILE_PATH    = "./keys/config.json"
 DEFAULT_CACHE_TIME  = 600
-
-RABBITMQ_EXCHANGE               = "prompting_exchange"
-RABBITMQ_QUEUE_TASKS            = "prompting_tasks"
-RABBITMQ_QUEUE_RESULTS          = "prompting_results"
-RABBITMQ_DLX                    = "prompting_dlx"
-RABBITMQ_DLQ                    = "prompting_dlq"
-RABBITMQ_QUEUE_RETRY            = "prompting_retry"
-RABBITMQ_RETRY_DELAY_MS         = 5
-RABBITMQ_MAX_RETRY_COUNT        = 3
-
-
-TEXT_TO_SPEECH_LANGUAGE_CODE   = "en-US"
-TEXT_TO_SPEECH_VOICE_NAME      = "en-US-Standard-I"
-TEXT_TO_SPEECH_SSML_FORMAT     = "<speak>  <phoneme alphabet=\"ipa\" ph=\"{ssml_text}\">{text}</phoneme> </speak>"
-
 
 URL_PREFIX    = "/v1"
 
@@ -118,18 +23,6 @@ MASTER_CONFIG_ERROR_LABEL           = "ERROR_LABEL"
 MASTER_CONFIG_ERROR_OTHER_TYPE_ID   = 29
 MASTER_CONFIG_STATUS_PUBLISHED      = 1
 MASTER_CONFIG_STATUS_UNPUBLISHED    = 0
-
-CLAUDE_SYSTEM_CONFIG = lambda documentation: [
-    {
-        "type": "text",
-        "text": documentation,
-        "cache_control": {"type": "ephemeral"}
-    }
-] if documentation else ""
-
-
-CLASS_TYPE_LRGR              = {"1": "grammar", "2": "vocabulary"}
-CLASS_TYPE_LRGR_DEFAULT      = CLASS_TYPE_LRGR["1"]
 
 DEFAULT_MAX_TOKENS = 8192
 DEFAULT_MAX_REASONING_TOKENS = 2000

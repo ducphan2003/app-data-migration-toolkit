@@ -6,10 +6,12 @@ from flask_jwt_extended import JWTManager
 
 from app.controllers import (
     create_migrate_controllers,
+    create_quiz_controllers,
 )
 
 from app.repositories import (
     MigrateRepository,
+    QuizRepository,
 )
 
 from app.utils import (
@@ -23,6 +25,7 @@ from config.config import app_config
 
 def create_app():
     app = Flask(__name__)
+
     CORS(app, resources={
         r"/*": {
             "origins": ["*"],
@@ -53,11 +56,15 @@ def create_app():
 
     with db_session() as session:
         migrate_repo = MigrateRepository(session, redis_client)
+        quiz_repo = QuizRepository(session)
 
         #Initialize services
         app.register_blueprint(
             create_migrate_controllers(migrate_repo), 
             url_prefix=const.URL_PREFIX
         )
-
+        app.register_blueprint(
+            create_quiz_controllers(quiz_repo), 
+            url_prefix=const.URL_PREFIX
+        )
     return app

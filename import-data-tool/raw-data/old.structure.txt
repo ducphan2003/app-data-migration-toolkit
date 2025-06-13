@@ -1,0 +1,22 @@
+Quiz (bài thi)
+|-- id: 530
+|-- parts[] (các phần của bài thi)
+    |-- Part 1 (Section 1)
+        |-- id: 602
+        |-- title: "Section 1" 
+        |-- content: <nội dung bài nghe dạng HTML>
+        |-- questions[]
+            |-- Question 1, question_type: "FILL_BLANK"
+            |-- Question 2-10, question_type: "SINGLE_SELECTION"
+    |-- Part 2 (Section 2)  
+        |-- questions[]
+            |-- Question 11-14, question_type: MATCHING_INFO (multiple choice)
+            |-- Question 15-20, question_type: FILL_BLANK (matching)
+    |-- Part 3 (Section 3)
+        |-- questions[]
+            |-- Question 21-22, question_type: MULTIPLE_CHOICE_MANY (multiple answers)
+            |-- Question 23-27, question_type: YES_NO (matching)
+            |-- Question 28-30, question_type: MULTIPLE_CHOICE_ONE (multiple choice)
+    |-- Part 4 (Section 4)
+        |-- questions[]
+            |-- Question 31-40: FILL_BLANK
