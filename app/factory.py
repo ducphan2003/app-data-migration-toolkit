@@ -51,11 +51,9 @@ def create_app():
         response.status_code = 200
         return response
     
-    redis_client = get_redis_client()
-
 
     with db_session() as session:
-        migrate_repo = MigrateRepository(session, redis_client)
+        migrate_repo = MigrateRepository(session)
         quiz_repo = QuizRepository(session)
 
         #Initialize services
