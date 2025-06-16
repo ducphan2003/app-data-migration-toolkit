@@ -100,41 +100,51 @@ async def test_migration_workflow():
         
         # Kiểm tra kết quả
         logger.info("=== MIGRATION WORKFLOW RESULTS ===")
-        logger.info(f"Status: {final_state['status']}")
-        logger.info(f"Progress: {final_state['progress_percentage']}%")
-        logger.info(f"Quality Score: {final_state['quality_metrics']['quality_score']}")
-        logger.info(f"Total Questions: {final_state['quality_metrics']['total_questions']}")
-        logger.info(f"Successfully Mapped: {final_state['quality_metrics']['successfully_mapped']}")
-        logger.info(f"Failed Mappings: {final_state['quality_metrics']['failed_mappings']}")
-        logger.info(f"Processing Time: {final_state['quality_metrics']['processing_time']:.2f}s")
+        logger.info(f"Status: {final_state.get('status', 'unknown')}")
+        logger.info(f"Progress: {final_state.get('progress_percentage', 0)}%")
         
-        if final_state['errors']:
-            logger.error(f"Errors: {final_state['errors']}")
+        quality_metrics = final_state.get('quality_metrics', {})
+        logger.info(f"Quality Score: {quality_metrics.get('quality_score', 0)}")
+        logger.info(f"Total Questions: {quality_metrics.get('total_questions', 0)}")
+        logger.info(f"Successfully Mapped: {quality_metrics.get('successfully_mapped', 0)}")
+        logger.info(f"Failed Mappings: {quality_metrics.get('failed_mappings', 0)}")
+        logger.info(f"Processing Time: {quality_metrics.get('processing_time', 0):.2f}s")
+        
+        errors = final_state.get('errors', [])
+        if errors:
+            logger.error(f"Errors: {errors}")
             
-        if final_state['warnings']:
-            logger.warning(f"Warnings: {final_state['warnings']}")
+        warnings = final_state.get('warnings', [])
+        if warnings:
+            logger.warning(f"Warnings: {warnings}")
         
         # In ra processing logs
         logger.info("=== PROCESSING LOGS ===")
-        for log_entry in final_state['processing_logs']:
-            level = log_entry['level'].upper()
-            timestamp = log_entry['timestamp']
-            message = log_entry['message']
+        processing_logs = final_state.get('processing_logs', [])
+        for log_entry in processing_logs:
+            level = log_entry.get('level', 'info').upper()
+            timestamp = log_entry.get('timestamp', 'unknown')
+            message = log_entry.get('message', 'no message')
             logger.info(f"[{level}] {timestamp}: {message}")
         
         # In ra final result (nếu có)
-        if final_state['final_result']:
+        final_result = final_state.get('final_result')
+        if final_result:
             logger.info("=== FINAL RESULT STRUCTURE ===")
-            quiz_data = final_state['final_result']['quiz']
-            logger.info(f"Quiz Title: {quiz_data['title']}")
-            logger.info(f"Quiz Type: {quiz_data['type']}")
-            logger.info(f"Total Parts: {len(quiz_data['parts'])}")
+            quiz_data = final_result.get('quiz', {})
+            logger.info(f"Quiz Title: {quiz_data.get('title', 'unknown')}")
+            logger.info(f"Quiz Type: {quiz_data.get('type', 'unknown')}")
             
-            for i, part in enumerate(quiz_data['parts'], 1):
-                logger.info(f"  Part {i}: {part['title']}")
-                logger.info(f"    Question Sets: {len(part['question_sets'])}")
-                for j, qs in enumerate(part['question_sets'], 1):
-                    logger.info(f"      QS {j}: {qs['type']} ({len(qs['questions'])} questions)")
+            parts = quiz_data.get('parts', [])
+            logger.info(f"Total Parts: {len(parts)}")
+            
+            for i, part in enumerate(parts, 1):
+                logger.info(f"  Part {i}: {part.get('title', 'unknown')}")
+                question_sets = part.get('question_sets', [])
+                logger.info(f"    Question Sets: {len(question_sets)}")
+                for j, qs in enumerate(question_sets, 1):
+                    questions = qs.get('questions', [])
+                    logger.info(f"      QS {j}: {qs.get('type', 'unknown')} ({len(questions)} questions)")
         
         logger.info("Migration workflow test completed successfully!")
         return final_state
@@ -154,11 +164,15 @@ def main():
         print("\n" + "="*50)
         print("MIGRATION WORKFLOW TEST COMPLETED")
         print("="*50)
-        print(f"Final Status: {result['status']}")
-        print(f"Quality Score: {result['quality_metrics']['quality_score']}")
-        print(f"Processing Time: {result['quality_metrics']['processing_time']:.2f}s")
         
-        if result['status'] == 'completed':
+        status = result.get('status', 'unknown')
+        quality_metrics = result.get('quality_metrics', {})
+        
+        print(f"Final Status: {status}")
+        print(f"Quality Score: {quality_metrics.get('quality_score', 0)}")
+        print(f"Processing Time: {quality_metrics.get('processing_time', 0):.2f}s")
+        
+        if status == 'completed':
             print("✅ Test PASSED!")
         else:
             print("❌ Test FAILED!")

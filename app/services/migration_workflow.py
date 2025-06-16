@@ -190,14 +190,18 @@ class MigrationWorkflow:
         """
         Quyết định bước tiếp theo sau analyze node
         """
-        if state["status"] == MigrationStatus.FAILED:
-            if state["retry_count"] < state["max_retries"]:
-                state["retry_count"] += 1
+        actual_state = self._extract_actual_state(state)
+        
+        if actual_state.get("status") == MigrationStatus.FAILED:
+            retry_count = actual_state.get("retry_count", 0)
+            max_retries = actual_state.get("max_retries", 3)
+            if retry_count < max_retries:
+                actual_state["retry_count"] = retry_count + 1
                 return "retry"
             else:
                 return "error"
         
-        if state["analyzed_data"] is None:
+        if actual_state.get("analyzed_data") is None:
             return "error"
             
         return "continue"
@@ -206,19 +210,27 @@ class MigrationWorkflow:
         """
         Quyết định bước tiếp theo sau mapping node
         """
-        if state["status"] == MigrationStatus.FAILED:
-            if state["retry_count"] < state["max_retries"]:
-                state["retry_count"] += 1
+        actual_state = self._extract_actual_state(state)
+        
+        if actual_state.get("status") == MigrationStatus.FAILED:
+            retry_count = actual_state.get("retry_count", 0)
+            max_retries = actual_state.get("max_retries", 3)
+            if retry_count < max_retries:
+                actual_state["retry_count"] = retry_count + 1
                 return "retry"
             else:
                 return "error"
         
-        if state["mapped_data"] is None:
+        if actual_state.get("mapped_data") is None:
             return "error"
             
         # Kiểm tra quality threshold
-        if state["quality_metrics"]["failed_mappings"] > 0:
-            failed_ratio = state["quality_metrics"]["failed_mappings"] / state["total_parts"]
+        quality_metrics = actual_state.get("quality_metrics", {})
+        failed_mappings = quality_metrics.get("failed_mappings", 0)
+        total_parts = actual_state.get("total_parts", 1)
+        
+        if failed_mappings > 0:
+            failed_ratio = failed_mappings / total_parts
             if failed_ratio > 0.5:  # Nếu quá 50% parts failed
                 return "error"
         
@@ -228,21 +240,31 @@ class MigrationWorkflow:
         """
         Quyết định bước tiếp theo sau validation node
         """
-        if state["status"] == MigrationStatus.FAILED:
-            if state["retry_count"] < state["max_retries"]:
-                state["retry_count"] += 1
+        actual_state = self._extract_actual_state(state)
+        
+        if actual_state.get("status") == MigrationStatus.FAILED:
+            retry_count = actual_state.get("retry_count", 0)
+            max_retries = actual_state.get("max_retries", 3)
+            if retry_count < max_retries:
+                actual_state["retry_count"] = retry_count + 1
                 return "retry"
             else:
                 return "error"
         
-        if state["validated_data"] is None:
+        if actual_state.get("validated_data") is None:
             return "error"
             
         # Kiểm tra quality score
-        quality_threshold = state["config"].get("quality_threshold", 80.0)
-        if state["quality_metrics"]["quality_score"] < quality_threshold:
-            max_errors = state["config"].get("max_validation_errors", 5)
-            if len(state["quality_metrics"]["validation_errors"]) > max_errors:
+        config = actual_state.get("config", {})
+        quality_metrics = actual_state.get("quality_metrics", {})
+        
+        quality_threshold = config.get("quality_threshold", 80.0)
+        quality_score = quality_metrics.get("quality_score", 0.0)
+        
+        if quality_score < quality_threshold:
+            max_errors = config.get("max_validation_errors", 5)
+            validation_errors = quality_metrics.get("validation_errors", [])
+            if len(validation_errors) > max_errors:
                 return "error"
         
         return "continue"
@@ -251,14 +273,19 @@ class MigrationWorkflow:
         """
         Quyết định bước tiếp theo sau save node
         """
-        if state["status"] == MigrationStatus.FAILED:
-            if state["retry_count"] < state["max_retries"]:
-                state["retry_count"] += 1
+        actual_state = self._extract_actual_state(state)
+        status = actual_state.get("status")
+        
+        if status == MigrationStatus.FAILED:
+            retry_count = actual_state.get("retry_count", 0)
+            max_retries = actual_state.get("max_retries", 3)
+            if retry_count < max_retries:
+                actual_state["retry_count"] = retry_count + 1
                 return "retry"
             else:
                 return "error"
         
-        if state["status"] == MigrationStatus.COMPLETED:
+        if status == MigrationStatus.COMPLETED:
             return "end"
             
         return "error"
@@ -267,24 +294,48 @@ class MigrationWorkflow:
         """
         Node xử lý lỗi cuối cùng
         """
-        logger.error(f"Migration failed for process {state['migrate_process_id']}")
+        actual_state = self._extract_actual_state(state)
+        migrate_process_id = actual_state.get("migrate_process_id", "unknown")
+        logger.error(f"Migration failed for process {migrate_process_id}")
         
-        state["status"] = MigrationStatus.FAILED
-        state["current_step"] = "error_handling"
+        actual_state["status"] = MigrationStatus.FAILED
+        actual_state["current_step"] = "error_handling"
         
         # Log lỗi cuối cùng
-        state["processing_logs"].append({
+        processing_logs = actual_state.get("processing_logs", [])
+        retry_count = actual_state.get("retry_count", 0)
+        errors = actual_state.get("errors", [])
+        warnings = actual_state.get("warnings", [])
+        
+        processing_logs.append({
             "step": "error_handling",
             "timestamp": datetime.utcnow().isoformat(),
-            "message": f"Migration failed after {state['retry_count']} retries",
+            "message": f"Migration failed after {retry_count} retries",
             "level": "error",
             "details": {
-                "errors": state["errors"],
-                "warnings": state["warnings"],
-                "retry_count": state["retry_count"]
+                "errors": errors,
+                "warnings": warnings,
+                "retry_count": retry_count
             }
         })
         
+        actual_state["processing_logs"] = processing_logs
+        
+        return state
+    
+    def _extract_actual_state(self, state: MigrationState) -> Dict[str, Any]:
+        """
+        Extract actual state từ LangGraph state wrapper
+        LangGraph có thể wrap state trong node key như {'validation': {...}}
+        """
+        # Nếu state có key là node names, extract actual state
+        node_keys = ['analyze', 'mapping', 'validation', 'save', 'error_handler']
+        
+        for key in node_keys:
+            if key in state and isinstance(state[key], dict):
+                return state[key]
+        
+        # Nếu không có wrapper, return state as is
         return state
     
     async def _update_database_progress(self, state: MigrationState) -> None:
@@ -292,50 +343,62 @@ class MigrationWorkflow:
         Cập nhật tiến độ vào database
         """
         try:
-            migrate_process_id = state["migrate_process_id"]
-            current_step = state["current_step"]
+            # Extract actual state từ LangGraph wrapper
+            actual_state = self._extract_actual_state(state)
+            
+            migrate_process_id = actual_state.get("migrate_process_id")
+            current_step = actual_state.get("current_step")
+            
+            if not migrate_process_id:
+                logger.warning("migrate_process_id not found in state")
+                logger.debug(f"State keys: {list(state.keys())}")
+                logger.debug(f"Actual state keys: {list(actual_state.keys())}")
+                return
             
             # Cập nhật theo từng step
-            if current_step == "analyze" and state.get("analyzed_data"):
+            if current_step == "analyze" and actual_state.get("analyzed_data"):
                 self.migrate_repo.update_prepare_data_result(
                     migrate_process_id, 
-                    state["analyzed_data"]
+                    actual_state.get("analyzed_data")
                 )
             
-            elif current_step == "mapping" and state.get("mapped_data"):
+            elif current_step == "mapping" and actual_state.get("mapped_data"):
                 self.migrate_repo.update_mapping_structure_result(
                     migrate_process_id, 
-                    state["mapped_data"]
+                    actual_state.get("mapped_data")
                 )
             
-            elif current_step == "validation" and state.get("validated_data"):
+            elif current_step == "validation" and actual_state.get("validated_data"):
+                quality_metrics = actual_state.get("quality_metrics", {})
                 validation_result = {
-                    "status": "success" if state["status"] != MigrationStatus.FAILED else "failed",
-                    "quality_score": state["quality_metrics"]["quality_score"],
-                    "validation_errors": state["quality_metrics"]["validation_errors"],
-                    "processing_logs": state["processing_logs"]
+                    "status": "success" if actual_state.get("status") != MigrationStatus.FAILED else "failed",
+                    "quality_score": quality_metrics.get("quality_score", 0.0),
+                    "validation_errors": quality_metrics.get("validation_errors", []),
+                    "processing_logs": actual_state.get("processing_logs", [])
                 }
                 self.migrate_repo.update_validate_data_result(
                     migrate_process_id, 
                     validation_result
                 )
             
-            elif current_step == "saving" and state.get("final_result"):
+            elif current_step == "saving" and actual_state.get("final_result"):
                 self.migrate_repo.update_final_result(
                     migrate_process_id, 
-                    state["final_result"]
+                    actual_state.get("final_result")
                 )
             
-            elif state["status"] == MigrationStatus.FAILED:
+            elif actual_state.get("status") == MigrationStatus.FAILED:
                 error_details = {
-                    "errors": state["errors"],
-                    "warnings": state["warnings"],
-                    "processing_logs": state["processing_logs"],
-                    "quality_metrics": state["quality_metrics"]
+                    "errors": actual_state.get("errors", []),
+                    "warnings": actual_state.get("warnings", []),
+                    "processing_logs": actual_state.get("processing_logs", []),
+                    "quality_metrics": actual_state.get("quality_metrics", {})
                 }
+                errors = actual_state.get("errors", [])
+                error_message = f"Migration failed: {'; '.join(errors)}" if errors else "Migration failed"
                 self.migrate_repo.update_error(
                     migrate_process_id, 
-                    f"Migration failed: {'; '.join(state['errors'])}"
+                    error_message
                 )
                 
         except Exception as e:
