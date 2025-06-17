@@ -9,22 +9,223 @@
 
   ```json
   {
-    "id": "question_id",
-    "type": "SINGLE-RADIO",
-    "question_type": "MULTIPLE_CHOICE_ONE",
-    "title": "What does Eyre believe is needed for children to equal 'gifted' standards?",
-    "description": "<h2>Questions 38 - 40:</h2>\n<p>Choose the correct letter, A, B, C or D.</p>\n<p>Write the correct letter in boxes 38 - 40 on your answer sheet.</p>",
-    "single_choice_radio": [
+    "id": 1714,
+    "type": 1,
+    "mode": 0,
+    "title": "Orange 19 Reading - Test 2",
+    "status": "published",
+    "sort": null,
+    "time": 60,
+    "is_test": null,
+    "simplified_id": null,
+    "limit_submit": null,
+    "thumbnail": null,
+    "quiz_code": "",
+    "description": null,
+    "content": null,
+    "parts": [
       {
-        "text": "strict discipline from the teaching staff",
-        "correct": false
-      },
-      {
-        "text": "the development of a spirit of inquiry towards their studies",
-        "correct": true
+        "id": 1825,
+        "quiz_id": 1714,
+        "passage": 3,
+        "title": "Part 3",
+        "sort": 3,
+        "time": null,
+        "content": "<h3>READING PASSAGE 3</h3>\n<p>You should spend about 20 minutes on Questions 38 - 40 which are based on Reading Passage 3 below.</p>\n<h2>Educational Excellence and Giftedness</h2>\n<p>Dr. Sarah Eyre's research on educational development has revealed important insights about how children achieve academic excellence. According to Eyre, traditional methods of identifying 'gifted' students often focus too heavily on standardized test scores and fail to recognize the potential in all children. She argues that with the right educational environment, most children can achieve standards typically associated with 'gifted' students. Eyre believes that the key lies not in strict discipline or rigid teaching methods, but in fostering a spirit of inquiry and encouraging students to question and explore. This approach, she suggests, helps develop critical thinking skills that are essential for academic success.</p>",
+        "simplified_content": null,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.822+07:00",
+        "date_updated": "2024-09-10T18:22:31.987+07:00",
+        "explanations": [],
+        "questions": [
+          {
+            "id": 10883,
+            "quiz_id": 0,
+            "type": "SINGLE-RADIO",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "What does Eyre believe is needed for children to equal 'gifted' standards?",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 10,
+            "order": 38,
+            "part_id": 1825,
+            "time_to_think": null,
+            "listen_from": null,
+            "locate": null,
+            "explain": "<div>Bước 1: Hiểu và tìm keywords trong câu hỏi: \"What does Eyre believe is needed for children to equal 'gifted' standards?\" - Eyre tin rằng điều gì cần thiết để trẻ em đạt tiêu chuẩn 'năng khiếu'? Bước 2: Tìm thông tin trong đoạn văn: \"Eyre believes that the key lies not in strict discipline or rigid teaching methods, but in fostering a spirit of inquiry and encouraging students to question and explore.\" Bước 3: Phân tích các lựa chọn: A (strict discipline) bị loại vì bài nói \"not in strict discipline\", B đúng vì khớp với \"fostering a spirit of inquiry\". Bước 4: Đáp án: B</div>",
+            "description": "<h2>Questions 38 - 40:</h2>\n<p>Choose the correct letter, A, B, C or D.</p>\n<p>Write the correct letter in boxes 38 - 40 on your answer sheet.</p>",
+            "gap_fill_in_blank": null,
+            "single_choice_radio": [
+              {
+                "text": "strict discipline from the teaching staff",
+                "correct": false
+              },
+              {
+                "text": "the development of a spirit of inquiry towards their studies",
+                "correct": true
+              },
+              {
+                "text": "higher standardized test scores",
+                "correct": false
+              },
+              {
+                "text": "more rigid teaching methods",
+                "correct": false
+              }
+            ],
+            "selection": null,
+            "mutilple_choice": null,
+            "selection_option": null,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_created": "2024-07-14T07:34:53.97+07:00",
+            "date_updated": "2024-09-10T18:22:32.059+07:00",
+            "instruction": null,
+            "writing_logical_frame": null,
+            "writing_graph_image": null,
+            "writing_graph_description": null,
+            "writing_graph_type": null,
+            "time_limit": null,
+            "audio_url": null,
+            "min_words": 0,
+            "max_words": 0
+          },
+          {
+            "id": 10884,
+            "quiz_id": 0,
+            "type": "SINGLE-RADIO",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "According to the passage, traditional methods of identifying gifted students are criticized for:",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 11,
+            "order": 39,
+            "part_id": 1825,
+            "time_to_think": null,
+            "listen_from": null,
+            "locate": null,
+            "explain": "<div>Bước 1: Hiểu câu hỏi: \"According to the passage, traditional methods of identifying gifted students are criticized for:\" - Theo đoạn văn, các phương pháp truyền thống xác định học sinh năng khiếu bị chỉ trích vì điều gì? Bước 2: Tìm thông tin: \"traditional methods of identifying 'gifted' students often focus too heavily on standardized test scores and fail to recognize the potential in all children.\" Bước 3: Phân tích: focusing too heavily on test scores = over-relying on standardized testing. Bước 4: Đáp án: C</div>",
+            "description": "<h2>Questions 38 - 40:</h2>\n<p>Choose the correct letter, A, B, C or D.</p>\n<p>Write the correct letter in boxes 38 - 40 on your answer sheet.</p>",
+            "gap_fill_in_blank": null,
+            "single_choice_radio": [
+              {
+                "text": "being too expensive to implement",
+                "correct": false
+              },
+              {
+                "text": "taking too much time to complete",
+                "correct": false
+              },
+              {
+                "text": "over-relying on standardized testing",
+                "correct": true
+              },
+              {
+                "text": "requiring too much teacher training",
+                "correct": false
+              }
+            ],
+            "selection": null,
+            "mutilple_choice": null,
+            "selection_option": null,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_created": "2024-07-14T07:34:53.988+07:00",
+            "date_updated": "2024-09-10T18:22:32.093+07:00",
+            "instruction": null,
+            "writing_logical_frame": null,
+            "writing_graph_image": null,
+            "writing_graph_description": null,
+            "writing_graph_type": null,
+            "time_limit": null,
+            "audio_url": null,
+            "min_words": 0,
+            "max_words": 0
+          },
+          {
+            "id": 10885,
+            "quiz_id": 0,
+            "type": "SINGLE-RADIO",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "The main purpose of Eyre's educational approach is to:",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 12,
+            "order": 40,
+            "part_id": 1825,
+            "time_to_think": null,
+            "listen_from": null,
+            "locate": null,
+            "explain": "<div>Bước 1: Hiểu câu hỏi: \"The main purpose of Eyre's educational approach is to:\" - Mục đích chính của phương pháp giáo dục của Eyre là gì? Bước 2: Tìm thông tin: \"This approach, she suggests, helps develop critical thinking skills that are essential for academic success.\" Bước 3: Phân tích: develop critical thinking skills = foster critical thinking abilities. Bước 4: Đáp án: D</div>",
+            "description": "<h2>Questions 38 - 40:</h2>\n<p>Choose the correct letter, A, B, C or D.</p>\n<p>Write the correct letter in boxes 38 - 40 on your answer sheet.</p>",
+            "gap_fill_in_blank": null,
+            "single_choice_radio": [
+              {
+                "text": "increase test scores dramatically",
+                "correct": false
+              },
+              {
+                "text": "reduce the workload for teachers",
+                "correct": false
+              },
+              {
+                "text": "identify truly gifted students",
+                "correct": false
+              },
+              {
+                "text": "foster critical thinking abilities",
+                "correct": true
+              }
+            ],
+            "selection": null,
+            "mutilple_choice": null,
+            "selection_option": null,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_created": "2024-07-14T07:34:53.999+07:00",
+            "date_updated": "2024-09-10T18:22:32.105+07:00",
+            "instruction": null,
+            "writing_logical_frame": null,
+            "writing_graph_image": null,
+            "writing_graph_description": null,
+            "writing_graph_type": null,
+            "time_limit": null,
+            "audio_url": null,
+            "min_words": 0,
+            "max_words": 0
+          }
+        ],
+        "vocabs": [],
+        "listen_from": null,
+        "listen_to": null,
+        "instruction": null
       }
     ],
-    "explain": "<div>Bước 1: Hiểu và tìm keywords trong câu hỏi...</div>"
+    "tags": null,
+    "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+    "user_updated": "20e3add8-f7bd-488d-b669-d42f50e7f8e9",
+    "date_created": "2024-07-14T07:25:51.829+07:00",
+    "date_updated": "2025-06-09T16:38:06.591517+07:00",
+    "quiz_part": null,
+    "quiz_type": 4,
+    "mock_test_id": 46,
+    "mock_test_type": 1,
+    "listening": null,
+    "instruction": null,
+    "question": null,
+    "samples": null,
+    "vote_count": 77,
+    "total_submitted": 14508,
+    "writing_task_type": null,
+    "extra": {
+      "user_attempt_count": null
+    },
+    "speaking_part_type": null,
+    "speaking_topic_id": null,
+    "speaking_topic": null
   }
   ```
 
@@ -32,23 +233,127 @@
 
   ```json
   {
-    "id": 1,
-    "part_id": "part_id",
-    "question_type": "SINGLE_CHOICE",
-    "question_count": "number of questions in the set",
-    "title": "Questions {from}-{to}",
-    "description": "Take from the old question.description of the first question in the group",
-    "content": "",
-    "option_title": "",
-    "options": null,
-    "allow_reuse": false,
-    "max_selections": 0,
+    "quiz": {
+      "id": 1714,
+      "type": 1,
+      "mode": 0,
+      "title": "Orange 19 Reading - Test 2",
+      "status": "published",
+      "sort": null,
+      "time": 60,
+      "is_test": null,
+      "simplified_id": null,
+      "limit_submit": null,
+      "thumbnail": null,
+      "quiz_code": "",
+      "description": null,
+      "content": null,
+      "tags": null,
+      "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+      "user_updated": "20e3add8-f7bd-488d-b669-d42f50e7f8e9",
+      "date_created": "2024-07-14T07:25:51.829+07:00",
+      "date_updated": "2025-06-09T16:38:06.591517+07:00",
+      "quiz_part": null,
+      "quiz_type": 4,
+      "mock_test_id": 46,
+      "mock_test_type": 1,
+      "listening": null,
+      "instruction": null,
+      "question": null,
+      "samples": null,
+      "vote_count": 0,
+      "total_submitted": 0,
+      "writing_task_type": null,
+      "extra": {
+        "user_attempt_count": null
+      },
+      "speaking_part_type": null,
+      "speaking_topic_id": null,
+      "speaking_topic": null
+    },
+    "parts": [
+      {
+        "id": 1825,
+        "sort": 3,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.822+07:00",
+        "date_updated": "2024-09-10T18:22:31.987+07:00",
+        "title": "Part 3",
+        "order": null,
+        "content": "<h3>READING PASSAGE 3</h3>\n<p>You should spend about 20 minutes on Questions 38 - 40 which are based on Reading Passage 3 below.</p>\n<h2>Educational Excellence and Giftedness</h2>\n<p>Dr. Sarah Eyre's research on educational development has revealed important insights about how children achieve academic excellence. According to Eyre, traditional methods of identifying 'gifted' students often focus too heavily on standardized test scores and fail to recognize the potential in all children. She argues that with the right educational environment, most children can achieve standards typically associated with 'gifted' students. Eyre believes that the key lies not in strict discipline or rigid teaching methods, but in fostering a spirit of inquiry and encouraging students to question and explore. This approach, she suggests, helps develop critical thinking skills that are essential for academic success.</p>",
+        "quiz": 1714,
+        "time": null,
+        "passage": 3,
+        "simplified_content": null,
+        "question_count": 0,
+        "listen_from": null,
+        "listen_to": null,
+        "instruction": null,
+        "task_instruction": null,
+        "transcription": null,
+        "file_id": null
+      }
+    ],
+    "question_sets": [
+      {
+        "id": 1,
+        "part_id": 1825,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.97+07:00",
+        "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+        "date_updated": "2024-09-10T18:22:32.105+07:00",
+        "question_type": "SINGLE_CHOICE",
+        "question_count": 3,
+        "title": "Questions 38-40",
+        "description": "<h2>Questions 38 - 40:</h2>\n<p>Choose the correct letter, A, B, C or D.</p>\n<p>Write the correct letter in boxes 38 - 40 on your answer sheet.</p>",
+        "content": "",
+        "option_title": "",
+        "options": null,
+        "allow_reuse": false,
+        "max_selections": 0,
+        "sort": 10
+      }
+    ],
     "questions": [
       {
         "id": 1,
-        "question_type": "SINGLE-CHOICE",
-        "correct_answer": "C",
+        "status": "published",
+        "sort": 10,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.97+07:00",
+        "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+        "date_updated": "2024-09-10T18:22:32.059+07:00",
+        "title": null,
+        "content": null,
+        "locate": null,
+        "order": 38,
+        "explain": "<div>Bước 1: Hiểu và tìm keywords trong câu hỏi: \"What does Eyre believe is needed for children to equal 'gifted' standards?\" - Eyre tin rằng điều gì cần thiết để trẻ em đạt tiêu chuẩn 'năng khiếu'? Bước 2: Tìm thông tin trong đoạn văn: \"Eyre believes that the key lies not in strict discipline or rigid teaching methods, but in fostering a spirit of inquiry and encouraging students to question and explore.\" Bước 3: Phân tích các lựa chọn: A (strict discipline) bị loại vì bài nói \"not in strict discipline\", B đúng vì khớp với \"fostering a spirit of inquiry\". Bước 4: Đáp án: B</div>",
+        "description": null,
+        "content_writing": null,
+        "time_to_think": null,
+        "listen_from": null,
+        "instruction": null,
+        "writing_graph_image": null,
+        "writing_graph_description": null,
+        "writing_graph_type": null,
+        "audio_url": null,
+        "time_limit": 30,
+        "max_words": null,
+        "min_words": null,
         "text": "What does Eyre believe is needed for children to equal 'gifted' standards?",
+        "locate_info": null,
+        "quiz_id": 0,
+        "part_id": null,
+        "type": "",
+        "gap_fill_in_blank": null,
+        "single_choice_radio": null,
+        "selection": null,
+        "mutilple_choice": null,
+        "selection_option": null,
+        "question_set_id": 1,
+        "question_type": "SINGLE-CHOICE",
+        "correct_answer": "B",
+        "correct_answers": null,
         "options": [
           {
             "text": "strict discipline from the teaching staff",
@@ -57,11 +362,144 @@
           },
           {
             "text": "the development of a spirit of inquiry towards their studies",
+            "option": "B",
+            "is_correct": true
+          },
+          {
+            "text": "higher standardized test scores",
+            "option": "C",
+            "is_correct": false
+          },
+          {
+            "text": "more rigid teaching methods",
+            "option": "D",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "status": "published",
+        "sort": 11,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.988+07:00",
+        "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+        "date_updated": "2024-09-10T18:22:32.093+07:00",
+        "title": null,
+        "content": null,
+        "locate": null,
+        "order": 39,
+        "explain": "<div>Bước 1: Hiểu câu hỏi: \"According to the passage, traditional methods of identifying gifted students are criticized for:\" - Theo đoạn văn, các phương pháp truyền thống xác định học sinh năng khiếu bị chỉ trích vì điều gì? Bước 2: Tìm thông tin: \"traditional methods of identifying 'gifted' students often focus too heavily on standardized test scores and fail to recognize the potential in all children.\" Bước 3: Phân tích: focusing too heavily on test scores = over-relying on standardized testing. Bước 4: Đáp án: C</div>",
+        "description": null,
+        "content_writing": null,
+        "time_to_think": null,
+        "listen_from": null,
+        "instruction": null,
+        "writing_graph_image": null,
+        "writing_graph_description": null,
+        "writing_graph_type": null,
+        "audio_url": null,
+        "time_limit": 30,
+        "max_words": null,
+        "min_words": null,
+        "text": "According to the passage, traditional methods of identifying gifted students are criticized for:",
+        "locate_info": null,
+        "quiz_id": 0,
+        "part_id": null,
+        "type": "",
+        "gap_fill_in_blank": null,
+        "single_choice_radio": null,
+        "selection": null,
+        "mutilple_choice": null,
+        "selection_option": null,
+        "question_set_id": 1,
+        "question_type": "SINGLE-CHOICE",
+        "correct_answer": "C",
+        "correct_answers": null,
+        "options": [
+          {
+            "text": "being too expensive to implement",
+            "option": "A",
+            "is_correct": false
+          },
+          {
+            "text": "taking too much time to complete",
+            "option": "B",
+            "is_correct": false
+          },
+          {
+            "text": "over-relying on standardized testing",
             "option": "C",
             "is_correct": true
+          },
+          {
+            "text": "requiring too much teacher training",
+            "option": "D",
+            "is_correct": false
           }
-        ],
-        "explanation": "<div>Bước 1: Hiểu và tìm keywords trong câu hỏi...</div>"
+        ]
+      },
+      {
+        "id": 3,
+        "status": "published",
+        "sort": 12,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.999+07:00",
+        "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+        "date_updated": "2024-09-10T18:22:32.105+07:00",
+        "title": null,
+        "content": null,
+        "locate": null,
+        "order": 40,
+        "explain": "<div>Bước 1: Hiểu câu hỏi: \"The main purpose of Eyre's educational approach is to:\" - Mục đích chính của phương pháp giáo dục của Eyre là gì? Bước 2: Tìm thông tin: \"This approach, she suggests, helps develop critical thinking skills that are essential for academic success.\" Bước 3: Phân tích: develop critical thinking skills = foster critical thinking abilities. Bước 4: Đáp án: D</div>",
+        "description": null,
+        "content_writing": null,
+        "time_to_think": null,
+        "listen_from": null,
+        "instruction": null,
+        "writing_graph_image": null,
+        "writing_graph_description": null,
+        "writing_graph_type": null,
+        "audio_url": null,
+        "time_limit": 30,
+        "max_words": null,
+        "min_words": null,
+        "text": "The main purpose of Eyre's educational approach is to:",
+        "locate_info": null,
+        "quiz_id": 0,
+        "part_id": null,
+        "type": "",
+        "gap_fill_in_blank": null,
+        "single_choice_radio": null,
+        "selection": null,
+        "mutilple_choice": null,
+        "selection_option": null,
+        "question_set_id": 1,
+        "question_type": "SINGLE-CHOICE",
+        "correct_answer": "D",
+        "correct_answers": null,
+        "options": [
+          {
+            "text": "increase test scores dramatically",
+            "option": "A",
+            "is_correct": false
+          },
+          {
+            "text": "reduce the workload for teachers",
+            "option": "B",
+            "is_correct": false
+          },
+          {
+            "text": "identify truly gifted students",
+            "option": "C",
+            "is_correct": false
+          },
+          {
+            "text": "foster critical thinking abilities",
+            "option": "D",
+            "is_correct": true
+          }
+        ]
       }
     ]
   }
