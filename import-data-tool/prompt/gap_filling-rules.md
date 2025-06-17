@@ -297,7 +297,9 @@
      - `question_type` is the value of question_type of the old question: question.question_type
      - `correct_answers`:
        - Take the answer from the old `{[answer][number]}` in the `gap_fill_in_blank`
-       - Always in array format
+       - Always in array format: ["answer1", "answer2"]
+       - If answer contains multiple options like "labour | labor", split into ["labour", "labor"]
+       - NEVER use string format like "labour | labor" in the array
      - `explanation`:
        - Split the old `explain` into separate parts for each question
        - Each explanation corresponds to one gap

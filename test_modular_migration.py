@@ -5,9 +5,14 @@ Test script cho modular migration workflow theo từng question type
 import asyncio
 import json
 import logging
+import os
 from datetime import datetime
+from dotenv import load_dotenv
 
 from app.services.ai_migration_agents import AIMigrationAgents
+
+# Load environment variables
+load_dotenv()
 
 # Setup logging
 logging.basicConfig(
@@ -15,6 +20,20 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+def load_api_keys():
+    """Load API keys từ environment variables"""
+    try:
+        return {
+            'openrouter_api_key': os.getenv('PROMPT_YOUR_API_OPENROUTER'),
+            'gpt_api_key': os.getenv('PROMPT_YOUR_API_GPT'),
+            'gemini_api_key': os.getenv('PROMPT_YOUR_API_GEMINI'),
+            'claude_api_key': os.getenv('PROMPT_YOUR_API_CLAUDE')
+        }
+    except Exception as e:
+        logger.warning(f"Could not load API keys: {e}")
+    
+    return {}
 
 async def test_modular_migration():
     """Test migration workflow với logic modular theo từng question type"""
@@ -30,8 +49,19 @@ async def test_modular_migration():
         print("❌ Test data file not found")
         return
     
-    # Initialize AI agents (sử dụng fallback mode)
-    agents = AIMigrationAgents()
+    # Load API keys và initialize AI agents
+    api_keys = load_api_keys()
+    
+    # Kiểm tra xem có API key nào không
+    has_api_key = any(key and key.strip() for key in api_keys.values())
+    
+    if has_api_key:
+        print("🤖 Found API keys, initializing AI agents...")
+        agents = AIMigrationAgents(**api_keys)
+    else:
+        print("⚠️  No API keys found, using fallback mode...")
+        agents = AIMigrationAgents()
+    
     print("✅ Initialized AI migration agents")
     
     # Test với part đầu tiên
@@ -81,13 +111,16 @@ async def test_modular_migration():
             
             print("✅ Migration completed successfully!")
             print(f"📊 Result summary:")
-            print(f"   - Quiz data: {bool(migration_result.get('quiz'))}")
-            print(f"   - Parts: {len(migration_result.get('parts', []))}")
+            quiz_data = migration_result.get('quiz', {})
+            parts_data = quiz_data.get('parts', [])
+            
+            print(f"   - Quiz data: {bool(quiz_data)}")
+            print(f"   - Parts: {len(parts_data)}")
             
             # Count nested question_sets and questions
             total_question_sets = 0
             total_questions = 0
-            for part in migration_result.get('parts', []):
+            for part in parts_data:
                 part_question_sets = part.get('question_sets', [])
                 total_question_sets += len(part_question_sets)
                 for qs in part_question_sets:
@@ -97,9 +130,9 @@ async def test_modular_migration():
             print(f"   - Questions: {total_questions}")
             
             # Show question sets by type (nested structure)
-            if migration_result.get('parts'):
+            if parts_data:
                 print("\n📋 Question sets created:")
-                for part_idx, part in enumerate(migration_result.get('parts', []), 1):
+                for part_idx, part in enumerate(parts_data, 1):
                     print(f"  Part {part_idx}: {part.get('title', 'Unknown')}")
                     for qs in part.get('question_sets', []):
                         print(f"   - {qs.get('question_type')}: {qs.get('title')} ({qs.get('question_count')} questions)")
@@ -116,8 +149,8 @@ async def test_modular_migration():
                 logger.error(f"Error saving result: {e}")
             
             # Show sample question set (nested structure)
-            if migration_result.get('parts') and migration_result['parts'][0].get('question_sets'):
-                sample_qs = migration_result['parts'][0]['question_sets'][0]
+            if parts_data and parts_data[0].get('question_sets'):
+                sample_qs = parts_data[0]['question_sets'][0]
                 print(f"\n📄 Sample question set ({sample_qs.get('question_type')}):")
                 print(f"   Title: {sample_qs.get('title')}")
                 print(f"   Description: {sample_qs.get('description', '')[:100]}...")
@@ -140,35 +173,35 @@ async def test_modular_migration():
     else:
         print("❌ No parts found in test data")
 
-def test_question_type_detection():
-    """Test question type detection logic"""
-    print("\n🧪 Testing question type detection...")
+# def test_question_type_detection():
+#     """Test question type detection logic"""
+#     print("\n🧪 Testing question type detection...")
     
-    # Load test data
-    try:
-        with open('import-data-tool/raw-data/reading.input-fill_blank.json', 'r', encoding='utf-8') as f:
-            test_data = json.load(f)
+#     # Load test data
+#     try:
+#         with open('import-data-tool/raw-data/reading.input-fill_blank.json', 'r', encoding='utf-8') as f:
+#             test_data = json.load(f)
         
-        agents = AIMigrationAgents()
+#         agents = AIMigrationAgents()
         
-        if test_data.get('parts'):
-            questions = test_data['parts'][0].get('questions', [])
+#         if test_data.get('parts'):
+#             questions = test_data['parts'][0].get('questions', [])
             
-            print(f"📊 Testing {len(questions)} questions:")
-            for i, question in enumerate(questions[:3]):  # Test first 3 questions
-                detected_type = agents._simple_type_detection(question)
-                print(f"   Question {i+1}:")
-                print(f"     - Type field: {question.get('type')}")
-                print(f"     - Question type: {question.get('question_type')}")
-                print(f"     - Detected: {detected_type}")
-                print(f"     - Has gap_fill_in_blank: {bool(question.get('gap_fill_in_blank'))}")
-                print(f"     - Has single_choice_radio: {bool(question.get('single_choice_radio'))}")
-                print(f"     - Has selection: {bool(question.get('selection'))}")
-                print(f"     - Has mutilple_choice: {bool(question.get('mutilple_choice'))}")
-                print()
+#             print(f"📊 Testing {len(questions)} questions:")
+#             for i, question in enumerate(questions[:3]):  # Test first 3 questions
+#                 detected_type = agents._simple_type_detection(question)
+#                 print(f"   Question {i+1}:")
+#                 print(f"     - Type field: {question.get('type')}")
+#                 print(f"     - Question type: {question.get('question_type')}")
+#                 print(f"     - Detected: {detected_type}")
+#                 print(f"     - Has gap_fill_in_blank: {bool(question.get('gap_fill_in_blank'))}")
+#                 print(f"     - Has single_choice_radio: {bool(question.get('single_choice_radio'))}")
+#                 print(f"     - Has selection: {bool(question.get('selection'))}")
+#                 print(f"     - Has mutilple_choice: {bool(question.get('mutilple_choice'))}")
+#                 print()
                 
-    except Exception as e:
-        logger.error(f"Error in question type detection test: {e}")
+#     except Exception as e:
+#         logger.error(f"Error in question type detection test: {e}")
 
 if __name__ == "__main__":
     print("=" * 60)
@@ -177,7 +210,7 @@ if __name__ == "__main__":
     
     # Run tests
     asyncio.run(test_modular_migration())
-    test_question_type_detection()
+    # test_question_type_detection()
     
     print("\n" + "=" * 60)
     print("✅ Test completed!")

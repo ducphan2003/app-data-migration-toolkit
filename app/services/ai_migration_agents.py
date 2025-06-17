@@ -166,8 +166,8 @@ class AIMigrationAgents:
                  gpt_api_key: str = None, 
                  gemini_api_key: str = None,
                  claude_api_key: str = None,
-                 provider: str = "openai",
-                 model: str = "gpt-4o-mini"):
+                 provider: str = "openrouter",
+                 model: str = "anthropic/claude-sonnet-4"):
         
         self.provider = provider
         self.model = model
@@ -180,36 +180,33 @@ class AIMigrationAgents:
             claude_api_key=claude_api_key
         )
         
-        # Load structure rules
-        self.structure_rules = self._load_structure_rules()
-        
     def _setup_llm(self, openrouter_api_key=None, gpt_api_key=None, gemini_api_key=None, claude_api_key=None):
         """Setup LLM dựa trên API keys có sẵn"""
         
         # Thử OpenRouter trước (thường có nhiều models)
-        if openrouter_api_key:
+        if openrouter_api_key and openrouter_api_key.strip():
             try:
                 from langchain_openai import ChatOpenAI
-                logger.info("Using OpenRouter API")
+                logger.info("Using OpenRouter API with anthropic/claude-sonnet-4")
                 return ChatOpenAI(
                     api_key=openrouter_api_key,
                     base_url="https://openrouter.ai/api/v1",
-                    model="anthropic/claude-sonnet-4",  # hoặc model khác trên OpenRouter
+                    model=self.model if self.provider == "openrouter" else "anthropic/claude-sonnet-4",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS,
-                    request_timeout=30  # 30 seconds timeout
+                    request_timeout=60  # 60 seconds timeout cho Claude
                 )
             except Exception as e:
                 logger.warning(f"Failed to setup OpenRouter: {e}")
         
         # Thử GPT API
-        if gpt_api_key:
+        if gpt_api_key and gpt_api_key.strip():
             try:
                 from langchain_openai import ChatOpenAI
                 logger.info("Using OpenAI GPT API")
                 return ChatOpenAI(
                     api_key=gpt_api_key,
-                    model="gpt-4.1-2025-04-14",
+                    model="gpt-4o-mini",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS,
                     request_timeout=30  # 30 seconds timeout
@@ -218,13 +215,13 @@ class AIMigrationAgents:
                 logger.warning(f"Failed to setup OpenAI GPT: {e}")
         
         # Thử Gemini API
-        if gemini_api_key:
+        if gemini_api_key and gemini_api_key.strip():
             try:
                 from langchain_google_genai import ChatGoogleGenerativeAI
                 logger.info("Using Google Gemini API")
                 return ChatGoogleGenerativeAI(
                     google_api_key=gemini_api_key,
-                    model="gemini-2.5-pro-preview-06-05",
+                    model="gemini-1.5-pro",
                     temperature=DEFAULT_TEMPERATURE,
                     max_output_tokens=DEFAULT_MAX_TOKENS
                 )
@@ -232,13 +229,13 @@ class AIMigrationAgents:
                 logger.warning(f"Failed to setup Gemini: {e}")
         
         # Thử Claude API
-        if claude_api_key:
+        if claude_api_key and claude_api_key.strip():
             try:
                 from langchain_anthropic import ChatAnthropic
                 logger.info("Using Anthropic Claude API")
                 return ChatAnthropic(
                     anthropic_api_key=claude_api_key,
-                    model="claude-sonnet-4-20250514",
+                    model="claude-3-5-sonnet-20241022",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS
                 )
@@ -302,7 +299,13 @@ class AIMigrationAgents:
                     grouped[question_type] = []
                 grouped[question_type].append({
                     'question': question,
-                    'analysis': analysis
+                    'analysis': {
+                        'question_id': analysis.question_id,
+                        'detected_type': analysis.detected_type,
+                        'confidence': analysis.confidence,
+                        'reasoning': analysis.reasoning,
+                        'key_indicators': analysis.key_indicators
+                    }
                 })
         
         return grouped
@@ -314,12 +317,12 @@ class AIMigrationAgents:
         base_rules = self._load_base_migration_rules()
         type_rules = self._load_question_type_rules(question_type)
         
-        system_prompt = f"""You are an expert in migrating IELTS data. Your task is to convert questions of type {question_type} from the old structure to the new structure.
+        system_prompt = f"""You are an expert in migrating IELTS data. Your task is to convert questions of type \'{{question_type}}\' from the old structure to the new structure.
 
 BASE MIGRATION RULES:
 {base_rules}
 
-SPECIFIC RULES FOR {question_type}:
+SPECIFIC RULES FOR \'{{question_type}}\':
 {type_rules}
 
 IMPORTANT: You must return the correct JSON object format as follows, no additional text and anything else:
@@ -332,7 +335,7 @@ IMPORTANT: You must return the correct JSON object format as follows, no additio
       "date_created": "date_created",
       "user_updated": "user_updated", 
       "date_updated": "date_updated",
-      "question_type": "{question_type}",
+      "question_type": "\'{{question_type}}\'",
       "question_count": 2,
       "title": "Questions 1-2",
       "description": "instruction text",
@@ -401,10 +404,8 @@ QUESTIONS DATA:
 
 Group questions of the same type consecutively into question sets and convert according to the defined rules."""
 
-        prompt = ChatPromptTemplate.from_messages([
-            SystemMessagePromptTemplate.from_template(system_prompt),
-            HumanMessagePromptTemplate.from_template(human_prompt)
-        ])
+        # Tạo messages trực tiếp để tránh template variable conflicts
+        from langchain_core.messages import SystemMessage, HumanMessage
         
         try:
             # Check if LLM is available
@@ -412,17 +413,28 @@ Group questions of the same type consecutively into question sets and convert ac
                 logger.info(f"No LLM available, using fallback migrate for {question_type}")
                 return self._fallback_migrate_question_type(question_type, questions_data, part_data)
             
+            # Tạo content trực tiếp để tránh template variable conflicts
             part_json = json.dumps(part_data, ensure_ascii=False, indent=2)
             questions_json = json.dumps(questions_data, ensure_ascii=False, indent=2)
             
-            chain = prompt | self.llm
+            # Tạo system message với nội dung đã format sẵn
+            # system_prompt đã được format với base_rules và type_rules rồi, chỉ cần replace {{question_type}}
+            system_content = system_prompt.replace('{{question_type}}', question_type)
             
-            response = await chain.ainvoke({
-                "question_type": question_type,
-                "part_data": part_json,
-                "questions_data": questions_json
-            })
+            # Tạo human message với nội dung đã format sẵn
+            human_content = human_prompt.format(
+                question_type=question_type,
+                part_data=part_json,
+                questions_data=questions_json
+            )
             
+            # Invoke LLM trực tiếp với messages
+            messages = [
+                SystemMessage(content=system_content),
+                HumanMessage(content=human_content)
+            ]
+            
+            response = await self.llm.ainvoke(messages)
             response_content = response.content if hasattr(response, 'content') else str(response)
             
             # Clean response content
@@ -430,10 +442,8 @@ Group questions of the same type consecutively into question sets and convert ac
             
             try:
                 migration_data = json.loads(cleaned_content)
-                
                 logger.info(f"AI successfully migrated {question_type} questions")
                 return migration_data
-                
             except json.JSONDecodeError as e:
                 logger.warning(f"Failed to parse migrate response for {question_type} as JSON: {e}")
                 logger.debug(f"Raw response: {response_content[:500]}...")
@@ -503,11 +513,21 @@ Group questions of the same type consecutively into question sets and convert ac
             for j, gap in enumerate(gaps):
                 # Extract answer from gap {[answer][number]}
                 gap_match = re.search(r'\{[^}]+\}', gap)
-                answer = ""
+                answer_raw = ""
                 if gap_match:
                     answer_match = re.search(r'\[([^\]]+)\]', gap)
                     if answer_match:
-                        answer = answer_match.group(1)
+                        answer_raw = answer_match.group(1)
+                
+                # Process multiple answers (e.g., "labour | labor" -> ["labour", "labor"])
+                correct_answers = []
+                if answer_raw:
+                    if '|' in answer_raw:
+                        # Split by | and clean up
+                        answers = [ans.strip() for ans in answer_raw.split('|')]
+                        correct_answers = [ans for ans in answers if ans]
+                    else:
+                        correct_answers = [answer_raw]
                 
                 question_item = {
                     "id": len(questions) + 1,
@@ -547,7 +567,7 @@ Group questions of the same type consecutively into question sets and convert ac
                     "question_set_id": question_set["id"],
                     "question_type": question.get('question_type', 'FILL_BLANK'),
                     "correct_answer": None,
-                    "correct_answers": [answer] if answer else [],
+                    "correct_answers": correct_answers,
                     "options": None
                 }
                 questions.append(question_item)
@@ -1364,9 +1384,11 @@ Group questions of the same type consecutively into question sets and convert ac
                 part_data_single['question_sets'] = part_question_sets
                 parts_data = [part_data_single]
             
+            # Thêm parts vào quiz (nested structure)
+            quiz_data['parts'] = parts_data
+            
             migration_result = {
-                "quiz": quiz_data,
-                "parts": parts_data
+                "quiz": quiz_data
             }
             
             logger.info(f"Successfully migrated to {len(all_question_sets)} question sets and {len(all_questions)} questions")
@@ -1446,16 +1468,19 @@ Group questions of the same type consecutively into question sets and convert ac
                 
                 part['question_sets'] = part_question_sets
             
+            # Thêm parts vào quiz (nested structure)
+            quiz_data['parts'] = parts_data
+            
             return {
-                "quiz": quiz_data,
-                "parts": parts_data
+                "quiz": quiz_data
             }
             
         except Exception as e:
             logger.error(f"Error in fallback transform by type: {e}")
             return {
-                "quiz": {},
-                "parts": []
+                "quiz": {
+                    "parts": []
+                }
             }
     
     async def analyze_question_types(self, questions: List[Dict[str, Any]]) -> List[QuestionTypeAnalysis]:
