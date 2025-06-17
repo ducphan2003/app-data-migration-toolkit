@@ -1,57 +1,57 @@
-# Quy tắc xác định cấu trúc và chuyển đổi dữ liệu IELTS
+# Rules for defining IELTS data structure and transformation
 
-## 1. Quy tắc migrate theo đối tượng
+## 1. Migration rules by object
 
 ### 1.1. Quiz
-- **Giữ nguyên tất cả thông tin**
-- **Các ngoại lệ**:
+- **Keep all information**
+- **Exceptions**:
   - `vote_count`: Set = 0
   - `total_submitted`: Set = 0
-  - `listening`: Bỏ qua, sẽ được chuyển vào `part.file_id`
-  - `instruction_audio`: Bỏ qua, sẽ bổ sung sau
+  - `listening`: Skip, will be transferred to `part.file_id`
+  - `instruction_audio`: Skip, will be added later
 
 ### 1.2. Parts
-- **Các trường cần migrate**:
-  - Giữ nguyên tất cả thông tin cơ bản
-  - `file_id`: Lấy từ `quiz.listening`
-- **Các trường bỏ qua**:
-  - `questions`: Không cần vì sẽ sử dụng `question_sets`
+- **Fields to migrate**:
+  - Keep all basic information
+  - `file_id`: Take from `quiz.listening`
+- **Fields to skip**:
+  - `questions`: Not needed because `question_sets` will be used
 
 ### 1.3. Question Sets
-- **Quy tắc gom nhóm**:
-  - Gom các question lại thành các question_set
-  - `part_id`: Lấy từ `part.id`
-  - `question_type`: Xác định dựa trên loại câu hỏi
-  - `question_count`: Số lượng question trong question_set
+- **Grouping rules**:
+  - Group questions into question_sets
+  - `part_id`: Take from `part.id`
+  - `question_type`: Determine based on question type
+  - `question_count`: Number of questions in question_set
   - `title`: Format "Question " + question_from-question_to
-    - Ví dụ: "Questions 1-7", "Questions 8-13"
-  - `description`: Lấy từ đoạn hướng dẫn cách làm của loại câu hỏi đó
+    - Example: "Questions 1-7", "Questions 8-13"
+  - `description`: Take from the instruction of the question type
 
 ### 1.4. Questions
-- **Giữ nguyên các thông tin cơ bản**
-- **Các ngoại lệ**:
+- **Keep all basic information**
+- **Exceptions**:
   - `quiz_id`: Set = 0
   - `part_id`: Set = null
   - `type`: Set = ""
-  - `question_type`: Giữ nguyên như cũ
+  - `question_type`: Keep as is
   - `gap_fill_in_blank`: Set = null
-  - `correct_answer`: Sử dụng cho các loại:
+  - `correct_answer`: Used for the following types:
     - SINGLE_SELECTION
     - MATCHING
     - NOTE_COMPLETION
     - SINGLE_CHOICE
-  - `correct_answers`: Sử dụng cho các loại:
+  - `correct_answers`: Used for the following types:
     - GAP_FILLING
     - MULTIPLE_CHOICE_MANY
 
-## 2. Quy tắc migrate theo loại Question Set
+## 2. Migration rules by question set type
 
 ### 2.1. GAP_FILLING
-- **Xác định loại**:
-  - Dựa vào `question_type` trong câu hỏi cũ
-  - Nếu là "GAP_FILLING" thì tạo question_set mới với `question_type = "GAP_FILLING"`
+- **Determine type**:
+  - Based on `question_type` in the old question
+  - If it is "GAP_FILLING" then create a new question_set with `question_type = "GAP_FILLING"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -69,9 +69,9 @@
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "GAP_FILLING",
-    "question_count": "số lượng question trong set",
+    "question_count": "number of questions in the set",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ question.title cũ",
+    "description": "Take from question.title of the old question",
     "content": "<h3>Britain's Industrial Revolution</h3>...______...______...",
     "questions": [
       {
@@ -90,43 +90,43 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "GAP_FILLING"
-     - `question_count`: Đếm số lượng gap trong `gap_fill_in_blank` cũ
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
-     - `description`: Lấy từ `title` của câu hỏi cũ
+     - `question_count`: Count the number of gaps in the old `gap_fill_in_blank`
+     - `title`: Format "Questions {from}-{to}" based on the question order
+     - `description`: Take from the old question.title
      - `content`: 
-       - Lấy nội dung từ `gap_fill_in_blank` cũ
-       - Thay thế các đáp án `{[answer][number]}` bằng `______`
-       - Giữ nguyên cấu trúc HTML và định dạng
+       - Take the content from the old `gap_fill_in_blank`
+       - Replace the answers `{[answer][number]}` with `______`
+       - Keep the HTML structure and formatting
 
   2. **Questions**:
-     - Tạo một question mới cho mỗi gap trong `gap_fill_in_blank` cũ
-     - `question_type` là giá trị question_type của question cũ: question.question_type
+     - Create a new question for each gap in the old `gap_fill_in_blank`
+     - `question_type` is the value of question_type of the old question: question.question_type
      - `correct_answers`: 
-       - Lấy đáp án từ `{[answer][number]}` trong `gap_fill_in_blank` cũ
-       - Luôn ở dạng mảng
+       - Take the answer from the old `{[answer][number]}` in the `gap_fill_in_blank`
+       - Always in array format
      - `explanation`: 
-       - Phân tách `explain` cũ thành các phần riêng biệt cho từng câu hỏi
-       - Mỗi phần giải thích tương ứng với một gap
+       - Split the old `explain` into separate parts for each question
+       - Each explanation corresponds to one gap
 
-- **Lưu ý**:
-  - Cần đảm bảo thứ tự các câu hỏi trong set giống với thứ tự các gap trong `gap_fill_in_blank` cũ
-  - Khi thay thế đáp án bằng `______`, cần giữ nguyên khoảng trắng và định dạng xung quanh
-  - Cần xử lý các trường hợp đặc biệt như:
-    - Nhiều đáp án đúng cho một gap (ví dụ: "labour | labor")
-    - Đáp án có chứa ký tự đặc biệt hoặc định dạng HTML
-    - Phần explanation có cấu trúc phức tạp cần được phân tách chính xác
+- **Notes**:
+  - Ensure the order of questions in the set is the same as the order of gaps in the old `gap_fill_in_blank`
+  - When replacing the answer with `______`, keep the spaces and formatting around
+  - Handle special cases such as:
+    - Multiple correct answers for one gap (e.g. "labour | labor")
+    - Answer contains special characters or HTML formatting
+    - The explanation has a complex structure and needs to be accurately split
 
 ### 2.2. SINGLE_SELECTION
 
-- **Xác định loại**:
-  - Dựa vào `type` trong câu hỏi cũ
-  - Nếu là "SINGLE-SELECTION" thì tạo question_set mới với `question_type = "SINGLE_SELECTION"`
+- **Determine type**:
+  - Based on `type` in the old question
+  - If it is "SINGLE-SELECTION" then create a new question_set with `question_type = "SINGLE_SELECTION"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -155,15 +155,15 @@
   }
   ```
 
-- **Cấu trúc mới**:
+- **New structure**:
   ```json
   {
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "SINGLE_SELECTION",
-    "question_count": "số lượng question trong set",
+    "question_count": "number of questions in the set",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ question.description cũ của câu hỏi đầu tiên trong nhóm",
+    "description": "Take from the old question.description of the first question in the group",
     "content": "",
     "option_title": "",
     "options": [
@@ -194,61 +194,61 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "SINGLE_SELECTION"
-     - `question_count`: Đếm số lượng question cùng loại liên tiếp trong part
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
+     - `question_count`: Count the number of questions of the same type consecutively in the part
+     - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`: 
-       - Lấy từ `description` của câu hỏi đầu tiên trong nhóm
-       - Nếu không có thì lấy từ câu hỏi có `description` trong nhóm
-       - Thay thế placeholder `{start_question}-{end_question}` bằng số thứ tự thực tế
+       - Take from the old question.description of the first question in the group
+       - If there is no description, take from the question with `description` in the group
+       - Replace the placeholder `{start_question}-{end_question}` with the actual order
      - `content`: Set = ""
      - `option_title`: Set = ""
      - `options`: 
-       - Lấy từ `selection_option` của câu hỏi cũ
-       - Chuyển đổi format từ `{"option": "value"}` thành `{"text": "display_text", "option": "value"}`
-       - Đối với TRUE_FALSE: TRUE → "YES", FALSE → "NO", NOT GIVEN → "NOT GIVEN"
+       - Take from the old question.selection_option
+       - Convert the format from `{"option": "value"}` to `{"text": "display_text", "option": "value"}`
+       - For TRUE_FALSE: TRUE → "YES", FALSE → "NO", NOT GIVEN → "NOT GIVEN"
      - `allow_reuse`: Set = false
      - `max_selections`: Set = 0
 
   2. **Questions**:
-     - Tạo một question mới cho mỗi câu hỏi cũ trong nhóm
-     - `question_type`: Giữ nguyên từ câu hỏi cũ (ví dụ: "TRUE_FALSE")
+     - Create a new question for each old question in the group
+     - `question_type`: Keep the old question.question_type (e.g. "TRUE_FALSE")
      - `correct_answer`: 
-       - Lấy từ `selection[0].answer` của câu hỏi cũ
-       - Luôn ở dạng string đơn
-     - `text`: Lấy từ `selection[0].text` của câu hỏi cũ
-     - `explanation`: Lấy từ `explain` của câu hỏi cũ
-     - Các trường khác:
+       - Take from the old question.selection[0].answer
+       - Always in string format
+     - `text`: Take from the old question.selection[0].text
+     - `explanation`: Take from the old question.explain
+     - Other fields:
        - `quiz_id`: Set = 0
        - `type`: Set = ""
        - `part_id`: Set = null
        - `correct_answers`: Set = null
        - `options`: Set = null
 
-- **Quy tắc gom nhóm**:
-  - Gom các question liên tiếp có cùng `type = "SINGLE-SELECTION"` và cùng `question_type`
-  - Gom các question có cùng `selection_option` (cùng bộ lựa chọn)
-  - Nếu có `description` ở câu hỏi đầu tiên thì sử dụng làm mốc để xác định nhóm
-  - Ưu tiên gom theo thứ tự `sort` hoặc `order` liên tiếp
+- **Grouping rules**:
+  - Group questions consecutively with the same `type = "SINGLE-SELECTION"` and the same `question_type`
+  - Group questions with the same `selection_option` (same options)
+  - If there is a `description` in the first question, use it as the basis for determining the group
+  - Prefer to group by `sort` or `order` consecutively
 
-- **Lưu ý đặc biệt**:
-  - Đối với TRUE_FALSE questions: 
-    - Options luôn là ["YES", "NO", "NOT GIVEN"] với values tương ứng ["TRUE", "FALSE", "NOT GIVEN"]
-  - Đối với các loại khác có thể có options khác nhau
-  - Cần xử lý trường hợp `description` có placeholder `{start_question}-{end_question}` cần thay thế
-  - Giữ nguyên HTML formatting trong `description` và `explanation`
-  - Nếu một question không có `selection` hoặc `selection` rỗng thì bỏ qua question đó
+- **Notes**:
+  - For TRUE_FALSE questions: 
+    - Options are always ["YES", "NO", "NOT GIVEN"] with corresponding values ["TRUE", "FALSE", "NOT GIVEN"]
+  - For other types, there may be different options
+  - Handle the case where `description` has a placeholder `{start_question}-{end_question}` and need to replace
+  - Keep HTML formatting in `description` and `explanation`
+  - If a question has no `selection` or `selection` is empty, skip the question
 
 ### 2.3. MATCHING
 
-- **Xác định loại**:
-  - Dựa vào `question_type` trong câu hỏi cũ
-  - Nếu là "MATCHING_INFO" thì tạo question_set mới với `question_type = "MATCHING"`
+- **Determine type**:
+  - Based on `question_type` in the old question
+  - If it is "MATCHING_INFO" then create a new question_set with `question_type = "MATCHING"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -286,15 +286,15 @@
   }
   ```
 
-- **Cấu trúc mới**:
+- **New structure**:
   ```json
   {
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "MATCHING",
-    "question_count": "số lượng question trong set",
+    "question_count": "number of questions in the set",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ question.description cũ của câu hỏi đầu tiên trong nhóm",
+    "description": "Take from the old question.description of the first question in the group",
     "content": "",
     "option_title": "",
     "options": [
@@ -321,63 +321,63 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "MATCHING"
-     - `question_count`: Đếm số lượng question cùng loại liên tiếp trong part
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
+     - `question_count`: Count the number of questions of the same type consecutively in the part
+     - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`: 
-       - Lấy từ `description` của câu hỏi đầu tiên trong nhóm
-       - Thay thế placeholder `{start_question}-{end_question}` bằng số thứ tự thực tế
-       - Giữ nguyên HTML formatting
+       - Take from the old question.description of the first question in the group
+       - Replace the placeholder `{start_question}-{end_question}` with the actual order
+       - Keep HTML formatting
      - `content`: Set = ""
      - `option_title`: Set = ""
      - `options`: 
-       - Tạo từ tất cả `selection[0].text` của các câu hỏi trong nhóm
+       - Create from all `selection[0].text` of the questions in the group
        - Format: `{"text": "question_text", "option": "answer_value"}`
-       - `text`: Lấy từ `selection[0].text` của từng câu hỏi
-       - `option`: Lấy từ `selection[0].answer` của từng câu hỏi tương ứng
-     - `allow_reuse`: Set = true (vì thường có thể dùng lại đáp án)
+       - `text`: Take from the old question.selection[0].text of each question
+       - `option`: Take from the old question.selection[0].answer of each question
+     - `allow_reuse`: Set = true (because it can reuse the answer)
      - `max_selections`: Set = 0
 
   2. **Questions**:
-     - Tạo một question mới cho mỗi câu hỏi cũ trong nhóm
-     - `question_type`: Giữ nguyên từ câu hỏi cũ (ví dụ: "MATCHING_INFO")
+     - Create a new question for each old question in the group
+     - `question_type`: Keep the old question.question_type (e.g. "MATCHING_INFO")
      - `correct_answer`: 
-       - Lấy từ `selection[0].answer` của câu hỏi cũ
-       - Luôn ở dạng string đơn
-     - `text`: Set = "" (vì text đã được chuyển vào options của question_set)
-     - `explanation`: Lấy từ `explain` của câu hỏi cũ
-     - Các trường khác:
+       - Take from the old question.selection[0].answer
+       - Always in string format
+     - `text`: Set = "" (because the text has been transferred to the options of the question_set)
+     - `explanation`: Take from the old question.explain
+     - Other fields:
        - `quiz_id`: Set = 0
        - `type`: Set = ""
        - `part_id`: Set = null
        - `correct_answers`: Set = null
        - `options`: Set = null
 
-- **Quy tắc gom nhóm**:
-  - Gom các question liên tiếp có cùng `question_type = "MATCHING_INFO"`
-  - Gom các question có cùng `selection_option` (cùng bộ lựa chọn A, B, C, D, E, F...)
-  - Nếu có `description` ở câu hỏi đầu tiên thì sử dụng làm mốc để xác định nhóm
-  - Ưu tiên gom theo thứ tự `sort` hoặc `order` liên tiếp
+- **Grouping rules**:
+  - Group questions consecutively with the same `question_type = "MATCHING_INFO"`
+  - Group questions with the same `selection_option` (same options A, B, C, D, E, F...)
+  - If there is a `description` in the first question, use it as the basis for determining the group
+  - Prefer to group by `sort` or `order` consecutively
 
-- **Lưu ý đặc biệt**:
-  - Đối với MATCHING_INFO: 
-    - Options được tạo từ các câu hỏi (text) và đáp án tương ứng
-    - Thường có `allow_reuse = true` vì có thể dùng lại đáp án
-  - Cần xử lý trường hợp `description` có placeholder `{start_question}-{end_question}` cần thay thế
-  - Giữ nguyên HTML formatting trong `description` và `explanation`
-  - Nếu một question không có `selection` hoặc `selection` rỗng thì bỏ qua question đó
-  - Thứ tự trong `options` phải tương ứng với thứ tự các question trong `questions`
+- **Notes**:
+  - For MATCHING_INFO: 
+    - Options are created from the questions (text) and corresponding answers
+    - Usually has `allow_reuse = true` because it can reuse the answer
+  - Handle the case where `description` has a placeholder `{start_question}-{end_question}` and need to replace
+  - Keep HTML formatting in `description` and `explanation`
+  - If a question has no `selection` or `selection` is empty, skip the question
+  - The order in `options` must correspond to the order of questions in `questions`
 
 ### 2.4. MULTIPLE_CHOICE_MANY
 
-- **Xác định loại**:
-  - Dựa vào `type` và `question_type` trong câu hỏi cũ
-  - Nếu là `type = "MULTIPLE"` và `question_type = "MULTIPLE_CHOICE_MANY"` thì tạo question_set mới với `question_type = "MULTIPLE_CHOICE_MANY"`
+- **Determine type**:
+  - Based on `type` and `question_type` in the old question
+  - If it is `type = "MULTIPLE"` and `question_type = "MULTIPLE_CHOICE_MANY"` then create a new question_set with `question_type = "MULTIPLE_CHOICE_MANY"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -408,15 +408,15 @@
   }
   ```
 
-- **Cấu trúc mới**:
+- **New structure**:
   ```json
   {
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "MULTIPLE_CHOICE_MANY",
-    "question_count": "số lượng question trong set",
+    "question_count": "number of questions in the set",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ question.description cũ",
+    "description": "Take from the old question.description",
     "content": "",
     "option_title": "",
     "options": [
@@ -443,68 +443,68 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "MULTIPLE_CHOICE_MANY"
-     - `question_count`: Đếm số lượng question cùng loại liên tiếp trong part
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
+     - `question_count`: Count the number of questions of the same type consecutively in the part
+     - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`: 
-       - Lấy từ `description` của câu hỏi cũ
-       - Thay thế placeholder `{start_question}-{end_question}` bằng số thứ tự thực tế
-       - Giữ nguyên HTML formatting
+       - Take from the old question.description
+       - Replace the placeholder `{start_question}-{end_question}` with the actual order
+       - Keep HTML formatting
      - `content`: Set = ""
      - `option_title`: Set = ""
      - `options`: 
-       - Tạo từ tất cả items trong `mutilple_choice` của câu hỏi cũ
+       - Create from all items in the old question.mutilple_choice
        - Format: `{"text": "option_text", "option": "letter"}`
-       - `text`: Lấy từ `mutilple_choice[i].text`
-       - `option`: Tạo letter tự động theo thứ tự A, B, C, D, E...
-       - Sắp xếp theo `mutilple_choice[i].order`
-     - `allow_reuse`: Set = false (không thể chọn lại cùng đáp án)
-     - `max_selections`: Lấy từ số lượng đáp án đúng hoặc từ description (ví dụ: "Choose TWO" → 2)
+       - `text`: Take from the old question.mutilple_choice[i].text
+       - `option`: Create letter automatically in the order A, B, C, D, E...
+       - Sort by the old question.mutilple_choice[i].order
+     - `allow_reuse`: Set = false (cannot reuse the same answer)
+     - `max_selections`: Take from the number of correct answers or from the description (e.g. "Choose TWO" → 2)
 
   2. **Questions**:
-     - Tạo một question duy nhất cho toàn bộ question set
+     - Create a single question for the entire question set
      - `question_type`: Set = "MULTIPLE"
      - `correct_answers`: 
-       - Lấy tất cả options có `correct = true` từ `mutilple_choice`
-       - Chuyển thành array các letters tương ứng (A, B, C...)
-       - Ví dụ: nếu option thứ 2 và 4 đúng → ["B", "D"]
-     - `text`: Set = "" (vì text đã có trong title của question_set)
+       - Take all options with `correct = true` from the old question.mutilple_choice
+       - Convert to an array of letters corresponding to (A, B, C...)
+       - Example: if option 2 and 4 are correct → ["B", "D"]
+     - `text`: Set = "" (because the text is in the title of the question_set)
      - `explanation`: 
-       - Tổng hợp từ `explain` của các options có `correct = true`
-       - Nếu không có explain riêng cho options, lấy từ `explain` chung của question
-       - Format: kết hợp các explanation thành một đoạn dài
-     - Các trường khác:
+       - Combine the explanations of the options with `correct = true`
+       - If there is no explanation for the options, take from the old question.explain
+       - Format: combine the explanations into a long paragraph
+     - Other fields:
        - `quiz_id`: Set = 0
        - `type`: Set = ""
        - `part_id`: Set = null
        - `correct_answer`: Set = ""
        - `options`: Set = null
 
-- **Quy tắc gom nhóm**:
-  - Thường mỗi MULTIPLE_CHOICE_MANY là một question set riêng biệt
-  - Chỉ gom nhóm nếu có nhiều questions liên tiếp cùng loại và cùng chủ đề
-  - Ưu tiên gom theo thứ tự `sort` hoặc `order` liên tiếp
+- **Grouping rules**:
+  - Usually each MULTIPLE_CHOICE_MANY is a separate question set
+  - Only group if there are many questions consecutively of the same type and same topic
+  - Prefer to group consecutively by `sort` or `order`
 
-- **Lưu ý đặc biệt**:
-  - Đối với MULTIPLE_CHOICE_MANY:
-    - `max_selections` phải được xác định chính xác từ description hoặc đếm số đáp án đúng
-    - Options được sắp xếp theo `order` trong `mutilple_choice`
-    - Chỉ có một question trong question_set nhưng có nhiều đáp án đúng
-  - Cần xử lý trường hợp `description` có placeholder cần thay thế
-  - Giữ nguyên HTML formatting trong `description` và `explanation`
-  - Nếu một option không có `text` thì bỏ qua option đó
-  - Explanation có thể được tổng hợp từ nhiều options hoặc lấy từ explain chung
+- **Notes**:
+  - For MULTIPLE_CHOICE_MANY:
+    - `max_selections` must be determined accurately from the description or count the number of correct answers
+    - Options are sorted by the `order` in the old question.mutilple_choice
+    - There is only one question in the question_set but there are many correct answers
+  - Need to handle the case where `description` has a placeholder that needs to be replaced
+  - Keep HTML formatting in `description` and `explanation`
+  - If an option has no `text`, skip the option
+  - Explanation can be combined from many options or taken from the old question.explain
 
 ### 2.5. NOTE_COMPLETION
 
-- **Xác định loại**:
-  - Dựa vào `type` và `question_type` trong câu hỏi cũ
-  - Nếu là `type = "FILL-IN-THE-BLANK"` và `question_type = "FILL_BLANK"` với có `gap_fill_in_blank` chứa danh sách từ vựng thì tạo question_set mới với `question_type = "NOTE_COMPLETION"`
+- **Determine type**:
+  - Based on `type` and `question_type` in the old question
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "FILL_BLANK"` and has `gap_fill_in_blank` containing the vocabulary list then create a new question_set with `question_type = "NOTE_COMPLETION"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -517,15 +517,15 @@
   }
   ```
 
-- **Cấu trúc mới**:
+- **New structure**:
   ```json
   {
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "NOTE_COMPLETION",
-    "question_count": "số lượng gaps trong content",
+    "question_count": "number of gaps in the content",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ title cũ hoặc tạo mới",
+    "description": "Take from the old question.title or create new",
     "content": "<h3><strong>Notes on Maryam Mirzakhani</strong></h3>\n<div class=\"note-completion-content\">\n<p>Maryam Mirzakhani is regarded as <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span> in the field of mathematics...</p>\n</div>",
     "option_title": "",
     "options": [
@@ -552,40 +552,40 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "NOTE_COMPLETION"
-     - `question_count`: Đếm số lượng gaps trong `gap_fill_in_blank` (đếm {[letter][number]})
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
+     - `question_count`: Count the number of gaps in the `gap_fill_in_blank` (count {[letter][number]})
+     - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`: 
-       - Lấy từ `title` của câu hỏi cũ hoặc tạo mới
-       - Thay thế placeholder `{start_question}-{end_question}` bằng số thứ tự thực tế
+       - Take from the old question.title or create new
+       - Replace the placeholder `{start_question}-{end_question}` with the actual order
        - Format: "Complete the notes below. Choose NO MORE THAN ONE WORD from the passage for each answer."
      - `content`: 
-       - Lấy nội dung từ `gap_fill_in_blank` cũ
-       - Loại bỏ phần "List of words" (bảng từ vựng)
-       - Chuyển đổi `{[letter][number]}` thành `<span class="gap-placeholder" data-question-id="note_comp_{number}">______</span>`
-       - Thêm wrapper `<div class="note-completion-content">` và cấu trúc notes
+       - Take from the old question.gap_fill_in_blank
+       - Remove the "List of words" (vocabulary table)
+       - Convert `{[letter][number]}` to `<span class="gap-placeholder" data-question-id="note_comp_{number}">______</span>`
+       - Add wrapper `<div class="note-completion-content">` and structure notes
      - `option_title`: Set = ""
      - `options`: 
-       - Trích xuất từ bảng "List of words" trong `gap_fill_in_blank`
+       - Extract from the "List of words" in the `gap_fill_in_blank`
        - Format: `{"text": "word", "option": "letter"}`
-       - Sắp xếp theo thứ tự A, B, C, D...
-     - `allow_reuse`: Set = true (có thể dùng lại từ vựng)
+       - Sort by the order A, B, C, D...
+     - `allow_reuse`: Set = true (can reuse the vocabulary)
      - `max_selections`: Set = 0
 
   2. **Questions**:
-     - Tạo một question cho mỗi gap trong `gap_fill_in_blank`
+     - Create a question for each gap in the `gap_fill_in_blank`
      - `question_type`: Set = "NOTE_COMPLETION"
      - `correct_answer`: 
-       - Lấy từ `{[letter][number]}` trong `gap_fill_in_blank` cũ
-       - Chỉ lấy letter (A, B, C...) hoặc từ tương ứng
-     - `text`: Set = "" (vì text đã có trong content của question_set)
+       - Take from the `{[letter][number]}` in the old question.gap_fill_in_blank
+       - Only take letter (A, B, C...) or corresponding word
+     - `text`: Set = "" (because the text is in the content of the question_set)
      - `explanation`: 
-       - Trích xuất từ `explain` của câu hỏi cũ
-       - Phân tách theo từng câu (Câu 27, Câu 28...)
-       - Mỗi question có explanation riêng
+       - Extract from the old question.explain
+       - Split by question (Question 27, Question 28...)
+       - Each question has a separate explanation
      - Các trường khác:
        - `quiz_id`: Set = 0
        - `type`: Set = ""
@@ -593,29 +593,29 @@
        - `correct_answers`: Set = null
        - `options`: Set = null
 
-- **Quy tắc gom nhóm**:
-  - Thường mỗi NOTE_COMPLETION là một question set riêng biệt
-  - Chỉ gom nhóm nếu có nhiều questions liên tiếp cùng loại và cùng bảng từ vựng
-  - Ưu tiên gom theo thứ tự `sort` hoặc `order` liên tiếp
+- **Grouping rules**:
+  - Usually each NOTE_COMPLETION is a separate question set
+  - Only group if there are many questions consecutively of the same type and same vocabulary
+  - Prefer to group consecutively by `sort` or `order`
 
-- **Lưu ý đặc biệt**:
-  - Đối với NOTE_COMPLETION:
-    - Cần tách riêng "List of words" và nội dung chính từ `gap_fill_in_blank`
-    - Chuyển đổi format gap từ `{[letter][number]}` sang `<span class="gap-placeholder">`
-    - Options được trích xuất từ bảng từ vựng, không phải từ nội dung
-    - Explanation cần được phân tách theo từng câu hỏi
-  - Cần xử lý trường hợp `description` có placeholder cần thay thế
-  - Giữ nguyên HTML formatting trong `content` và `explanation`
-  - Nếu không có bảng từ vựng thì có thể là dạng GAP_FILLING thay vì NOTE_COMPLETION
-  - Thứ tự questions phải tương ứng với thứ tự gaps trong content
+- **Notes**:
+  - For NOTE_COMPLETION:
+    - Need to separate the "List of words" and main content from the `gap_fill_in_blank`
+    - Convert gap format from `{[letter][number]}` to `<span class="gap-placeholder">`
+    - Options are extracted from the vocabulary table, not from the content
+    - Explanation needs to be split by question
+  - Need to handle the case where `description` has a placeholder that needs to be replaced
+  - Keep HTML formatting in `content` and `explanation`
+  - If there is no vocabulary table, it may be a GAP_FILLING instead of NOTE_COMPLETION
+  - The order of questions must correspond to the order of gaps in the content
 
 ### 2.6. SINGLE_CHOICE
 
-- **Xác định loại**:
-  - Dựa vào `type` và `question_type` trong câu hỏi cũ
-  - Nếu là `type = "SINGLE-RADIO"` và `question_type = "MULTIPLE_CHOICE_ONE"` thì tạo question_set mới với `question_type = "SINGLE_CHOICE"`
+- **Determine type**:
+  - Based on `type` and `question_type` in the old question
+  - If it is `type = "SINGLE-RADIO"` and `question_type = "MULTIPLE_CHOICE_ONE"` then create a new question_set with `question_type = "SINGLE_CHOICE"`
 
-- **Cấu trúc cũ**:
+- **Old structure**:
   ```json
   {
     "id": "question_id",
@@ -637,15 +637,15 @@
   }
   ```
 
-- **Cấu trúc mới**:
+- **New structure**:
   ```json
   {
     "id": "auto_generate",
     "part_id": "part_id",
     "question_type": "SINGLE_CHOICE",
-    "question_count": "số lượng question trong set",
+    "question_count": "number of questions in the set",
     "title": "Questions {from}-{to}",
-    "description": "Lấy từ question.description cũ của câu hỏi đầu tiên trong nhóm",
+    "description": "Take from the old question.description of the first question in the group",
     "content": "",
     "option_title": "",
     "options": null,
@@ -675,54 +675,54 @@
   }
   ```
 
-- **Quy tắc chuyển đổi**:
+- **Migration rules**:
   1. **Question Set**:
-     - `part_id`: Lấy từ part hiện tại
+     - `part_id`: Take from the current part
      - `question_type`: Set = "SINGLE_CHOICE"
-     - `question_count`: Đếm số lượng question cùng loại liên tiếp trong part
-     - `title`: Format "Questions {from}-{to}" dựa trên số thứ tự câu hỏi
+     - `question_count`: Count the number of questions consecutively of the same type in the part
+     - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`: 
-       - Lấy từ `description` của câu hỏi đầu tiên trong nhóm
-       - Thay thế placeholder `{start_question}-{end_question}` bằng số thứ tự thực tế
-       - Giữ nguyên HTML formatting
+       - Take from the old question.description of the first question in the group
+       - Replace the placeholder `{start_question}-{end_question}` with the actual order
+       - Keep HTML formatting
      - `content`: Set = ""
      - `option_title`: Set = ""
-     - `options`: Set = null (vì mỗi question có options riêng)
+     - `options`: Set = null (because each question has separate options)
      - `allow_reuse`: Set = false
      - `max_selections`: Set = 0
 
   2. **Questions**:
-     - Tạo một question cho mỗi câu hỏi cũ trong nhóm
+     - Create a question for each old question in the group
      - `question_type`: Set = "SINGLE-CHOICE"
      - `correct_answer`: 
-       - Tìm option có `correct = true` trong `single_choice_radio`
-       - Chuyển thành letter tương ứng (A, B, C, D...)
-     - `text`: Lấy từ `title` của câu hỏi cũ
+       - Find the option with `correct = true` in the old question.single_choice_radio
+       - Convert to the corresponding letter (A, B, C, D...)
+     - `text`: Take from the old question.title
      - `options`: 
-       - Chuyển đổi từ `single_choice_radio` của câu hỏi cũ
+       - Convert from the old question.single_choice_radio
        - Format: `{"text": "option_text", "option": "letter", "is_correct": boolean}`
-       - Sắp xếp theo thứ tự A, B, C, D...
-     - `explanation`: Lấy từ `explain` của câu hỏi cũ
-     - Các trường khác:
+       - Sort by the order A, B, C, D...
+     - `explanation`: Take from the old question.explain
+     - Other fields:
        - `quiz_id`: Set = 0
        - `type`: Set = ""
        - `part_id`: Set = null
        - `correct_answers`: Set = null
 
-- **Quy tắc gom nhóm**:
-  - Gom các question liên tiếp có cùng `type = "SINGLE-RADIO"` và `question_type = "MULTIPLE_CHOICE_ONE"`
-  - Gom các question có cùng `description` (cùng nhóm câu hỏi)
-  - Nếu có `description` ở câu hỏi đầu tiên thì sử dụng làm mốc để xác định nhóm
-  - Ưu tiên gom theo thứ tự `sort` hoặc `order` liên tiếp
+- **Grouping rules**:
+  - Group consecutive questions with `type = "SINGLE-RADIO"` and `question_type = "MULTIPLE_CHOICE_ONE"`
+  - Group questions with the same `description` (same question group)
+  - If there is a `description` in the first question, use it as the basis for determining the group
+  - Prefer to group consecutively by `sort` or `order`
 
-- **Lưu ý đặc biệt**:
-  - Đối với SINGLE_CHOICE:
-    - Mỗi question có options riêng biệt (khác với SINGLE_SELECTION có options chung)
-    - Options được sắp xếp theo thứ tự A, B, C, D...
-    - Chỉ có một đáp án đúng cho mỗi question
-    - `text` của question lấy từ `title` của câu hỏi cũ
-  - Cần xử lý trường hợp `description` có placeholder cần thay thế
-  - Giữ nguyên HTML formatting trong `description` và `explanation`
-  - Nếu một question không có `single_choice_radio` hoặc rỗng thì bỏ qua question đó
-  - Thứ tự options phải được sắp xếp theo alphabet (A, B, C, D...)
+- **Notes**:
+  - For SINGLE_CHOICE:
+    - Each question has separate options (different from SINGLE_SELECTION which has common options)
+    - Options are sorted by the order A, B, C, D...
+    - There is only one correct answer for each question
+    - `text` of the question takes from the old question.title
+  - Need to handle the case where `description` has a placeholder that needs to be replaced
+  - Keep HTML formatting in `description` and `explanation`
+  - If a question has no `single_choice_radio` or is empty, skip the question
+  - The order of options must be sorted alphabetically (A, B, C, D...)
 
