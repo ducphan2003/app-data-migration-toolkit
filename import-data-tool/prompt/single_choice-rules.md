@@ -32,7 +32,7 @@
 
   ```json
   {
-    "id": "auto_generate",
+    "id": 1,
     "part_id": "part_id",
     "question_type": "SINGLE_CHOICE",
     "question_count": "number of questions in the set",
@@ -45,7 +45,7 @@
     "max_selections": 0,
     "questions": [
       {
-        "id": "auto_generate",
+        "id": 1,
         "question_type": "SINGLE-CHOICE",
         "correct_answer": "C",
         "text": "What does Eyre believe is needed for children to equal 'gifted' standards?",

@@ -1,0 +1,457 @@
+{
+  "quiz": {
+    "id": 1823,
+    "type": 1,
+    "mode": 0,
+    "title": "Part 2",
+    "status": "published",
+    "sort": 2,
+    "time": null,
+    "is_test": null,
+    "simplified_id": null,
+    "limit_submit": null,
+    "thumbnail": null,
+    "quiz_code": "",
+    "description": null,
+    "content": "<h3>READING PASSAGE 2</h3>\n<p>You should spend about 20 minutes on Questions 14 - 26 which are based on Reading Passage 2 below.</p>\n<h2 style=\"text-align: center;\"><span class=\"fontstyle2\"><strong><span data-sheets-root=\"1\">Athletes and stress</span></strong></span></h2>\n<p><span class=\"fontstyle2\"><strong>A.</strong> </span>It isn't easy being a professional athlete. Not only are the physical demands greater than&nbsp;most people could handle, athletes also face intense psychological pressure during competition. {[This is something that British tennis player Emma Raducanu wrote about on social media following her withdrawal from the 2021 Wimbledon tournament.][16]}{[ Though the young player had been doing well in the tournament, she began having difficulty regulating her breathing and heart rate during a match, which she later attributed to 'the accumulation of the excitement and the buzz'][23-24]}.</p>\n<p><span class=\"fontstyle2\"><strong>B.</strong>&nbsp;</span>For athletes, some level of performance stress is almost unavoidable. But there are many different factors that dictate just how people's minds and bodies respond to stressful events. Typically, stress is the result of an exchange between two factors: demands and resources. An athlete may feel stressed about an event if they feel the demands on them are greater than they can handle. {[These demands include the high level of physical and mental effort required to succeed, and also the athlete's concerns about the difficulty of the event, their chance of succeeding, and any potential dangers such as injury.][19]}Resources, on the other hand, are a person's ability to cope with these demands. These include factors such as the competitor's degree of confidence, how much they believe they can control the situation's outcome, and whether they're looking forward to the event or not.</p>\n<p><span class=\"fontstyle2\"><strong>C.</strong> </span>Each new demand or change in circumstances affects whether a person responds positively or negatively to stress. Typically, the more resources a person feels they have in handling the situation, the more positive their stress response. This positive stress response is called a challenge state. But should the person feel there are too many demands placed on them, the more likely they are to experience a negative stress response - known as a threat state. {[Research shows that the challenge states lead to good performance, while threat states lead to poorer performance.][17]}So, in Emma Raducanu's case, a much larger audience, higher expectations and facing a more skilful opponent, may all have led her to feel there were greater demands being placed on her at Wimbledon - but she didn't have the resources to tackle them. This led to her experiencing a threat response.</p>\n<p><span class=\"fontstyle2\"><strong>D.</strong></span> {[Our challenge and threat responses essentially influence how our body responds to stressful situations, as both affect the production of adrenaline and cortisol - also known as 'stress hormones'.][14]}During a challenge state, adrenaline increases the amount of blood pumped from the heart and expands the blood vessels, which allows more energy to be delivered to the muscles and brain. This increase of blood and decrease of pressure in the blood vessels has been consistently related to superior sport performance in everything from cricket batting, to golf putting and football penalty taking. But during a threat state, cortisol inhibits the positive effect of adrenaline, resulting in tighter blood vessels, higher blood pressure, slower psychological responses, and a faster heart rate. In short, a threat state makes people more anxious - they make worse decisions and perform more poorly. {[In tennis players, cortisol has been associated with more unsuccessful serves and greater anxiety][20]}.</p>\n<p><strong><span class=\"fontstyle0\">E.</span></strong> That said, anxiety is also a common experience for athletes when they're under pressure. Anxiety can increase heart rate and perspiration, cause heart palpitations, muscle tremors and shortness of breath, as well as headaches, nausea, stomach pain, weakness and a desire to escape in more extreme cases. Anxiety can also reduce concentration and self-control and cause overthinking. {[The intensity with which a person experiences anxiety depends on the demands and resources they have.][25]}Anxiety may also manifest itself in the form of excitement or nervousness depending on the stress response. {[Negative stress responses can be damaging to both physical and mental health - and repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression.][26]}</p>\n<p><strong><span class=\"fontstyle0\">F. </span></strong>But there are many ways athletes can ensure they respond positively under pressure. {[Positive stress responses can be promoted through the language that they and others - such as coaches or parents - use.][15-18]}{[Psychologists can also help athletes change how they see their physiological responses - such as helping them see a higher heart rate as excitement, rather than nerves.][18-21]}{[Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat.][15-22]}Visualisation may involve the athlete recreating a mental picture of a time when they performed well, or picturing themselves doing well in the future. This can help create a feeling of control over the stressful event. Recreating competitive pressure during training can also help athletes learn how to deal with stress. An example of this might be scoring athletes against their peers to create a sense of competition. This would increase the demands which players experience compared to a normal training session, while still allowing them to practise coping with stress.&nbsp;</p>",
+    "tags": null,
+    "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+    "user_updated": "20e3add8-f7bd-488d-b669-d42f50e7f8e9",
+    "date_created": "2024-07-14T07:34:53.822+07:00",
+    "date_updated": "2024-09-10T18:22:31.987+07:00",
+    "quiz_part": null,
+    "quiz_type": 4,
+    "mock_test_id": 46,
+    "mock_test_type": 1,
+    "listening": null,
+    "instruction": null,
+    "question": null,
+    "samples": null,
+    "vote_count": 0,
+    "total_submitted": 0,
+    "writing_task_type": null,
+    "extra": {
+      "user_attempt_count": null
+    },
+    "speaking_part_type": null,
+    "speaking_topic_id": null,
+    "speaking_topic": null,
+    "quiz_id": 1714,
+    "passage": 2,
+    "simplified_content": null,
+    "explanations": [],
+    "vocabs": [],
+    "listen_from": null,
+    "listen_to": null,
+    "parts": [
+      {
+        "id": 1823,
+        "quiz_id": 1714,
+        "passage": 2,
+        "title": "Part 2",
+        "sort": 2,
+        "time": null,
+        "content": "<h3>READING PASSAGE 2</h3>\n<p>You should spend about 20 minutes on Questions 14 - 26 which are based on Reading Passage 2 below.</p>\n<h2 style=\"text-align: center;\"><span class=\"fontstyle2\"><strong><span data-sheets-root=\"1\">Athletes and stress</span></strong></span></h2>\n<p><span class=\"fontstyle2\"><strong>A.</strong> </span>It isn't easy being a professional athlete. Not only are the physical demands greater than&nbsp;most people could handle, athletes also face intense psychological pressure during competition. .</p>\n<p><span class=\"fontstyle2\"><strong>B.</strong>&nbsp;</span>For athletes, some level of performance stress is almost unavoidable. But there are many different factors that dictate just how people's minds and bodies respond to stressful events. Typically, stress is the result of an exchange between two factors: demands and resources. An athlete may feel stressed about an event if they feel the demands on them are greater than they can handle. Resources, on the other hand, are a person's ability to cope with these demands. These include factors such as the competitor's degree of confidence, how much they believe they can control the situation's outcome, and whether they're looking forward to the event or not.</p>\n<p><span class=\"fontstyle2\"><strong>C.</strong> </span>Each new demand or change in circumstances affects whether a person responds positively or negatively to stress. Typically, the more resources a person feels they have in handling the situation, the more positive their stress response. This positive stress response is called a challenge state. But should the person feel there are too many demands placed on them, the more likely they are to experience a negative stress response - known as a threat state. So, in Emma Raducanu's case, a much larger audience, higher expectations and facing a more skilful opponent, may all have led her to feel there were greater demands being placed on her at Wimbledon - but she didn't have the resources to tackle them. This led to her experiencing a threat response.</p>\n<p><span class=\"fontstyle2\"><strong>D.</strong></span> During a challenge state, adrenaline increases the amount of blood pumped from the heart and expands the blood vessels, which allows more energy to be delivered to the muscles and brain. This increase of blood and decrease of pressure in the blood vessels has been consistently related to superior sport performance in everything from cricket batting, to golf putting and football penalty taking. But during a threat state, cortisol inhibits the positive effect of adrenaline, resulting in tighter blood vessels, higher blood pressure, slower psychological responses, and a faster heart rate. In short, a threat state makes people more anxious - they make worse decisions and perform more poorly. .</p>\n<p><strong><span class=\"fontstyle0\">E.</span></strong> That said, anxiety is also a common experience for athletes when they're under pressure. Anxiety can increase heart rate and perspiration, cause heart palpitations, muscle tremors and shortness of breath, as well as headaches, nausea, stomach pain, weakness and a desire to escape in more extreme cases. Anxiety can also reduce concentration and self-control and cause overthinking. Anxiety may also manifest itself in the form of excitement or nervousness depending on the stress response. </p>\n<p><strong><span class=\"fontstyle0\">F. </span></strong>But there are many ways athletes can ensure they respond positively under pressure. Visualisation may involve the athlete recreating a mental picture of a time when they performed well, or picturing themselves doing well in the future. This can help create a feeling of control over the stressful event. Recreating competitive pressure during training can also help athletes learn how to deal with stress. An example of this might be scoring athletes against their peers to create a sense of competition. This would increase the demands which players experience compared to a normal training session, while still allowing them to practise coping with stress.&nbsp;</p>",
+        "simplified_content": null,
+        "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+        "date_created": "2024-07-14T07:34:53.822+07:00",
+        "date_updated": "2024-09-10T18:22:31.987+07:00",
+        "explanations": [],
+        "questions": [
+          {
+            "id": 10880,
+            "quiz_id": 0,
+            "type": "MULTIPLE",
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "title": "Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text?",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 7,
+            "order": 23,
+            "part_id": 1823,
+            "time_to_think": null,
+            "listen_from": null,
+            "locate": null,
+            "explain": null,
+            "description": "<h2><span class=\"fontstyle0\">Questions 23 - 24:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 23 - 24 on your answer sheet.</span>&nbsp;</p>",
+            "gap_fill_in_blank": null,
+            "single_choice_radio": null,
+            "selection": null,
+            "mutilple_choice": [
+              {
+                "text": "the stage at which she dropped out of the tournament",
+                "correct": false,
+                "order": 1
+              },
+              {
+                "text": "symptoms of her performance stress at the tournament",
+                "correct": true,
+                "order": 2,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Pd1pdkBc8oHNYVxi05zlQZQRgsb\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UABfdWd0coVaBxxxmqCl0y0og1d\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-XyHtdatA0o784bxZpsyluL68g8d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VBa5df6H5osRnRx6Nxalr3eMgWb\" data-list=\"bullet\">\n<div><strong>Having difficulty regulating her breathing and heart rate </strong>~ symptoms of her performance stress</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Gi9SdBgd2opR5yxZ39QlAbZsgQh\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Lqsld04j2oztPjxMSaAlTLHMgJd\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu <u><strong>gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở</strong></u> v&agrave; <u><strong>nhịp tim</strong></u> trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do 'ngột ngạt trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động.\"</div>\n<div class=\"ace-line ace-line old-record-id-A3D7d6EPAoIaVCxL6melfNEegAh\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u B \"đề cập đến c&aacute;c<strong> </strong><u><strong>triệu chứng của căng thẳng</strong></u> của nữ vận động vi&ecirc;n n&agrave;y khi thể hiện trong những trận đấu lớn&rdquo;<em> (having difficulty regulating her breathing and heart rate).</em></div>\n<div class=\"ace-line ace-line old-record-id-L5T8d4LIyosvohxnQrWlu4fwgMg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: B</div>\n<div class=\"ace-line ace-line old-record-id-Nuf6dhxmXoVnThxlrCAlG9Nhgwh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-Rudnd0n9noYBsgxo7HOl966dgJ0\"><u><strong>Đ&aacute;p &aacute;n E</strong></u>: <em><strong>Phản ứng của c&ocirc;ng ch&uacute;ng</strong></em> đối với c&aacute;c b&agrave;i đăng tr&ecirc;n mạng x&atilde; hội của Emma Raducanu về trải nghiệm tại Wimbledon =&gt; Đoạn A chỉ đề cập đến việc &ldquo;c&ocirc; ấy đăng b&agrave;i tr&ecirc;n mạng x&atilde; hội&rdquo;, kh&ocirc;ng n&oacute;i về phản ứng của c&ocirc;ng ch&uacute;ng đối với c&aacute;c b&agrave;i đăng đ&oacute;.</div>\n</div>"
+              },
+              {
+                "text": "measures which she had taken to manage her stress levels",
+                "correct": false,
+                "order": 3
+              },
+              {
+                "text": "aspects of the Wimbledon tournament which increased her stress levels",
+                "correct": true,
+                "order": 4,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-QLBWdmG1ZocjlAxcJb0lwgvbgvg\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-QPiZdUOEEoHoqPxeKpblHv4jgxg\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-CL4HdoHNWoNKJ8xyekclFJ5xgYg\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Fg7kduNqVoUKLQxztx0lpTTEgLf\" data-list=\"bullet\">\n<div><strong>attributed </strong>~ increased</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-A9iddtnlaozP0ZxLAXdlTOGBgIg\" data-list=\"bullet\">\n<div><strong>the excitement and the buzz </strong>~ aspects</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Xf7fdbKvOo1HmQxcqRVlOFDTgfd\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-QB3EdWGp9o2UlPxuJDdliigPgGe\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; tay vợt trẻ Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở v&agrave; nhịp tim trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do '<u><strong>sự ngột ngại trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động</strong></u>'.\"</div>\n<div class=\"ace-line ace-line old-record-id-RiUKdLfTCo5StfxUj3ol3UFvgoe\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u D \"<u><strong>đề cập đến c&aacute;c kh&iacute;a cạnh l&agrave;m tăng mức độ căng thẳng của Emma Raducanu tại giải Wimbledon</strong></u>\" (<em>aspects which increased her stress levels</em>).</div>\n<div class=\"ace-line ace-line old-record-id-EdMLdqmLdo3f75xcyDTl70kRgAg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: D</div>\n<div class=\"ace-line ace-line old-record-id-INVpd7rdYoMlJyxEiWtlNywMgjb\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-SIYndsJ92ospQjxkBG5lOjO3gth\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: C&aacute;c <em><strong>biện ph&aacute;p</strong></em> Emma Raducanu đ&atilde; thực hiện để <em><strong>kiểm so&aacute;t mức độ căng thẳng</strong></em> =&gt; Đoạn A chỉ đề cập đến việc Emma Raducanu bị căng thẳng chứ kh&ocirc;ng đề cập đến bất kỳ biện ph&aacute;p n&agrave;o c&ocirc; đ&atilde; thực hiện để kiểm so&aacute;t căng thẳng.</div>\n</div>"
+              },
+              {
+                "text": "reactions to her social media posts about her experience at Wimbledon",
+                "correct": false,
+                "order": 5
+              }
+            ],
+            "selection_option": null,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_created": "2024-07-14T07:34:53.97+07:00",
+            "date_updated": "2024-09-10T18:22:32.059+07:00",
+            "instruction": null,
+            "writing_logical_frame": null,
+            "writing_graph_image": null,
+            "writing_graph_description": null,
+            "writing_graph_type": null,
+            "time_limit": null,
+            "audio_url": null,
+            "min_words": 0,
+            "max_words": 0
+          },
+          {
+            "id": 10881,
+            "quiz_id": 0,
+            "type": "MULTIPLE",
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "title": "Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 8,
+            "order": 25,
+            "part_id": 1823,
+            "time_to_think": null,
+            "listen_from": null,
+            "locate": null,
+            "explain": null,
+            "description": "<h2><span class=\"fontstyle0\">Questions 25 - 26:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 25 - 26 on your answer sheet.</span>&nbsp;</p>",
+            "gap_fill_in_blank": null,
+            "single_choice_radio": null,
+            "selection": null,
+            "mutilple_choice": [
+              {
+                "text": "the factors which determine how severe it may be",
+                "correct": true,
+                "order": 1,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-FRzGdnOQroxO6LxvDE4ldZgPgeN\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UOKqdSKgHojRONxzWY4lhujqgob\">T&igrave;m ra HAI nhận định về chứng lo &acirc;u được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-SXG7dWJIHoxyeHxZhBiloLTygSD\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-EIKPdLwpVoGnjYxRulmlSdiBgjc\" data-list=\"bullet\">\n<div><strong>The intensity </strong>~ how severe</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-OuESdXwcFoUaFgxE33PlpNkngfd\" data-list=\"bullet\">\n<div><strong>depends on</strong> ~ the factors which determine</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-MdtXdIcUHopOr1xghqZlSYDdgSf\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JZNodpuMQoG18rx3WejlSgzMgWh\">B&agrave;i đọc chỉ r&otilde;: \"<u><strong>Mức độ</strong></u> m&agrave; một người mắc <u><strong>chứng lo &acirc;u phụ thuộc</strong></u> v&agrave;o thứ m&agrave; <u><strong>họ được y&ecirc;u cầu phải l&agrave;m</strong></u> v&agrave;<u><strong> nguồn lực</strong></u> m&agrave; họ c&oacute;\"</div>\n<div class=\"ace-line ace-line old-record-id-QKYydzv65oQuxyxGgVZl68W6gdf\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u A: \"<u><strong>đề cập đến c&aacute;c yếu tố quyết định mức độ nghi&ecirc;m trọng của lo lắng</strong></u>&rdquo;<em> </em>(<em>the factors which determine how severe it may be</em>)</div>\n<div class=\"ace-line ace-line old-record-id-AjTGdoFBKo74nmxXNpfl9rHmgEb\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: A</div>\n<div class=\"ace-line ace-line old-record-id-YDzSdTzupoC6HPxy1pdl5NLtgdd\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-TDDJdgsQco8eA9xqw44liG6wgwh\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: <em><strong>Triệu chứng</strong></em> n&agrave;o thường gặp nhất =&gt; Đoạn E liệt k&ecirc; nhiều triệu chứng của lo lắng nhưng kh&ocirc;ng chỉ ra triệu chứng n&agrave;o l&agrave; phổ biến nhất.</div>\n</div>"
+              },
+              {
+                "text": "how long it takes for its effects to become apparent",
+                "correct": false,
+                "order": 2
+              },
+              {
+                "text": "which of its symptoms is most frequently encountered",
+                "correct": false,
+                "order": 3
+              },
+              {
+                "text": "the types of athletes who are most likely to suffer from it",
+                "correct": false,
+                "order": 4
+              },
+              {
+                "text": "the harm that can result if athletes experience it too often",
+                "correct": true,
+                "order": 5,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-PmoSdiIDEowvazxBxZplsLIxgAd\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-KYL1d6ZQAomiJSxIxTUlCsX9gFh\">T&igrave;m ra HAI sự kiện về lo lắng được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-VsrrdcfXzofQxFxxot9lFKIGg7d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IM1BdMUntooQHyxUHhPlt3TYgRT\" data-list=\"bullet\">\n<div><strong>Repeated episodes </strong>~ experience it too often</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AdYTdSUGMofPNfxAUSrlpyIhgae\" data-list=\"bullet\">\n<div><strong>anxiety coupled with negative responses </strong>~ the harm</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Zldodhjhmoc6LRxq3NMlspFtgXb\" data-list=\"bullet\">\n<div><strong>increase risk</strong> ~ result</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-O0G5dnYiDoFommxRxtIlTR43gvg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-L7qadTT2HoQ4aHx1dIFlZYeagch\">B&agrave;i đọc chỉ r&otilde;: \"C&aacute;c phản ứng căng thẳng ti&ecirc;u cực c&oacute; thể g&acirc;y hại cho cả sức khỏe thể chất v&agrave; tinh thần - v&agrave; c&aacute;c <u><strong>đợt lo lắng lặp đi lặp lại</strong></u> k&egrave;m theo c&aacute;c <u><strong>phản ứng ti&ecirc;u cực</strong></u> c&oacute; thể l&agrave;m tăng <u><strong>nguy cơ mắc bệnh tim v&agrave; trầm cảm</strong></u>.\"</div>\n<div class=\"ace-line ace-line old-record-id-RPS7d0qYwo3kahxUJPklWzahgNc\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u E rằng <em>\"</em><u><strong>t&aacute;c hại c&oacute; thể xảy ra nếu vận động vi&ecirc;n trải qua n&oacute; qu&aacute; thường xuy&ecirc;n</strong></u><em>\"</em> (<em>repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression</em>)</div>\n<div class=\"ace-line ace-line old-record-id-VZNcd2kNVoWD04xwURolJAKcgce\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: E</div>\n<div class=\"ace-line ace-line old-record-id-LNctdm6ijoM120xHObxl6sMBgKh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-C4DJdUb45ozAUdxfnorlEiAvgyc\"><u><strong>Đ&aacute;p &aacute;n D</strong></u>: <em><strong>Loại vận động vi&ecirc;n</strong></em> n&agrave;o c&oacute; khả năng <em><strong>bị ảnh hưởng </strong></em>(bởi lo lắng) <em><strong>nhiều nhất</strong></em> =&gt; Đoạn E kh&ocirc;ng đề cập đến việc loại vận động vi&ecirc;n n&agrave;o dễ bị ảnh hưởng nhất.</div>\n</div>"
+              }
+            ],
+            "selection_option": null,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_created": "2024-07-14T07:34:53.988+07:00",
+            "date_updated": "2024-09-10T18:22:32.093+07:00",
+            "instruction": null,
+            "writing_logical_frame": null,
+            "writing_graph_image": null,
+            "writing_graph_description": null,
+            "writing_graph_type": null,
+            "time_limit": null,
+            "audio_url": null,
+            "min_words": 0,
+            "max_words": 0
+          }
+        ],
+        "vocabs": [],
+        "listen_from": null,
+        "listen_to": null,
+        "instruction": null,
+        "question_sets": [
+          {
+            "id": 1,
+            "part_id": 1823,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "date_created": "2024-07-14T07:34:53.97+07:00",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_updated": "2024-09-10T18:22:32.059+07:00",
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "title": "Questions 23-24",
+            "description": "<h2><span class=\"fontstyle0\">Questions 23 - 24:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 23 - 24 on your answer sheet.</span>&nbsp;</p>",
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "the stage at which she dropped out of the tournament",
+                "option": "A"
+              },
+              {
+                "text": "symptoms of her performance stress at the tournament",
+                "option": "B"
+              },
+              {
+                "text": "measures which she had taken to manage her stress levels",
+                "option": "C"
+              },
+              {
+                "text": "aspects of the Wimbledon tournament which increased her stress levels",
+                "option": "D"
+              },
+              {
+                "text": "reactions to her social media posts about her experience at Wimbledon",
+                "option": "E"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 1,
+                "status": "published",
+                "sort": 1,
+                "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+                "date_created": "2024-07-14T07:34:53.97+07:00",
+                "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+                "date_updated": "2024-09-10T18:22:32.059+07:00",
+                "title": "",
+                "content": "",
+                "locate": null,
+                "order": null,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Pd1pdkBc8oHNYVxi05zlQZQRgsb\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UABfdWd0coVaBxxxmqCl0y0og1d\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-XyHtdatA0o784bxZpsyluL68g8d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VBa5df6H5osRnRx6Nxalr3eMgWb\" data-list=\"bullet\">\n<div><strong>Having difficulty regulating her breathing and heart rate </strong>~ symptoms of her performance stress</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Gi9SdBgd2opR5yxZ39QlAbZsgQh\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Lqsld04j2oztPjxMSaAlTLHMgJd\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu <u><strong>gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở</strong></u> v&agrave; <u><strong>nhịp tim</strong></u> trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do 'ngột ngạt trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động.\"</div>\n<div class=\"ace-line ace-line old-record-id-A3D7d6EPAoIaVCxL6melfNEegAh\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u B \"đề cập đến c&aacute;c<strong> </strong><u><strong>triệu chứng của căng thẳng</strong></u> của nữ vận động vi&ecirc;n n&agrave;y khi thể hiện trong những trận đấu lớn&rdquo;<em> (having difficulty regulating her breathing and heart rate).</em></div>\n<div class=\"ace-line ace-line old-record-id-L5T8d4LIyosvohxnQrWlu4fwgMg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: B</div>\n<div class=\"ace-line ace-line old-record-id-Nuf6dhxmXoVnThxlrCAlG9Nhgwh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-Rudnd0n9noYBsgxo7HOl966dgJ0\"><u><strong>Đ&aacute;p &aacute;n E</strong></u>: <em><strong>Phản ứng của c&ocirc;ng ch&uacute;ng</strong></em> đối với c&aacute;c b&agrave;i đăng tr&ecirc;n mạng x&atilde; hội của Emma Raducanu về trải nghiệm tại Wimbledon =&gt; Đoạn A chỉ đề cập đến việc &ldquo;c&ocirc; ấy đăng b&agrave;i tr&ecirc;n mạng x&atilde; hội&rdquo;, kh&ocirc;ng n&oacute;i về phản ứng của c&ocirc;ng ch&uacute;ng đối với c&aacute;c b&agrave;i đăng đ&oacute;.</div>\n</div>",
+                "description": null,
+                "content_writing": "",
+                "time_to_think": null,
+                "listen_from": null,
+                "instruction": null,
+                "writing_graph_image": null,
+                "writing_graph_description": null,
+                "writing_graph_type": null,
+                "audio_url": null,
+                "time_limit": 30,
+                "max_words": null,
+                "min_words": null,
+                "text": "",
+                "locate_info": null,
+                "quiz_id": 0,
+                "part_id": null,
+                "type": "",
+                "gap_fill_in_blank": null,
+                "single_choice_radio": null,
+                "selection": null,
+                "mutilple_choice": null,
+                "selection_option": null,
+                "question_set_id": 1,
+                "question_type": "MULTIPLE",
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "options": null
+              },
+              {
+                "id": 2,
+                "status": "published",
+                "sort": 2,
+                "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+                "date_created": "2024-07-14T07:34:53.97+07:00",
+                "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+                "date_updated": "2024-09-10T18:22:32.059+07:00",
+                "title": "",
+                "content": "",
+                "locate": null,
+                "order": null,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-QLBWdmG1ZocjlAxcJb0lwgvbgvg\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-QPiZdUOEEoHoqPxeKpblHv4jgxg\">T&igrave;m ra HAI nhận định về việc Emma Raducanu r&uacute;t lui khỏi giải Wimbledon được đề cập trong b&agrave;i.</div>\n<div class=\"ace-line ace-line old-record-id-CL4HdoHNWoNKJ8xyekclFJ5xgYg\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Fg7kduNqVoUKLQxztx0lpTTEgLf\" data-list=\"bullet\">\n<div><strong>attributed </strong>~ increased</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-A9iddtnlaozP0ZxLAXdlTOGBgIg\" data-list=\"bullet\">\n<div><strong>the excitement and the buzz </strong>~ aspects</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Xf7fdbKvOo1HmQxcqRVlOFDTgfd\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-QB3EdWGp9o2UlPxuJDdliigPgGe\">B&agrave;i đọc chỉ r&otilde;: \"Mặc d&ugrave; tay vợt trẻ Emma Raducanu đ&atilde; thi đấu tốt trong giải đấu, c&ocirc; bắt đầu gặp kh&oacute; khăn trong việc điều h&ograve;a hơi thở v&agrave; nhịp tim trong một trận đấu, điều m&agrave; sau đ&oacute; c&ocirc; cho l&agrave; do '<u><strong>sự ngột ngại trong kh&ocirc;ng kh&iacute; phấn kh&iacute;ch v&agrave; s&ocirc;i động</strong></u>'.\"</div>\n<div class=\"ace-line ace-line old-record-id-RiUKdLfTCo5StfxUj3ol3UFvgoe\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u D \"<u><strong>đề cập đến c&aacute;c kh&iacute;a cạnh l&agrave;m tăng mức độ căng thẳng của Emma Raducanu tại giải Wimbledon</strong></u>\" (<em>aspects which increased her stress levels</em>).</div>\n<div class=\"ace-line ace-line old-record-id-EdMLdqmLdo3f75xcyDTl70kRgAg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: D</div>\n<div class=\"ace-line ace-line old-record-id-INVpd7rdYoMlJyxEiWtlNywMgjb\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-SIYndsJ92ospQjxkBG5lOjO3gth\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: C&aacute;c <em><strong>biện ph&aacute;p</strong></em> Emma Raducanu đ&atilde; thực hiện để <em><strong>kiểm so&aacute;t mức độ căng thẳng</strong></em> =&gt; Đoạn A chỉ đề cập đến việc Emma Raducanu bị căng thẳng chứ kh&ocirc;ng đề cập đến bất kỳ biện ph&aacute;p n&agrave;o c&ocirc; đ&atilde; thực hiện để kiểm so&aacute;t căng thẳng.</div>\n</div>",
+                "description": null,
+                "content_writing": "",
+                "time_to_think": null,
+                "listen_from": null,
+                "instruction": null,
+                "writing_graph_image": null,
+                "writing_graph_description": null,
+                "writing_graph_type": null,
+                "audio_url": null,
+                "time_limit": 30,
+                "max_words": null,
+                "min_words": null,
+                "text": "",
+                "locate_info": null,
+                "quiz_id": 0,
+                "part_id": null,
+                "type": "",
+                "gap_fill_in_blank": null,
+                "single_choice_radio": null,
+                "selection": null,
+                "mutilple_choice": null,
+                "selection_option": null,
+                "question_set_id": 1,
+                "question_type": "MULTIPLE",
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "options": null
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "part_id": 1823,
+            "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+            "date_created": "2024-07-14T07:34:53.988+07:00",
+            "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+            "date_updated": "2024-09-10T18:22:32.093+07:00",
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "title": "Questions 25-26",
+            "description": "<h2><span class=\"fontstyle0\">Questions 25 - 26:</span></h2>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle2\">TWO </span><span class=\"fontstyle0\">letters, </span><span class=\"fontstyle2\"><strong>A-E</strong>. </span></p>\n<p><span class=\"fontstyle0\">Write the&nbsp;</span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letters </span><span class=\"fontstyle0\">in boxes 25 - 26 on your answer sheet.</span>&nbsp;</p>",
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "the factors which determine how severe it may be",
+                "option": "A"
+              },
+              {
+                "text": "how long it takes for its effects to become apparent",
+                "option": "B"
+              },
+              {
+                "text": "which of its symptoms is most frequently encountered",
+                "option": "C"
+              },
+              {
+                "text": "the types of athletes who are most likely to suffer from it",
+                "option": "D"
+              },
+              {
+                "text": "the harm that can result if athletes experience it too often",
+                "option": "E"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 3,
+                "status": "published",
+                "sort": 1,
+                "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+                "date_created": "2024-07-14T07:34:53.988+07:00",
+                "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+                "date_updated": "2024-09-10T18:22:32.093+07:00",
+                "title": "",
+                "content": "",
+                "locate": null,
+                "order": null,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-FRzGdnOQroxO6LxvDE4ldZgPgeN\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UOKqdSKgHojRONxzWY4lhujqgob\">T&igrave;m ra HAI nhận định về chứng lo &acirc;u được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-SXG7dWJIHoxyeHxZhBiloLTygSD\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-EIKPdLwpVoGnjYxRulmlSdiBgjc\" data-list=\"bullet\">\n<div><strong>The intensity </strong>~ how severe</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-OuESdXwcFoUaFgxE33PlpNkngfd\" data-list=\"bullet\">\n<div><strong>depends on</strong> ~ the factors which determine</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-MdtXdIcUHopOr1xghqZlSYDdgSf\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JZNodpuMQoG18rx3WejlSgzMgWh\">B&agrave;i đọc chỉ r&otilde;: \"<u><strong>Mức độ</strong></u> m&agrave; một người mắc <u><strong>chứng lo &acirc;u phụ thuộc</strong></u> v&agrave;o thứ m&agrave; <u><strong>họ được y&ecirc;u cầu phải l&agrave;m</strong></u> v&agrave;<u><strong> nguồn lực</strong></u> m&agrave; họ c&oacute;\"</div>\n<div class=\"ace-line ace-line old-record-id-QKYydzv65oQuxyxGgVZl68W6gdf\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u A: \"<u><strong>đề cập đến c&aacute;c yếu tố quyết định mức độ nghi&ecirc;m trọng của lo lắng</strong></u>&rdquo;<em> </em>(<em>the factors which determine how severe it may be</em>)</div>\n<div class=\"ace-line ace-line old-record-id-AjTGdoFBKo74nmxXNpfl9rHmgEb\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: A</div>\n<div class=\"ace-line ace-line old-record-id-YDzSdTzupoC6HPxy1pdl5NLtgdd\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-TDDJdgsQco8eA9xqw44liG6wgwh\"><u><strong>Đ&aacute;p &aacute;n C</strong></u>: <em><strong>Triệu chứng</strong></em> n&agrave;o thường gặp nhất =&gt; Đoạn E liệt k&ecirc; nhiều triệu chứng của lo lắng nhưng kh&ocirc;ng chỉ ra triệu chứng n&agrave;o l&agrave; phổ biến nhất.</div>\n</div>",
+                "description": null,
+                "content_writing": "",
+                "time_to_think": null,
+                "listen_from": null,
+                "instruction": null,
+                "writing_graph_image": null,
+                "writing_graph_description": null,
+                "writing_graph_type": null,
+                "audio_url": null,
+                "time_limit": 30,
+                "max_words": null,
+                "min_words": null,
+                "text": "",
+                "locate_info": null,
+                "quiz_id": 0,
+                "part_id": null,
+                "type": "",
+                "gap_fill_in_blank": null,
+                "single_choice_radio": null,
+                "selection": null,
+                "mutilple_choice": null,
+                "selection_option": null,
+                "question_set_id": 2,
+                "question_type": "MULTIPLE",
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "E"
+                ],
+                "options": null
+              },
+              {
+                "id": 4,
+                "status": "published",
+                "sort": 2,
+                "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+                "date_created": "2024-07-14T07:34:53.988+07:00",
+                "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
+                "date_updated": "2024-09-10T18:22:32.093+07:00",
+                "title": "",
+                "content": "",
+                "locate": null,
+                "order": null,
+                "explain": "<div data-page-id=\"EfpEd3praoYaK5xJCBGlIskfgeg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-PmoSdiIDEowvazxBxZplsLIxgAd\"><u><strong>Bước 1</strong></u>: Hiểu y&ecirc;u cầu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-KYL1d6ZQAomiJSxIxTUlCsX9gFh\">T&igrave;m ra HAI sự kiện về lo lắng được đề cập trong đoạn E của b&agrave;i đọc.</div>\n<div class=\"ace-line ace-line old-record-id-VsrrdcfXzofQxFxxot9lFKIGg7d\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IM1BdMUntooQHyxUHhPlt3TYgRT\" data-list=\"bullet\">\n<div><strong>Repeated episodes </strong>~ experience it too often</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AdYTdSUGMofPNfxAUSrlpyIhgae\" data-list=\"bullet\">\n<div><strong>anxiety coupled with negative responses </strong>~ the harm</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Zldodhjhmoc6LRxq3NMlspFtgXb\" data-list=\"bullet\">\n<div><strong>increase risk</strong> ~ result</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-O0G5dnYiDoFommxRxtIlTR43gvg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-L7qadTT2HoQ4aHx1dIFlZYeagch\">B&agrave;i đọc chỉ r&otilde;: \"C&aacute;c phản ứng căng thẳng ti&ecirc;u cực c&oacute; thể g&acirc;y hại cho cả sức khỏe thể chất v&agrave; tinh thần - v&agrave; c&aacute;c <u><strong>đợt lo lắng lặp đi lặp lại</strong></u> k&egrave;m theo c&aacute;c <u><strong>phản ứng ti&ecirc;u cực</strong></u> c&oacute; thể l&agrave;m tăng <u><strong>nguy cơ mắc bệnh tim v&agrave; trầm cảm</strong></u>.\"</div>\n<div class=\"ace-line ace-line old-record-id-RPS7d0qYwo3kahxUJPklWzahgNc\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u E rằng <em>\"</em><u><strong>t&aacute;c hại c&oacute; thể xảy ra nếu vận động vi&ecirc;n trải qua n&oacute; qu&aacute; thường xuy&ecirc;n</strong></u><em>\"</em> (<em>repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression</em>)</div>\n<div class=\"ace-line ace-line old-record-id-VZNcd2kNVoWD04xwURolJAKcgce\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: E</div>\n<div class=\"ace-line ace-line old-record-id-LNctdm6ijoM120xHObxl6sMBgKh\"><u><strong>Bước 5</strong></u>: Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<div class=\"ace-line ace-line old-record-id-C4DJdUb45ozAUdxfnorlEiAvgyc\"><u><strong>Đ&aacute;p &aacute;n D</strong></u>: <em><strong>Loại vận động vi&ecirc;n</strong></em> n&agrave;o c&oacute; khả năng <em><strong>bị ảnh hưởng </strong></em>(bởi lo lắng) <em><strong>nhiều nhất</strong></em> =&gt; Đoạn E kh&ocirc;ng đề cập đến việc loại vận động vi&ecirc;n n&agrave;o dễ bị ảnh hưởng nhất.</div>\n</div>",
+                "description": null,
+                "content_writing": "",
+                "time_to_think": null,
+                "listen_from": null,
+                "instruction": null,
+                "writing_graph_image": null,
+                "writing_graph_description": null,
+                "writing_graph_type": null,
+                "audio_url": null,
+                "time_limit": 30,
+                "max_words": null,
+                "min_words": null,
+                "text": "",
+                "locate_info": null,
+                "quiz_id": 0,
+                "part_id": null,
+                "type": "",
+                "gap_fill_in_blank": null,
+                "single_choice_radio": null,
+                "selection": null,
+                "mutilple_choice": null,
+                "selection_option": null,
+                "question_set_id": 2,
+                "question_type": "MULTIPLE",
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "E"
+                ],
+                "options": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

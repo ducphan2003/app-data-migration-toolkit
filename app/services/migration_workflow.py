@@ -235,6 +235,14 @@ class MigrationWorkflow:
     
     def __init__(self, migrate_repo: MigrateRepository):
         self.migrate_repo = migrate_repo
+        # Tạo instance của MigrationNodes với API keys từ environment
+        import os
+        self.migration_nodes = MigrationNodes(
+            openrouter_api_key=os.getenv('PROMPT_YOUR_API_OPENROUTER'),
+            gpt_api_key=os.getenv('PROMPT_YOUR_API_GPT'),
+            gemini_api_key=os.getenv('PROMPT_YOUR_API_GEMINI'),
+            claude_api_key=os.getenv('PROMPT_YOUR_API_CLAUDE')
+        )
         self.workflow = self._build_workflow()
         
     def _build_workflow(self) -> StateGraph:
@@ -244,11 +252,11 @@ class MigrationWorkflow:
         # Tạo StateGraph
         workflow = StateGraph(MigrationState)
         
-        # Thêm các nodes
-        workflow.add_node("analyze", MigrationNodes.analyze_node)
-        workflow.add_node("mapping", MigrationNodes.mapping_node)
-        workflow.add_node("validation", MigrationNodes.validation_node)
-        workflow.add_node("save", MigrationNodes.save_node)
+        # Thêm các nodes sử dụng instance methods
+        workflow.add_node("analyze", self._analyze_wrapper)
+        workflow.add_node("mapping", self._mapping_wrapper)
+        workflow.add_node("validation", self._validation_wrapper)
+        workflow.add_node("save", self._save_wrapper)
         workflow.add_node("error_handler", self._error_handler_node)
         
         # Định nghĩa entry point
@@ -298,6 +306,22 @@ class MigrationWorkflow:
         workflow.add_edge("error_handler", END)
         
         return workflow
+    
+    async def _analyze_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho analyze node để handle async"""
+        return await self.migration_nodes.analyze_node(state)
+    
+    async def _mapping_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho mapping node để handle async"""
+        return await self.migration_nodes.mapping_node(state)
+    
+    async def _validation_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho validation node để handle async"""
+        return await self.migration_nodes.validation_node(state)
+    
+    def _save_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho save node (sync)"""
+        return self.migration_nodes.save_node(state)
     
     def create_initial_state(
         self, 

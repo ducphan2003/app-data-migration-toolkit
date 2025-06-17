@@ -530,7 +530,7 @@ Group questions of the same type consecutively into question sets and convert ac
                         correct_answers = [answer_raw]
                 
                 question_item = {
-                    "id": len(questions) + 1,
+                    "id": len(questions) + 1 if isinstance(questions, list) else 1,
                     "status": "published",
                     "sort": j + 1,
                     "user_created": question.get('user_created'),

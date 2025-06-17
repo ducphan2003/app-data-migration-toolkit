@@ -39,7 +39,7 @@
 
   ```json
   {
-    "id": "auto_generate",
+    "id": 1,
     "part_id": "part_id",
     "question_type": "SINGLE_SELECTION",
     "question_count": "number of questions in the set",
@@ -65,7 +65,7 @@
     "max_selections": 0,
     "questions": [
       {
-        "id": "auto_generate",
+        "id": 1,
         "question_type": "TRUE_FALSE",
         "correct_answer": "NOT GIVEN",
         "text": "Britain's canal network grew rapidly so that more goods could be transported around the country.",

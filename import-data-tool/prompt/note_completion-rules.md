@@ -23,7 +23,7 @@
 
   ```json
   {
-    "id": "auto_generate",
+    "id": 1,
     "part_id": "part_id",
     "question_type": "NOTE_COMPLETION",
     "question_count": "number of gaps in the content",
@@ -45,7 +45,7 @@
     "max_selections": 0,
     "questions": [
       {
-        "id": "auto_generate",
+        "id": 1,
         "question_type": "NOTE_COMPLETION",
         "correct_answer": "H",
         "text": "",

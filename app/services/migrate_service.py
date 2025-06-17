@@ -135,8 +135,25 @@ class MigrateService:
                 )
                 
                 logger.info(f"LangGraph migration workflow completed for process {migrate_process_id}")
-                logger.info(f"Final status: {final_state['status']}")
-                logger.info(f"Quality score: {final_state['quality_metrics']['quality_score']}")
+                
+                # Safely extract status from final_state
+                try:
+                    if hasattr(final_state, 'get'):
+                        status = final_state.get('status', 'unknown')
+                        quality_metrics = final_state.get('quality_metrics', {})
+                        quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
+                    else:
+                        # Try to access as attribute
+                        status = getattr(final_state, 'status', 'unknown')
+                        quality_metrics = getattr(final_state, 'quality_metrics', {})
+                        quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
+                    
+                    logger.info(f"Final status: {status}")
+                    logger.info(f"Quality score: {quality_score}")
+                except Exception as access_error:
+                    logger.warning(f"Error accessing final_state fields: {str(access_error)}")
+                    logger.info(f"Final state type: {type(final_state)}")
+                    logger.info(f"Final state keys: {list(final_state.keys()) if hasattr(final_state, 'keys') else 'N/A'}")
                 
             finally:
                 loop.close()

@@ -42,7 +42,7 @@ async def test_modular_migration():
     
     # Load test data
     try:
-        with open('import-data-tool/raw-data/reading.input-fill_blank.json', 'r', encoding='utf-8') as f:
+        with open('import-data-tool/raw-data/reading.input-multiple_choice_many.json', 'r', encoding='utf-8') as f:
             test_data = json.load(f)
         print(f"✅ Loaded test data with {len(test_data.get('parts', []))} parts")
     except FileNotFoundError:
