@@ -84,7 +84,7 @@ class AIMigrationAgents:
                 return ChatOpenAI(
                     api_key=openrouter_api_key,
                     base_url="https://openrouter.ai/api/v1",
-                    model="openai/gpt-4o-mini",  # hoặc model khác trên OpenRouter
+                    model="anthropic/claude-sonnet-4",  # hoặc model khác trên OpenRouter
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS,
                     request_timeout=30  # 30 seconds timeout
@@ -99,7 +99,7 @@ class AIMigrationAgents:
                 logger.info("Using OpenAI GPT API")
                 return ChatOpenAI(
                     api_key=gpt_api_key,
-                    model="gpt-4o-mini",
+                    model="gpt-4.1-2025-04-14",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS,
                     request_timeout=30  # 30 seconds timeout
@@ -114,7 +114,7 @@ class AIMigrationAgents:
                 logger.info("Using Google Gemini API")
                 return ChatGoogleGenerativeAI(
                     google_api_key=gemini_api_key,
-                    model="gemini-1.5-flash",
+                    model="gemini-2.5-pro-preview-06-05",
                     temperature=DEFAULT_TEMPERATURE,
                     max_output_tokens=DEFAULT_MAX_TOKENS
                 )
@@ -128,7 +128,7 @@ class AIMigrationAgents:
                 logger.info("Using Anthropic Claude API")
                 return ChatAnthropic(
                     anthropic_api_key=claude_api_key,
-                    model="claude-3-haiku-20240307",
+                    model="claude-sonnet-4-20250514",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS
                 )
@@ -158,12 +158,12 @@ class AIMigrationAgents:
         """
         AI Agent 1: Phân tích loại câu hỏi
         """
-        system_prompt = """Bạn là chuyên gia phân tích câu hỏi IELTS. Nhiệm vụ của bạn là phân tích và xác định chính xác loại câu hỏi dựa trên cấu trúc dữ liệu.
+        system_prompt = """You are an expert in analyzing IELTS questions and migrate data. Your task is to analyze and determine correctly types of questions based on the data structure.
 
-QUYỀN TẮC PHÂN LOẠI:
+CLASSIFICATION RULES:
 {structure_rules}
 
-QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON array format như sau, không có text thêm:
+IMPORTANT: You must return the correct JSON array format as follows, no additional text and anything else:
 [
   {{
     "question_id": "string",
@@ -174,14 +174,14 @@ QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON array format như sau, kh
   }}
 ]
 
-Lưu ý:
-- Phân tích kỹ các trường type, question_type, gap_fill_in_blank, selection, mutilple_choice, single_choice_radio
-- Chú ý đặc biệt đến NOTE_COMPLETION (có bảng từ vựng "List of words")
-- TRUE_FALSE thường có options ["TRUE", "FALSE", "NOT GIVEN"] hoặc ["YES", "NO", "NOT GIVEN"]
+NOTE:
+- Analyze carefully the type, question_type, gap_fill_in_blank, selection, mutilple_choice, single_choice_radio
+- Pay special attention to NOTE_COMPLETION (has a vocabulary table "List of words")
+- TRUE_FALSE usually has options ["TRUE", "FALSE", "NOT GIVEN"] or ["YES", "NO", "NOT GIVEN"]
 
-CHỈ TRẢ VỀ JSON ARRAY, KHÔNG CÓ TEXT KHÁC."""
+ONLY RETURN JSON ARRAY, NO ADDITIONAL TEXT AND ANYTHING ELSE."""
 
-        human_prompt = """Phân tích các câu hỏi sau và trả về JSON array:
+        human_prompt = """Analyze the following questions and return JSON array:
 
 {questions_data}"""
 
@@ -239,12 +239,12 @@ CHỈ TRẢ VỀ JSON ARRAY, KHÔNG CÓ TEXT KHÁC."""
         """
         AI Agent 2: Chuyển đổi thành question sets
         """
-        system_prompt = """Bạn là chuyên gia chuyển đổi dữ liệu IELTS. Nhiệm vụ của bạn là chuyển đổi dữ liệu từ cấu trúc cũ sang cấu trúc mới theo các quy tắc đã định nghĩa.
+        system_prompt = """You are an expert in migrating IELTS data. Your task is to convert data from the old structure to the new structure according to the defined rules.
 
-QUYỀN TẮC CHUYỂN ĐỔI:
+TRANSFORMATION RULES:
 {structure_rules}
 
-QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON array format như sau, không có text thêm:
+IMPORTANT: You must return the correct JSON array format as follows, no additional text and anything else:
 [
   {{
     "type": "GAP_FILLING",
@@ -260,40 +260,40 @@ QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON array format như sau, kh
   }}
 ]
 
-Các nguyên tắc chuyển đổi:
+MIGRATION RULES:
 
 1. GAP_FILLING:
-   - Chuyển {{[answer][number]}} thành ______
-   - Tạo riêng question cho mỗi gap
-   - Content chứa text với gaps
+   - Convert {{[answer][number]}} to ______
+   - Create a separate question for each gap
+   - Content contains text with gaps
 
 2. SINGLE_SELECTION (TRUE/FALSE):
-   - Options cố định: ["TRUE", "FALSE", "NOT GIVEN"] hoặc ["YES", "NO", "NOT GIVEN"]
-   - Questions từ selection data
-   - Content từ title + description
+   - Fixed options: ["TRUE", "FALSE", "NOT GIVEN"] or ["YES", "NO", "NOT GIVEN"]
+   - Questions from selection data
+   - Content from title + description
 
 3. MATCHING:
-   - Options từ selection_option
-   - Questions từ selection text
+   - Options from selection_option
+   - Questions from selection text
    - allow_reuse = true
 
 4. MULTIPLE_CHOICE_MANY:
-   - Options từ mutilple_choice
-   - max_selections = số đáp án đúng
-   - Questions thường chỉ có 1
+   - Options from mutilple_choice
+   - max_selections = number of correct answers
+   - Questions usually only have 1
 
 5. NOTE_COMPLETION:
-   - Tách "List of words" thành options
-   - Chuyển {{[letter][number]}} thành <span class="gap-placeholder">
-   - Content không chứa bảng từ vựng
+   - Split "List of words" into options
+   - Convert {{[letter][number]}} to <span class="gap-placeholder">
+   - Content does not contain vocabulary table
 
 6. SINGLE_CHOICE:
-   - Options từ single_choice_radio
-   - Mỗi question có options riêng
+   - Options from single_choice_radio
+   - Each question has separate options
 
-CHỈ TRẢ VỀ JSON ARRAY, KHÔNG CÓ TEXT KHÁC."""
+ONLY RETURN JSON ARRAY, NO ADDITIONAL TEXT AND ANYTHING ELSE."""
 
-        human_prompt = """Chuyển đổi part data sau thành question sets:
+        human_prompt = """Convert the following part data into question sets:
 
 PART DATA:
 {part_data}
@@ -301,7 +301,7 @@ PART DATA:
 QUESTION ANALYSES:
 {question_analyses}
 
-Hãy nhóm các câu hỏi cùng loại liên tiếp thành question sets và chuyển đổi theo đúng quy tắc."""
+Group questions of the same type consecutively into question sets and convert according to the defined rules."""
 
         prompt = ChatPromptTemplate.from_messages([
             SystemMessagePromptTemplate.from_template(system_prompt),
@@ -353,9 +353,9 @@ Hãy nhóm các câu hỏi cùng loại liên tiếp thành question sets và ch
         """
         AI Agent 3: Validation và enhancement
         """
-        system_prompt = """Bạn là chuyên gia kiểm tra chất lượng dữ liệu IELTS. Nhiệm vụ của bạn là kiểm tra và cải thiện kết quả migration.
+        system_prompt = """You are an expert in validating IELTS data. Your task is to validate and improve the migration result.
 
-QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON object format như sau, không có text thêm:
+IMPORTANT: You must return the correct JSON object format as follows, no additional text and anything else:
 {{
   "quiz_title": "string",
   "quiz_type": "reading",
@@ -381,18 +381,18 @@ QUAN TRỌNG: Bạn PHẢI trả về CHÍNH XÁC JSON object format như sau, k
   "metadata": {{"validation_status": "completed"}}
 }}
 
-Kiểm tra các điểm sau:
-1. Cấu trúc dữ liệu đúng format
-2. Tất cả trường bắt buộc đều có
-3. Content không bị thiếu hoặc lỗi
-4. Options đầy đủ và đúng format
-5. Questions có order đúng
-6. HTML tags hợp lệ
-7. Gap placeholders đúng format
+CHECKLIST:
+1. Data structure is correct format
+2. All required fields are present
+3. Content is not missing or error
+4. Options are complete and correct format
+5. Questions have the correct order
+6. HTML tags are valid
+7. Gap placeholders are correct format
 
-CHỈ TRẢ VỀ JSON OBJECT, KHÔNG CÓ TEXT KHÁC."""
+ONLY RETURN JSON OBJECT, NO ADDITIONAL TEXT AND ANYTHING ELSE."""
 
-        human_prompt = """Kiểm tra và cải thiện migration result sau:
+        human_prompt = """Validate and improve the following migration result:
 
 {migration_data}"""
 
