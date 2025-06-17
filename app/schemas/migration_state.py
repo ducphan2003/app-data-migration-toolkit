@@ -4,6 +4,7 @@ from enum import Enum
 
 class MigrationStatus(Enum):
     PENDING = "pending"
+    STARTED = "started"
     ANALYZING = "analyzing"
     MAPPING = "mapping"
     VALIDATING = "validating"

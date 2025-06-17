@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from typing import Dict, Any, Literal
 from datetime import datetime
 
@@ -10,6 +11,224 @@ from app.services.migration_nodes import MigrationNodes
 from app.repositories.migrate_repository import MigrateRepository
 
 logger = logging.getLogger(__name__)
+
+class AIMigrationWorkflow:
+    """LangGraph workflow cho migration sử dụng AI agents"""
+    
+    def __init__(self, 
+                 openrouter_api_key: str = None,
+                 gpt_api_key: str = None, 
+                 gemini_api_key: str = None,
+                 claude_api_key: str = None):
+        self.migration_nodes = MigrationNodes(
+            openrouter_api_key=openrouter_api_key,
+            gpt_api_key=gpt_api_key,
+            gemini_api_key=gemini_api_key,
+            claude_api_key=claude_api_key
+        )
+        self.workflow = self._build_workflow()
+    
+    def _build_workflow(self) -> StateGraph:
+        """Xây dựng LangGraph workflow"""
+        
+        # Tạo StateGraph
+        workflow = StateGraph(MigrationState)
+        
+        # Thêm các nodes
+        workflow.add_node("analyze", self._analyze_wrapper)
+        workflow.add_node("mapping", self._mapping_wrapper)  
+        workflow.add_node("validation", self._validation_wrapper)
+        workflow.add_node("save", self._save_wrapper)
+        
+        # Định nghĩa flow
+        workflow.set_entry_point("analyze")
+        
+        # Conditional edges
+        workflow.add_conditional_edges(
+            "analyze",
+            self._should_continue_after_analyze,
+            {
+                "continue": "mapping",
+                "end": END
+            }
+        )
+        
+        workflow.add_conditional_edges(
+            "mapping", 
+            self._should_continue_after_mapping,
+            {
+                "continue": "validation",
+                "end": END
+            }
+        )
+        
+        workflow.add_conditional_edges(
+            "validation",
+            self._should_continue_after_validation, 
+            {
+                "continue": "save",
+                "end": END
+            }
+        )
+        
+        workflow.add_edge("save", END)
+        
+        return workflow.compile()
+    
+    async def _analyze_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho analyze node để handle async"""
+        return await self.migration_nodes.analyze_node(state)
+    
+    async def _mapping_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho mapping node để handle async"""
+        return await self.migration_nodes.mapping_node(state)
+    
+    async def _validation_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho validation node để handle async"""
+        return await self.migration_nodes.validation_node(state)
+    
+    def _save_wrapper(self, state: MigrationState) -> MigrationState:
+        """Wrapper cho save node (sync)"""
+        return self.migration_nodes.save_node(state)
+    
+    def _should_continue_after_analyze(self, state: MigrationState) -> str:
+        """Quyết định có tiếp tục sau analyze không"""
+        if state["status"] == MigrationStatus.FAILED:
+            return "end"
+        if state.get("errors"):
+            return "end"
+        return "continue"
+    
+    def _should_continue_after_mapping(self, state: MigrationState) -> str:
+        """Quyết định có tiếp tục sau mapping không"""
+        if state["status"] == MigrationStatus.FAILED:
+            return "end"
+        if state.get("errors"):
+            return "end"
+        return "continue"
+    
+    def _should_continue_after_validation(self, state: MigrationState) -> str:
+        """Quyết định có tiếp tục sau validation không"""
+        if state["status"] == MigrationStatus.FAILED:
+            return "end"
+        if state.get("errors"):
+            return "end"
+        return "continue"
+    
+    async def run_migration(self, initial_state: MigrationState) -> MigrationState:
+        """Chạy migration workflow với AI"""
+        logger.info(f"Starting AI migration workflow for process {initial_state['migrate_process_id']}")
+        logger.debug(f"Initial state status: {initial_state['status']}")
+        logger.debug(f"Initial state keys: {list(initial_state.keys())}")
+        
+        try:
+            # Cập nhật thời gian bắt đầu
+            initial_state["started_at"] = datetime.utcnow()
+            initial_state["status"] = MigrationStatus.STARTED
+            
+            logger.info(f"Updated status to STARTED, about to invoke workflow")
+            
+            # Chạy workflow
+            final_state = await self.workflow.ainvoke(initial_state)
+            
+            logger.info(f"Workflow completed, final status: {final_state['status']}")
+            logger.debug(f"Final state keys: {list(final_state.keys())}")
+            
+            # Tính thời gian xử lý
+            if "started_at" in final_state:
+                processing_time = (datetime.utcnow() - final_state["started_at"]).total_seconds()
+                final_state["quality_metrics"]["processing_time"] = processing_time
+                
+                # Log kết thúc
+                final_state["processing_logs"].append({
+                    "step": "workflow_complete",
+                    "timestamp": datetime.utcnow().isoformat(),
+                    "message": f"AI migration workflow completed in {processing_time:.2f} seconds",
+                    "level": "info",
+                    "details": {
+                        "processing_time": processing_time,
+                        "final_status": final_state["status"],
+                        "ai_powered": True
+                    }
+                })
+            
+            logger.info(f"AI migration workflow completed for process {initial_state['migrate_process_id']} with status: {final_state['status']}")
+            
+            return final_state
+            
+        except Exception as e:
+            error_msg = f"Error in AI migration workflow: {str(e)}"
+            logger.error(error_msg)
+            logger.exception("Full exception details:")
+            
+            # Cập nhật state với lỗi
+            initial_state["status"] = MigrationStatus.FAILED
+            initial_state["errors"].append(error_msg)
+            initial_state["processing_logs"].append({
+                "step": "workflow_error",
+                "timestamp": datetime.utcnow().isoformat(),
+                "message": error_msg,
+                "level": "error"
+            })
+            
+            return initial_state
+
+# Convenience function để chạy migration
+async def run_ai_migration(
+    raw_input_data: Dict[str, Any],
+    quiz_type: str,
+    migrate_process_id: str,
+    openrouter_api_key: str = None,
+    gpt_api_key: str = None, 
+    gemini_api_key: str = None,
+    claude_api_key: str = None
+) -> MigrationState:
+    """
+    Convenience function để chạy AI migration
+    """
+    
+    # Tạo initial state
+    initial_state = MigrationState(
+        migrate_process_id=migrate_process_id,
+        user_id="test_user",
+        raw_input_data=raw_input_data,
+        quiz_type=quiz_type,
+        status=MigrationStatus.PENDING,
+        current_step="",
+        started_at=datetime.utcnow(),
+        progress_percentage=0.0,
+        current_part_index=0,
+        total_parts=len(raw_input_data.get("parts", [])),
+        errors=[],
+        warnings=[],
+        retry_count=0,
+        max_retries=3,
+        processing_logs=[],
+        analyzed_data=None,
+        mapped_data=None,
+        validated_data=None,
+        final_result=None,
+        config={},
+        quality_metrics={
+            "total_questions": 0,
+            "successfully_mapped": 0,
+            "failed_mappings": 0,
+            "validation_errors": [],
+            "quality_score": 0.0,
+            "processing_time": 0.0
+        }
+    )
+    
+    # Tạo và chạy workflow
+    workflow = AIMigrationWorkflow(
+        openrouter_api_key=openrouter_api_key,
+        gpt_api_key=gpt_api_key,
+        gemini_api_key=gemini_api_key,
+        claude_api_key=claude_api_key
+    )
+    result = await workflow.run_migration(initial_state)
+    
+    return result
 
 class MigrationWorkflow:
     """LangGraph workflow cho quá trình migration"""

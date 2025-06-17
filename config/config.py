@@ -33,6 +33,11 @@ class Config:
 
         self.CMS_ENDPOINT        = self.settings.CMS_ENDPOINT
         self.CMS_TOKEN           = self.settings.CMS_TOKEN
+        self.OPENAI_API_KEY: Optional[str] = self.settings.get('OPENAI_API_KEY', '')
+        self.PROMPT_YOUR_API_OPENROUTER: Optional[str] = self.settings.get('PROMPT_YOUR_API_OPENROUTER', '')
+        self.PROMPT_YOUR_API_GPT: Optional[str] = self.settings.get('PROMPT_YOUR_API_GPT', '')
+        self.PROMPT_YOUR_API_GEMINI: Optional[str] = self.settings.get('PROMPT_YOUR_API_GEMINI', '')
+        self.PROMPT_YOUR_API_CLAUDE: Optional[str] = self.settings.get('PROMPT_YOUR_API_CLAUDE', '')
 
 
 app_config = Config()
