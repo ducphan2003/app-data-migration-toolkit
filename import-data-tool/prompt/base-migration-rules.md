@@ -3,6 +3,7 @@
 ## 1. Migration rules by object
 
 ### 1.1. Quiz
+
 - **Fields to migrate**:
   - `id`: Keep as is
   - `status`: Keep as is (default 'draft')
@@ -46,6 +47,7 @@
   - `instruction_audio`: Skip, will be added later
 
 ### 1.2. Parts
+
 - **Fields to migrate**:
   - `id`: Keep as is
   - `sort`: Keep as is
@@ -71,6 +73,7 @@
   - `questions`: Not needed because `question_sets` will be used
 
 ### 1.3. Question Sets
+
 - **Fields to migrate**:
   - `id`: Auto generate
   - `user_created`: Take from the first question in the group
@@ -91,6 +94,7 @@
   - `max_selections`: Maximum number of selections allowed
 
 ### 1.4. Questions
+
 - **Fields to migrate**:
   - `id`: Auto generate
   - `status`: Keep as is (default 'draft')
@@ -139,3 +143,93 @@
     - GAP_FILLING
     - MULTIPLE_CHOICE_MANY
   - `options`: Used for questions with individual options (SINGLE_CHOICE)
+
+### Example for Quiz
+
+- **Old structure**:
+
+  ```json
+  {
+    "id": 1714,
+    "type": 1,
+    "mode": 0,
+    "title": "IELTS Reading Test",
+    "status": "published",
+    "sort": null,
+    "time": 60,
+    "is_test": null,
+    "simplified_id": null,
+    "limit_submit": null,
+    "thumbnail": null,
+    "quiz_code": "",
+    "description": null,
+    "content": null,
+    "parts": [],
+    "tags": null,
+    "user_created": "user_created",
+    "user_updated": "user_updated",
+    "date_created": "date_created",
+    "date_updated": "date_updated",
+    "quiz_part": null,
+    "quiz_type": 4,
+    "mock_test_id": 46,
+    "mock_test_type": 1,
+    "listening": null,
+    "instruction": null,
+    "question": null,
+    "samples": null,
+    "vote_count": 77,
+    "total_submitted": 14508,
+    "writing_task_type": null,
+    "extra": {
+      "user_attempt_count": null
+    },
+    "speaking_part_type": null,
+    "speaking_topic_id": null,
+    "speaking_topic": null
+  }
+  ```
+
+- **New structure**:
+
+  ```json
+  {
+    "id": 1714,
+    "type": 1,
+    "mode": 0,
+    "title": "Orange 19 Reading - Test 2",
+    "status": "published",
+    "sort": null,
+    "time": 60,
+    "is_test": null,
+    "simplified_id": null,
+    "limit_submit": null,
+    "thumbnail": null,
+    "quiz_code": "",
+    "description": null,
+    "content": null,
+    "tags": null,
+    "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
+    "user_updated": "20e3add8-f7bd-488d-b669-d42f50e7f8e9",
+    "date_created": "2024-07-14T07:25:51.829+07:00",
+    "date_updated": "2025-06-09T16:38:06.591517+07:00",
+    "quiz_part": null,
+    "quiz_type": 4,
+    "mock_test_id": 46,
+    "mock_test_type": 1,
+    "listening": null,
+    "instruction": null,
+    "question": null,
+    "samples": null,
+    "vote_count": 0,
+    "total_submitted": 0,
+    "writing_task_type": null,
+    "extra": {
+      "user_attempt_count": null
+    },
+    "speaking_part_type": null,
+    "speaking_topic_id": null,
+    "speaking_topic": null,
+    "parts": []
+  }
+  ```

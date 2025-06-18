@@ -165,9 +165,9 @@ class MigrationNodes:
     
     async def mapping_node(self, state: MigrationState) -> MigrationState:
         """
-        Node 2: Áp dụng AI để chuyển đổi dữ liệu sử dụng modular approach
+        Node 2: Áp dụng AI để chuyển đổi dữ liệu với parallel processing cho parts
         """
-        logger.info(f"Starting AI mapping_node for process {state['migrate_process_id']}")
+        logger.info(f"Starting AI mapping_node with parallel processing for process {state['migrate_process_id']}")
         
         try:
             state["status"] = MigrationStatus.MAPPING
@@ -178,95 +178,21 @@ class MigrationNodes:
             state["processing_logs"].append({
                 "step": "mapping",
                 "timestamp": datetime.utcnow().isoformat(),
-                "message": "Starting AI-powered modular data mapping",
+                "message": "Starting AI-powered parallel data mapping",
                 "level": "info"
             })
             
             raw_input_data = state["raw_input_data"]
             analyzed_data = state["analyzed_data"]
             
-            # Xử lý từng part với modular approach
-            mapped_data = {
-                "quiz": None,
-                "metadata": {
-                    "migration_timestamp": datetime.utcnow().isoformat(),
-                    "ai_powered": True,
-                    "modular_approach": True
-                }
-            }
+            # 1. Xử lý Quiz metadata (sequential)
+            quiz_data = await self.process_quiz_metadata(raw_input_data, analyzed_data)
             
-            total_question_sets = 0
-            total_questions = 0
+            # 2. Xử lý Parts (parallel)
+            parts_results = await self.process_parts_parallel(raw_input_data["parts"], analyzed_data["parts_analysis"])
             
-            for part_idx, part_analysis in enumerate(analyzed_data["parts_analysis"]):
-                # Lấy part data từ raw input
-                part_data = raw_input_data["parts"][part_idx]
-                
-                # Prepare full part data với quiz info
-                full_part_data = {
-                    **raw_input_data,  # Include quiz-level fields
-                    **part_data        # Include part-specific fields
-                }
-                
-                # Lấy question analyses cho part này
-                part_question_analyses = part_analysis["ai_question_analyses"]
-                
-                # Sử dụng AI modular transformation
-                logger.info(f"Transforming part {part_idx + 1} with {len(part_question_analyses)} questions")
-                
-                migration_result = await self.ai_agents.transform_to_question_sets_by_type(
-                    full_part_data, 
-                    part_question_analyses
-                )
-                
-                # Extract transformed data
-                if migration_result and migration_result.get("quiz"):
-                    quiz_data = migration_result["quiz"]
-                    
-                    # Set quiz data từ part đầu tiên
-                    if mapped_data["quiz"] is None:
-                        mapped_data["quiz"] = {
-                            "id": raw_input_data.get("id", 1),  # Sử dụng ID từ input hoặc default 1
-                            "title": quiz_data.get("title", raw_input_data.get("title")),
-                            "description": quiz_data.get("description"),
-                            "status": "published",
-                            "type": 1 if analyzed_data["quiz_info"]["type"] == "reading" else 2,
-                            "time": raw_input_data.get("time", 60),
-                            "vote_count": 0,
-                            "total_submitted": 0,
-                            "user_created": "system",
-                            "date_created": datetime.utcnow().isoformat(),
-                            "quiz_type": 4,
-                            "mode": 0,
-                            "is_test": True,
-                            "parts": []  # Initialize parts array in quiz
-                        }
-                    
-                    # Add parts data to quiz.parts (nested structure)
-                    transformed_parts = quiz_data.get("parts", [])
-                    for transformed_part in transformed_parts:
-                        # Count question sets and questions
-                        part_question_sets = transformed_part.get("question_sets", [])
-                        total_question_sets += len(part_question_sets)
-                        
-                        for qs in part_question_sets:
-                            total_questions += len(qs.get("questions", []))
-                        
-                        # Add part to quiz.parts instead of mapped_data.parts
-                        mapped_data["quiz"]["parts"].append(transformed_part)
-                
-                # Log progress
-                state["processing_logs"].append({
-                    "step": "mapping",
-                    "timestamp": datetime.utcnow().isoformat(),
-                    "message": f"AI transformed part {part_idx + 1} using modular approach",
-                    "level": "info",
-                    "details": {
-                        "part_index": part_idx + 1,
-                        "question_analyses_count": len(part_question_analyses),
-                        "transformation_method": "modular_by_type"
-                    }
-                })
+            # 3. Gộp kết quả
+            mapped_data = self.merge_quiz_and_parts(quiz_data, parts_results)
             
             # Cập nhật state
             state["mapped_data"] = mapped_data
@@ -274,16 +200,23 @@ class MigrationNodes:
             
             # Log thành công
             total_parts = len(mapped_data.get("quiz", {}).get("parts", [])) if mapped_data.get("quiz") else 0
+            total_question_sets = sum(len(part.get("question_sets", [])) for part in mapped_data.get("quiz", {}).get("parts", []))
+            total_questions = sum(
+                len(qs.get("questions", [])) 
+                for part in mapped_data.get("quiz", {}).get("parts", [])
+                for qs in part.get("question_sets", [])
+            )
+            
             state["processing_logs"].append({
                 "step": "mapping",
                 "timestamp": datetime.utcnow().isoformat(),
-                "message": f"AI modular mapping completed. Generated {total_question_sets} question sets with {total_questions} questions",
+                "message": f"AI parallel mapping completed. Generated {total_question_sets} question sets with {total_questions} questions",
                 "level": "info",
                 "details": {
                     "total_parts": total_parts,
                     "total_question_sets": total_question_sets,
                     "total_questions": total_questions,
-                    "modular_approach": True
+                    "parallel_processing": True
                 }
             })
             
@@ -304,9 +237,142 @@ class MigrationNodes:
         
         return state
     
+    async def process_quiz_metadata(self, raw_input_data: Dict[str, Any], analyzed_data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Xử lý Quiz metadata sử dụng base-migration-rules.md
+        """
+        logger.info("Processing quiz metadata")
+        
+        quiz_info = analyzed_data["quiz_info"]
+        
+        quiz_data = {
+            "id": raw_input_data.get("id", 1),
+            "title": raw_input_data.get("title", "Untitled Quiz"),
+            "description": raw_input_data.get("description"),
+            "status": "published",
+            "type": 1 if quiz_info["type"] == "reading" else 2,
+            "time": raw_input_data.get("time", 60),
+            "vote_count": 0,
+            "total_submitted": 0,
+            "user_created": "system",
+            "date_created": datetime.utcnow().isoformat(),
+            "quiz_type": 4,
+            "mode": 0,
+            "is_test": True,
+            "parts": []  # Sẽ được populate bởi parts processing
+        }
+        
+        # Listening specific fields
+        if quiz_info["type"] == "listening":
+            quiz_data["listening_file_id"] = raw_input_data.get("listening")
+        
+        logger.info(f"Quiz metadata processed: {quiz_data['title']}")
+        return quiz_data
+    
+    async def process_parts_parallel(self, parts_data: List[Dict[str, Any]], parts_analysis: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Xử lý Parts song song sử dụng structure-rules.md
+        """
+        logger.info(f"Starting parallel processing of {len(parts_data)} parts")
+        
+        # Tạo tasks cho mỗi part
+        tasks = [
+            self.process_single_part(parts_data[idx], parts_analysis[idx], idx) 
+            for idx in range(len(parts_data))
+        ]
+        
+        # Chạy song song tất cả parts
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Xử lý kết quả và exceptions
+        processed_parts = []
+        for idx, result in enumerate(results):
+            if isinstance(result, Exception):
+                logger.error(f"Error processing part {idx + 1}: {str(result)}")
+                # Tạo empty part để maintain order
+                processed_parts.append({
+                    "id": idx + 1,
+                    "title": f"Part {idx + 1} (Error)",
+                    "question_sets": [],
+                    "error": str(result)
+                })
+            else:
+                processed_parts.append(result)
+        
+        logger.info(f"Parallel processing completed: {len(processed_parts)} parts processed")
+        return processed_parts
+    
+    async def process_single_part(self, part_data: Dict[str, Any], part_analysis: Dict[str, Any], part_idx: int) -> Dict[str, Any]:
+        """
+        Xử lý một part đơn lẻ và transform thành nested structure
+        """
+        logger.info(f"Processing part {part_idx + 1}")
+        
+        try:
+            # Lấy question analyses cho part này
+            part_question_analyses = part_analysis["ai_question_analyses"]
+            
+            # Sử dụng AI để transform part sử dụng structure-rules.md
+            migration_result = await self.ai_agents.transform_to_question_sets_by_type(
+                part_data,  # Chỉ pass part data, không cần quiz info
+                part_question_analyses
+            )
+            
+            # Extract part data từ migration result
+            if migration_result and migration_result.get("quiz"):
+                quiz_data = migration_result["quiz"]
+                parts_data = quiz_data.get("parts", [])
+                
+                if parts_data:
+                    # Lấy part đầu tiên từ kết quả (vì chỉ xử lý 1 part)
+                    transformed_part = parts_data[0]
+                    logger.info(f"Part {part_idx + 1} transformed successfully with {len(transformed_part.get('question_sets', []))} question sets")
+                    return transformed_part
+            
+            # Fallback nếu không có kết quả
+            logger.warning(f"No transformation result for part {part_idx + 1}, creating empty part")
+            return {
+                "id": part_data.get("id", part_idx + 1),
+                "title": part_data.get("title", f"Part {part_idx + 1}"),
+                "content": part_data.get("content", ""),
+                "question_sets": []
+            }
+            
+        except Exception as e:
+            logger.error(f"Error processing part {part_idx + 1}: {str(e)}")
+            raise e
+    
+    def merge_quiz_and_parts(self, quiz_data: Dict[str, Any], parts_results: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """
+        Gộp quiz metadata và parts results thành final structure
+        """
+        logger.info("Merging quiz metadata and parts results")
+        
+        # Gán parts vào quiz
+        quiz_data["parts"] = parts_results
+        
+        final_result = {
+            "quiz": quiz_data,
+            "metadata": {
+                "migration_timestamp": datetime.utcnow().isoformat(),
+                "ai_powered": True,
+                "parallel_processing": True,
+                "total_parts": len(parts_results),
+                "total_question_sets": sum(len(part.get("question_sets", [])) for part in parts_results),
+                "total_questions": sum(
+                    len(qs.get("questions", [])) 
+                    for part in parts_results
+                    for qs in part.get("question_sets", [])
+                )
+            }
+        }
+        
+        logger.info(f"Merge completed: {final_result['metadata']['total_parts']} parts, {final_result['metadata']['total_question_sets']} question sets")
+        return final_result
+    
     async def validation_node(self, state: MigrationState) -> MigrationState:
         """
-        Node 3: Validation dữ liệu đã được transform bởi modular approach
+        Node 3: Validation dữ liệu đã được transform bởi parallel processing
         """
         logger.info(f"Starting validation_node for process {state['migrate_process_id']}")
         
@@ -319,13 +385,13 @@ class MigrationNodes:
             state["processing_logs"].append({
                 "step": "validation",
                 "timestamp": datetime.utcnow().isoformat(),
-                "message": "Starting validation of modular migration results",
+                "message": "Starting validation of parallel migration results",
                 "level": "info"
             })
             
             mapped_data = state["mapped_data"]
             
-            # Sử dụng kết quả từ modular approach
+            # Sử dụng kết quả từ parallel processing
             final_data = mapped_data
             
             # Debug logs để kiểm tra cấu trúc
@@ -339,7 +405,7 @@ class MigrationNodes:
                     logger.debug(f"Debug - parts_data type: {type(parts_data)}")
                     logger.debug(f"Debug - parts_data length: {len(parts_data) if isinstance(parts_data, list) else 'N/A'}")
             
-            # Loại bỏ questions từ parts vì chúng đã nằm trong question_sets
+            # Cleanup: Loại bỏ questions từ parts nếu có (vì questions đã nằm trong question_sets)
             quiz_data = final_data.get("quiz", {})
             if quiz_data and "parts" in quiz_data:
                 for part in quiz_data["parts"]:
@@ -405,12 +471,12 @@ class MigrationNodes:
             state["processing_logs"].append({
                 "step": "validation",
                 "timestamp": datetime.utcnow().isoformat(),
-                "message": f"Modular validation completed. {len(validation_errors)} errors, {len(validation_warnings)} warnings. Removed questions field from parts.",
+                "message": f"Parallel validation completed. {len(validation_errors)} errors, {len(validation_warnings)} warnings. Removed questions field from parts.",
                 "level": "info" if not validation_errors else "error",
                 "details": {
                     "validation_errors": validation_errors,
                     "validation_warnings": validation_warnings,
-                    "modular_approach": True,
+                    "parallel_processing": True,
                     "questions_removed_from_parts": True
                 }
             })
