@@ -1,0 +1,92 @@
+{
+  "problematic_result": {
+    "quiz": {
+      "id": "123",
+      "title": "Test Quiz",
+      "status": "published"
+    },
+    "parts": [
+      {
+        "id": "part_1",
+        "title": "Part 1",
+        "sort": 1
+      },
+      {
+        "id": "part_2",
+        "title": "Part 2",
+        "sort": 2
+      },
+      {
+        "id": "part_3",
+        "title": "Part 3",
+        "sort": 3
+      },
+      {
+        "id": "part_1_dup",
+        "title": "Part 1",
+        "sort": 1
+      },
+      {
+        "id": "part_2_real",
+        "title": "Part 2",
+        "sort": 2
+      },
+      {
+        "id": "part_3_dup",
+        "title": "Part 3",
+        "sort": 3
+      },
+      {
+        "id": "part_1_dup2",
+        "title": "Part 1",
+        "sort": 1
+      },
+      {
+        "id": "part_2_dup",
+        "title": "Part 2",
+        "sort": 2
+      },
+      {
+        "id": "part_3_real",
+        "title": "Part 3",
+        "sort": 3
+      }
+    ],
+    "question_sets": [
+      {
+        "id": "qs_1",
+        "part_id": "part_1",
+        "title": "QS 1",
+        "question_type": "SINGLE_CHOICE"
+      },
+      {
+        "id": "qs_2",
+        "part_id": "part_2_real",
+        "title": "QS 2",
+        "question_type": "GAP_FILLING"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_1",
+        "question_set_id": "qs_1",
+        "title": "Question 1"
+      },
+      {
+        "id": "q_2",
+        "question_set_id": "qs_1",
+        "title": "Question 2"
+      },
+      {
+        "id": "q_3",
+        "question_set_id": "qs_2",
+        "title": "Question 3"
+      }
+    ]
+  },
+  "problems_found": [
+    "\u274c Expected 3 parts, got 9",
+    "\u274c Parts without question sets: Part 2, Part 3, Part 1, Part 3, Part 1, Part 2, Part 3"
+  ],
+  "analysis_time": "2025-06-18T17:02:02.833544"
+}

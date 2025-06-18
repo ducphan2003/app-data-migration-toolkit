@@ -1,0 +1,93 @@
+{
+  "quiz": {
+    "id": "test_123",
+    "title": "Test IELTS Reading",
+    "status": "published"
+  },
+  "parts": [
+    {
+      "id": "part_1",
+      "title": "Part 1 - Urban Planning",
+      "content": "Reading passage about urban planning...",
+      "sort": 1,
+      "order": 1,
+      "quiz": 123
+    },
+    {
+      "id": "part_2",
+      "title": "Part 2 - Technology",
+      "content": "Reading passage about technology...",
+      "sort": 2,
+      "order": 2,
+      "quiz": 123
+    },
+    {
+      "id": "part_3",
+      "title": "Part 3 - Environment",
+      "content": "Reading passage about environment...",
+      "sort": 3,
+      "order": 3,
+      "quiz": 123
+    }
+  ],
+  "question_sets": [
+    {
+      "id": "qs_1_1",
+      "part_id": "part_1",
+      "title": "Question Set 1",
+      "question_type": "SINGLE_CHOICE",
+      "question_count": 2
+    },
+    {
+      "id": "qs_2_1",
+      "part_id": "part_2",
+      "title": "Question Set 2",
+      "question_type": "SINGLE_CHOICE",
+      "question_count": 1
+    },
+    {
+      "id": "qs_3_1",
+      "part_id": "part_3",
+      "title": "Question Set 3",
+      "question_type": "SINGLE_CHOICE",
+      "question_count": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_1_1",
+      "question_set_id": "qs_1_1",
+      "title": "Question 1",
+      "content": "What is the main idea?",
+      "question_type": "SINGLE_CHOICE"
+    },
+    {
+      "id": "q_1_2",
+      "question_set_id": "qs_1_1",
+      "title": "Question 2",
+      "content": "Fill in the blank: The city ___",
+      "question_type": "GAP_FILLING"
+    },
+    {
+      "id": "q_2_1",
+      "question_set_id": "qs_2_1",
+      "title": "Question 3",
+      "content": "True or False?",
+      "question_type": "TRUE_FALSE"
+    },
+    {
+      "id": "q_3_1",
+      "question_set_id": "qs_3_1",
+      "title": "Question 4",
+      "content": "Select multiple answers",
+      "question_type": "MULTIPLE_CHOICE_MANY"
+    },
+    {
+      "id": "q_3_2",
+      "question_set_id": "qs_3_1",
+      "title": "Question 5",
+      "content": "Another question",
+      "question_type": "SINGLE_CHOICE"
+    }
+  ]
+}
