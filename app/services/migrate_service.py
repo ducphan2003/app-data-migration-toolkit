@@ -136,17 +136,15 @@ class MigrateService:
                 
                 logger.info(f"LangGraph migration workflow completed for process {migrate_process_id}")
                 
+                # Extract actual state from the LangGraph wrapper
+                actual_final_state = self.migration_workflow._extract_actual_state(final_state)
+
                 # Safely extract status from final_state
                 try:
-                    if hasattr(final_state, 'get'):
-                        status = final_state.get('status', 'unknown')
-                        quality_metrics = final_state.get('quality_metrics', {})
-                        quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
-                    else:
-                        # Try to access as attribute
-                        status = getattr(final_state, 'status', 'unknown')
-                        quality_metrics = getattr(final_state, 'quality_metrics', {})
-                        quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
+                    # Sử dụng actual_final_state thay vì final_state trực tiếp
+                    status = actual_final_state.get('status', 'unknown')
+                    quality_metrics = actual_final_state.get('quality_metrics', {})
+                    quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
                     
                     logger.info(f"Final status: {status}")
                     logger.info(f"Quality score: {quality_score}")

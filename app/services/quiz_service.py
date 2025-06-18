@@ -81,6 +81,7 @@ class QuizService:
                             )
 
                     elif question.question_type.value == "MULTIPLE_SELECTION":
+                        print('custom check: -------------------- MULTIPLE_SELECTION')
                         if not question.correct_answers or len(question.correct_answers) == 0:
                             errors.append(
                                 f"Câu hỏi multiple selection {q_idx} trong question set {qset_idx} "
@@ -88,6 +89,7 @@ class QuizService:
                             )
 
                     elif question.question_type.value == "GAP_FILLING":
+                        print('custom check: -------------------- GAP_FILLING')
                         if not question.correct_answers or len(question.correct_answers) == 0:
                             errors.append(
                                 f"Câu hỏi gap filling {q_idx} trong question set {qset_idx} "

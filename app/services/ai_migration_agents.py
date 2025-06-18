@@ -191,7 +191,7 @@ class AIMigrationAgents:
                 return ChatOpenAI(
                     api_key=openrouter_api_key,
                     base_url="https://openrouter.ai/api/v1",
-                    model=self.model if self.provider == "openrouter" else "anthropic/claude-sonnet-4",
+                    model="anthropic/claude-sonnet-4",
                     temperature=DEFAULT_TEMPERATURE,
                     max_tokens=DEFAULT_MAX_TOKENS,
                     request_timeout=60  # 60 seconds timeout cho Claude
@@ -1281,6 +1281,7 @@ Group questions of the same type consecutively into question sets and convert ac
             question_id_counter = 1
             
             for question_type, questions_data in grouped_questions.items():
+                print("custom test --------------- (questions_data) --------------- ")
                 logger.info(f"Migrating {len(questions_data)} questions of type {question_type}")
                 
                 # Migrate question type này
@@ -1391,6 +1392,8 @@ Group questions of the same type consecutively into question sets and convert ac
                 "quiz": quiz_data
             }
             
+            print("custom test --------------- (all_question_sets) --------------- ")
+            print("custom test --------------- (all_questions) --------------- ")
             logger.info(f"Successfully migrated to {len(all_question_sets)} question sets and {len(all_questions)} questions")
             return migration_result
             

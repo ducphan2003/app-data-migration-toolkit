@@ -414,7 +414,7 @@ class MigrationWorkflow:
                 
                 # Cập nhật database sau mỗi step
                 await self._update_database_progress(final_state)
-                
+                print(f"Final ---------------------------state: {final_state}")
                 logger.info(f"Migration step completed: {final_state.get('current_step', 'unknown')}")
             
             logger.info(f"Migration workflow completed for process {migrate_process_id}")
@@ -507,6 +507,7 @@ class MigrationWorkflow:
         if quality_score < quality_threshold:
             max_errors = config.get("max_validation_errors", 5)
             validation_errors = quality_metrics.get("validation_errors", [])
+            print('custom check: -------------------- validation_errors', validation_errors)
             if len(validation_errors) > max_errors:
                 return "error"
         

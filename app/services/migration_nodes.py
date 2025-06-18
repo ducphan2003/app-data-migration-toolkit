@@ -368,8 +368,8 @@ class MigrationNodes:
             state["progress_percentage"] = 95.0
             
             # Cập nhật quality metrics
-            state["quality_metrics"]["validation_errors"] = len(validation_errors)
-            state["quality_metrics"]["validation_warnings"] = len(validation_warnings)
+            state["quality_metrics"]["validation_errors"] = validation_errors
+            state["quality_metrics"]["validation_warnings"] = validation_warnings
             state["quality_metrics"]["ai_enhanced"] = True
             
             # Determine status
