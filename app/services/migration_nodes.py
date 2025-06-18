@@ -326,6 +326,18 @@ class MigrationNodes:
             # Sử dụng kết quả từ modular approach
             final_data = mapped_data
             
+            # Loại bỏ questions từ parts vì chúng đã nằm trong question_sets
+            quiz_data = final_data.get("quiz", {})
+            if quiz_data and "parts" in quiz_data:
+                for part in quiz_data["parts"]:
+                    # Xóa questions field khỏi part vì questions đã nằm trong question_sets
+                    if "questions" in part:
+                        del part["questions"]
+                        logger.debug(f"Removed questions field from part {part.get('id', 'unknown')}")
+            
+            # Tạo final_result với cấu trúc đúng
+            final_result = final_data
+            
             # Validation checks
             validation_errors = []
             validation_warnings = []
@@ -344,6 +356,10 @@ class MigrationNodes:
                 
                 if not part.get("question_sets"):
                     validation_warnings.append(f"Part {part.get('sort', 'unknown')} has no question sets")
+                
+                # Đảm bảo part không có questions field (đã được moved vào question_sets)
+                if "questions" in part:
+                    validation_warnings.append(f"Part {part.get('sort', 'unknown')} still contains questions field - should be in question_sets")
                 
                 # Kiểm tra question sets
                 for qs in part.get("question_sets", []):
@@ -376,12 +392,13 @@ class MigrationNodes:
             state["processing_logs"].append({
                 "step": "validation",
                 "timestamp": datetime.utcnow().isoformat(),
-                "message": f"Modular validation completed. {len(validation_errors)} errors, {len(validation_warnings)} warnings",
+                "message": f"Modular validation completed. {len(validation_errors)} errors, {len(validation_warnings)} warnings. Removed questions field from parts.",
                 "level": "info" if not validation_errors else "error",
                 "details": {
                     "validation_errors": validation_errors,
                     "validation_warnings": validation_warnings,
-                    "modular_approach": True
+                    "modular_approach": True,
+                    "questions_removed_from_parts": True
                 }
             })
             

@@ -41,9 +41,9 @@
           {
             "id": 10874,
             "quiz_id": 0,
-    "type": "SINGLE-SELECTION",
-    "question_type": "MATCHING_INFO",
-    "title": "",
+            "type": "SINGLE-SELECTION",
+            "question_type": "MATCHING_INFO",
+            "title": "",
             "status": "published",
             "content": "",
             "content_writing": "",
@@ -57,12 +57,12 @@
             "description": "<h2>Questions 14 - 18:</h2>\n<p>Reading Passage 2 has six paragraphs, A-F. Which paragraph contains the following information?</p>\n<p>Write the correct letter, A-F, in boxes 14-18 on your answer sheet.</p>\n<p><em><strong>NB</strong> You may use any letter more than once.</em></p>",
             "gap_fill_in_blank": null,
             "single_choice_radio": null,
-    "selection": [
-      {
-        "text": "reference to two chemical compounds which impact on performance",
-        "answer": "D"
-      }
-    ],
+            "selection": [
+              {
+                "text": "reference to two chemical compounds which impact on performance",
+                "answer": "D"
+              }
+            ],
             "mutilple_choice": null,
             "selection_option": [
               {
@@ -124,26 +124,26 @@
               }
             ],
             "mutilple_choice": null,
-    "selection_option": [
-      {
-        "option": "A"
-      },
-      {
-        "option": "B"
-      },
-      {
-        "option": "C"
-      },
-      {
-        "option": "D"
-      },
-      {
-        "option": "E"
-      },
-      {
-        "option": "F"
-      }
-    ],
+            "selection_option": [
+              {
+                "option": "A"
+              },
+              {
+                "option": "B"
+              },
+              {
+                "option": "C"
+              },
+              {
+                "option": "D"
+              },
+              {
+                "option": "E"
+              },
+              {
+                "option": "F"
+              }
+            ],
             "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
             "user_updated": "b192dd3c-37f7-4b34-92cd-44b039bd588d",
             "date_created": "2024-07-14T07:34:53.865+07:00",
@@ -252,8 +252,8 @@
         "transcription": null,
         "file_id": null,
         "question_sets": [
-  {
-    "id": 1,
+          {
+            "id": 1,
             "status": "published",
             "sort": 1,
             "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
@@ -261,27 +261,27 @@
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.006+07:00",
             "part_id": 1823,
-    "question_type": "MATCHING",
+            "question_type": "MATCHING",
             "question_count": 2,
             "title": "Questions 14-15",
             "description": "<h2>Questions 14 - 18:</h2>\n<p>Reading Passage 2 has six paragraphs, A-F. Which paragraph contains the following information?</p>\n<p>Write the correct letter, A-F, in boxes 14-18 on your answer sheet.</p>\n<p><em><strong>NB</strong> You may use any letter more than once.</em></p>",
-    "content": "",
-    "option_title": "",
-    "options": [
-      {
-        "text": "reference to two chemical compounds which impact on performance",
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "reference to two chemical compounds which impact on performance",
                 "option": "D"
-      },
-      {
-        "text": "examples of strategies for minimising the effects of stress",
+              },
+              {
+                "text": "examples of strategies for minimising the effects of stress",
                 "option": "F"
-      }
-    ],
-    "allow_reuse": true,
-    "max_selections": 0,
-    "questions": [
-      {
-        "id": 1,
+              }
+            ],
+            "allow_reuse": true,
+            "max_selections": 0,
+            "questions": [
+              {
+                "id": 1,
                 "status": "published",
                 "sort": 1,
                 "user_created": "c3bfa61e-a757-40f2-8711-78a8c9979f79",
@@ -316,8 +316,8 @@
                 "mutilple_choice": null,
                 "selection_option": null,
                 "question_set_id": 1,
-        "question_type": "MATCHING_INFO",
-        "correct_answer": "D",
+                "question_type": "MATCHING_INFO",
+                "correct_answer": "D",
                 "correct_answers": null,
                 "options": null
               },
@@ -346,7 +346,7 @@
                 "time_limit": null,
                 "max_words": 0,
                 "min_words": 0,
-        "text": "",
+                "text": "",
                 "locate_info": null,
                 "quiz_id": 0,
                 "part_id": null,
