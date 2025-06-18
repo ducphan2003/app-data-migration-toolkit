@@ -188,7 +188,6 @@ class MigrationNodes:
             # Xử lý từng part với modular approach
             mapped_data = {
                 "quiz": None,
-                "parts": [],
                 "metadata": {
                     "migration_timestamp": datetime.utcnow().isoformat(),
                     "ai_powered": True,
@@ -239,10 +238,11 @@ class MigrationNodes:
                             "date_created": datetime.utcnow().isoformat(),
                             "quiz_type": 4,
                             "mode": 0,
-                            "is_test": True
+                            "is_test": True,
+                            "parts": []  # Initialize parts array in quiz
                         }
                     
-                    # Add parts data
+                    # Add parts data to quiz.parts (nested structure)
                     transformed_parts = quiz_data.get("parts", [])
                     for transformed_part in transformed_parts:
                         # Count question sets and questions
@@ -252,7 +252,8 @@ class MigrationNodes:
                         for qs in part_question_sets:
                             total_questions += len(qs.get("questions", []))
                         
-                        mapped_data["parts"].append(transformed_part)
+                        # Add part to quiz.parts instead of mapped_data.parts
+                        mapped_data["quiz"]["parts"].append(transformed_part)
                 
                 # Log progress
                 state["processing_logs"].append({
@@ -272,13 +273,14 @@ class MigrationNodes:
             state["progress_percentage"] = 75.0
             
             # Log thành công
+            total_parts = len(mapped_data.get("quiz", {}).get("parts", [])) if mapped_data.get("quiz") else 0
             state["processing_logs"].append({
                 "step": "mapping",
                 "timestamp": datetime.utcnow().isoformat(),
                 "message": f"AI modular mapping completed. Generated {total_question_sets} question sets with {total_questions} questions",
                 "level": "info",
                 "details": {
-                    "total_parts": len(mapped_data["parts"]),
+                    "total_parts": total_parts,
                     "total_question_sets": total_question_sets,
                     "total_questions": total_questions,
                     "modular_approach": True
@@ -325,6 +327,17 @@ class MigrationNodes:
             
             # Sử dụng kết quả từ modular approach
             final_data = mapped_data
+            
+            # Debug logs để kiểm tra cấu trúc
+            logger.debug(f"Debug - mapped_data keys: {list(mapped_data.keys()) if mapped_data else 'None'}")
+            if mapped_data:
+                quiz_data = mapped_data.get("quiz")
+                logger.debug(f"Debug - quiz_data type: {type(quiz_data)}")
+                logger.debug(f"Debug - quiz_data keys: {list(quiz_data.keys()) if quiz_data and isinstance(quiz_data, dict) else 'N/A'}")
+                if quiz_data and isinstance(quiz_data, dict):
+                    parts_data = quiz_data.get("parts")
+                    logger.debug(f"Debug - parts_data type: {type(parts_data)}")
+                    logger.debug(f"Debug - parts_data length: {len(parts_data) if isinstance(parts_data, list) else 'N/A'}")
             
             # Loại bỏ questions từ parts vì chúng đã nằm trong question_sets
             quiz_data = final_data.get("quiz", {})

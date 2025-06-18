@@ -495,12 +495,32 @@ class MigrationWorkflow:
         actual_state = self._extract_actual_state(state)
         
         if actual_state.get("status") == MigrationStatus.FAILED:
+            # Kiểm tra loại lỗi để quyết định retry hay không
+            validation_errors = actual_state.get("validation_errors", [])
+            
+            # Các lỗi structural không thể fix bằng retry
+            structural_errors = [
+                "No parts found in quiz",
+                "Quiz title is missing",
+                "No question sets found"
+            ]
+            
+            # Nếu có structural error, không retry
+            for error in validation_errors:
+                for structural_error in structural_errors:
+                    if structural_error in error:
+                        logger.error(f"Structural error detected, stopping retries: {error}")
+                        return "error"
+            
+            # Chỉ retry cho non-structural errors
             retry_count = actual_state.get("retry_count", 0)
             max_retries = actual_state.get("max_retries", 3)
             if retry_count < max_retries:
                 actual_state["retry_count"] = retry_count + 1
+                logger.warning(f"Retrying validation, attempt {retry_count + 1}/{max_retries}")
                 return "retry"
             else:
+                logger.error(f"Max retries ({max_retries}) reached for validation")
                 return "error"
         
         if actual_state.get("validated_data") is None:
@@ -516,7 +536,7 @@ class MigrationWorkflow:
         if quality_score < quality_threshold:
             max_errors = config.get("max_validation_errors", 5)
             validation_errors = quality_metrics.get("validation_errors", [])
-            print('custom check: -------------------- validation_errors', validation_errors)
+            logger.debug(f"Quality check: score={quality_score}, threshold={quality_threshold}, errors={len(validation_errors)}")
             if len(validation_errors) > max_errors:
                 return "error"
         
