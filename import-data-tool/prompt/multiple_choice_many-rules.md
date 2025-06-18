@@ -184,7 +184,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "MULTIPLE",
+            "question_type": "MULTIPLE_CHOICE_MANY",
             "correct_answer": "",
             "correct_answers": ["B", "D"],
             "options": null,
@@ -226,7 +226,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "MULTIPLE",
+            "question_type": "MULTIPLE_CHOICE_MANY",
             "correct_answer": "",
             "correct_answers": ["B", "D"],
             "options": null,
@@ -265,7 +265,7 @@
      - **IMPORTANT**: Create multiple questions - one for each correct answer in the old question.mutilple_choice
      - Number of questions = Number of options with `correct = true`
      - For each question:
-       - `question_type`: Set = "MULTIPLE"
+       - `question_type`: Keep the old question.question_type
        - `sort`: Sequential numbering (1, 2, 3...)
        - `correct_answers`:
          - Take ALL options with `correct = true` from the old question.mutilple_choice

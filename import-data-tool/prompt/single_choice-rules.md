@@ -243,7 +243,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 38,
@@ -271,7 +271,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "SINGLE-CHOICE",
+            "question_type": "MULTIPLE_CHOICE_ONE",
             "correct_answer": "B",
             "correct_answers": null,
             "options": [
@@ -305,7 +305,7 @@
             "date_created": "2024-07-14T07:34:53.988+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.093+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 39,
@@ -333,7 +333,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "SINGLE-CHOICE",
+            "question_type": "MULTIPLE_CHOICE_ONE",
             "correct_answer": "C",
             "correct_answers": null,
             "options": [
@@ -367,7 +367,7 @@
             "date_created": "2024-07-14T07:34:53.999+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.105+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 40,
@@ -395,7 +395,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "SINGLE-CHOICE",
+            "question_type": "MULTIPLE_CHOICE_ONE",
             "correct_answer": "D",
             "correct_answers": null,
             "options": [
@@ -447,7 +447,7 @@
 
   2. **Questions**:
      - Create a question for each old question in the group
-     - `question_type`: Set = "SINGLE-CHOICE"
+     - `question_type`: Keep the old question.question_type
      - `correct_answer`:
        - Find the option with `correct = true` in the old question.single_choice_radio
        - Convert to the corresponding letter (A, B, C, D...)

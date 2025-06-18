@@ -165,7 +165,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 27,
@@ -193,7 +193,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "H",
             "correct_answers": null,
             "options": null
@@ -206,7 +206,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 28,
@@ -234,7 +234,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "C",
             "correct_answers": null,
             "options": null
@@ -247,7 +247,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 29,
@@ -275,7 +275,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "F",
             "correct_answers": null,
             "options": null
@@ -288,7 +288,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 30,
@@ -316,7 +316,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "A",
             "correct_answers": null,
             "options": null
@@ -329,7 +329,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 31,
@@ -357,7 +357,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "B",
             "correct_answers": null,
             "options": null
@@ -370,7 +370,7 @@
             "date_created": "2024-07-14T07:34:53.97+07:00",
             "user_updated": "266f2058-72cc-4c10-9f12-dbc5045539bf",
             "date_updated": "2024-09-10T18:22:32.059+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 32,
@@ -398,7 +398,7 @@
             "mutilple_choice": null,
             "selection_option": null,
             "question_set_id": 1,
-            "question_type": "NOTE_COMPLETION",
+            "question_type": "FILL_BLANK",
             "correct_answer": "D",
             "correct_answers": null,
             "options": null
@@ -414,7 +414,7 @@
   1. **Question Set**:
 
      - `part_id`: Take from the current part
-     - `question_type`: Set = "NOTE_COMPLETION"
+     - `question_type`: Set = old question.question_type
      - `question_count`: Count the number of gaps in the `gap_fill_in_blank` (count {[letter][number]})
      - `title`: Format "Questions {from}-{to}" based on the question order
      - `description`:
@@ -436,7 +436,7 @@
 
   2. **Questions**:
      - Create a question for each gap in the `gap_fill_in_blank`
-     - `question_type`: Set = "NOTE_COMPLETION"
+     - `question_type`: Keep the old question.question_type
      - `correct_answer`:
        - Take from the `{[letter][number]}` in the old question.gap_fill_in_blank
        - Only take letter (A, B, C...) or corresponding word

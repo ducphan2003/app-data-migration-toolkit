@@ -6,7 +6,7 @@
 
 - **Fields to migrate**:
   - `id`: Keep as is
-  - `status`: Keep as is (default 'draft')
+  - `status`: Keep as is (default 'published')
   - `sort`: Keep as is
   - `user_created`: Keep as is
   - `date_created`: Keep as is
@@ -97,13 +97,13 @@
 
 - **Fields to migrate**:
   - `id`: Auto generate
-  - `status`: Keep as is (default 'draft')
+  - `status`: Keep as is (default 'published')
   - `sort`: Keep as is
   - `user_created`: Keep as is
   - `date_created`: Keep as is
   - `user_updated`: Keep as is
   - `date_updated`: Keep as is
-  - `title`: Keep as is
+  - `title`: Keep as is (default "")
   - `content`: Keep as is
   - `locate`: Keep as is
   - `order`: Keep as is

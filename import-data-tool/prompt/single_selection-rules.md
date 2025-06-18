@@ -151,7 +151,7 @@
             "date_created": "2024-07-14T07:25:51.925+07:00",
             "user_updated": "c2afe8a2-9330-4394-a11c-5a6c0d52d9d0",
             "date_updated": "2024-08-24T22:37:09.96+07:00",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 8,
@@ -213,7 +213,7 @@
 
   2. **Questions**:
      - Create a new question for each old question in the group
-     - `question_type`: Keep the old question.question_type (e.g. "TRUE_FALSE")
+     - `question_type`: Keep the old question.question_type
      - `correct_answer`:
        - Take from the old question.selection[0].answer
        - Always in string format

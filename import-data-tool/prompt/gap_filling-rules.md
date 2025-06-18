@@ -120,7 +120,7 @@
             "date_created": "date_created",
             "user_updated": "user_updated",
             "date_updated": "date_updated",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 1,
@@ -161,7 +161,7 @@
             "date_created": "date_created",
             "user_updated": "user_updated",
             "date_updated": "date_updated",
-            "title": null,
+            "title": "",
             "content": null,
             "locate": null,
             "order": 2,
@@ -216,7 +216,7 @@
 
   2. **Questions**:
      - Create a new question for each gap in the old `gap_fill_in_blank`
-     - `question_type` is the value of question_type of the old question: question.question_type
+     - `question_type`: Keep the old question.question_type
      - `correct_answers`:
        - Take the answer from the old `{[answer][number]}` in the `gap_fill_in_blank`
        - Always in array format: ["answer1", "answer2"]
