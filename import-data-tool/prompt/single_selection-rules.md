@@ -2,8 +2,14 @@
 
 - **Determine type**:
 
-  - Based on `type` in the old question
+- Based on `type` in the old question
   - If it is "SINGLE-SELECTION" then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "YES_NO"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "SINGLE-RADIO"` and `question_type = "TRUE_FALSE"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "TRUE_FALSE"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "YES_NO"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "OTHERS"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "MAP_DIAGRAM_LABEL"` then create a new question_set with `question_type = "SINGLE_SELECTION"`
 
 - **Old structure**:
 
