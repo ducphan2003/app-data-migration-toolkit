@@ -143,6 +143,11 @@ class MigrateService:
                 try:
                     # Sử dụng actual_final_state thay vì final_state trực tiếp
                     status = actual_final_state.get('status', 'unknown')
+                    
+                    # Convert enum to string if needed
+                    if hasattr(status, 'value'):
+                        status = status.value
+                    
                     quality_metrics = actual_final_state.get('quality_metrics', {})
                     quality_score = quality_metrics.get('quality_score', 0.0) if isinstance(quality_metrics, dict) else 0.0
                     

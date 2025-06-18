@@ -154,6 +154,13 @@ class AIMigrationWorkflow:
             
             logger.info(f"AI migration workflow completed for process {initial_state['migrate_process_id']} with status: {final_state['status']}")
             
+            # Cập nhật database sau mỗi step
+            await self._update_database_progress(final_state)
+            
+            # Extract actual state để log đúng current_step
+            actual_state = self._extract_actual_state(final_state)
+            logger.info(f"Migration step completed: {actual_state.get('current_step', 'unknown')}")
+            
             return final_state
             
         except Exception as e:
@@ -414,8 +421,10 @@ class MigrationWorkflow:
                 
                 # Cập nhật database sau mỗi step
                 await self._update_database_progress(final_state)
-                print(f"Final ---------------------------state: {final_state}")
-                logger.info(f"Migration step completed: {final_state.get('current_step', 'unknown')}")
+                
+                # Extract actual state để log đúng current_step
+                actual_state = self._extract_actual_state(final_state)
+                logger.info(f"Migration step completed: {actual_state.get('current_step', 'unknown')}")
             
             logger.info(f"Migration workflow completed for process {migrate_process_id}")
             return final_state
@@ -582,6 +591,23 @@ class MigrationWorkflow:
         # Nếu không có wrapper, return state as is
         return state
     
+    def _make_json_serializable(self, obj):
+        """Convert objects to JSON serializable format"""
+        if hasattr(obj, 'dict'):  # Pydantic objects
+            return obj.dict()
+        elif hasattr(obj, '__dict__'):  # Regular objects with __dict__
+            return obj.__dict__
+        elif isinstance(obj, list):
+            return [self._make_json_serializable(item) for item in obj]
+        elif isinstance(obj, dict):
+            return {key: self._make_json_serializable(value) for key, value in obj.items()}
+        elif hasattr(obj, 'isoformat'):  # datetime objects
+            return obj.isoformat()
+        elif hasattr(obj, 'value'):  # Enum objects
+            return obj.value
+        else:
+            return obj
+
     async def _update_database_progress(self, state: MigrationState) -> None:
         """
         Cập nhật tiến độ vào database
@@ -593,6 +619,10 @@ class MigrationWorkflow:
             migrate_process_id = actual_state.get("migrate_process_id")
             current_step = actual_state.get("current_step")
             
+            # Debug logs
+            logger.debug(f"_update_database_progress: migrate_process_id={migrate_process_id}, current_step={current_step}")
+            logger.debug(f"_update_database_progress: actual_state keys={list(actual_state.keys())}")
+            
             if not migrate_process_id:
                 logger.warning("migrate_process_id not found in state")
                 logger.debug(f"State keys: {list(state.keys())}")
@@ -601,16 +631,22 @@ class MigrationWorkflow:
             
             # Cập nhật theo từng step
             if current_step == "analyze" and actual_state.get("analyzed_data"):
+                # Convert analyzed_data to JSON serializable format
+                analyzed_data = self._make_json_serializable(actual_state.get("analyzed_data"))
                 self.migrate_repo.update_prepare_data_result(
                     migrate_process_id, 
-                    actual_state.get("analyzed_data")
+                    analyzed_data
                 )
+                logger.info(f"Updated prepare_data_result for process {migrate_process_id}")
             
             elif current_step == "mapping" and actual_state.get("mapped_data"):
+                # Convert mapped_data to JSON serializable format
+                mapped_data = self._make_json_serializable(actual_state.get("mapped_data"))
                 self.migrate_repo.update_mapping_structure_result(
                     migrate_process_id, 
-                    actual_state.get("mapped_data")
+                    mapped_data
                 )
+                logger.info(f"Updated mapping_structure_result for process {migrate_process_id}")
             
             elif current_step == "validation" and actual_state.get("validated_data"):
                 quality_metrics = actual_state.get("quality_metrics", {})
@@ -620,16 +656,22 @@ class MigrationWorkflow:
                     "validation_errors": quality_metrics.get("validation_errors", []),
                     "processing_logs": actual_state.get("processing_logs", [])
                 }
+                # Convert validation_result to JSON serializable format
+                validation_result = self._make_json_serializable(validation_result)
                 self.migrate_repo.update_validate_data_result(
                     migrate_process_id, 
                     validation_result
                 )
+                logger.info(f"Updated validate_data_result for process {migrate_process_id}")
             
-            elif current_step == "saving" and actual_state.get("final_result"):
+            elif current_step == "save" and actual_state.get("final_result"):
+                # Convert final_result to JSON serializable format
+                final_result = self._make_json_serializable(actual_state.get("final_result"))
                 self.migrate_repo.update_final_result(
                     migrate_process_id, 
-                    actual_state.get("final_result")
+                    final_result
                 )
+                logger.info(f"Updated final_result for process {migrate_process_id}")
             
             elif actual_state.get("status") == MigrationStatus.FAILED:
                 error_details = {
@@ -644,6 +686,7 @@ class MigrationWorkflow:
                     migrate_process_id, 
                     error_message
                 )
+                logger.info(f"Updated error for process {migrate_process_id}")
                 
         except Exception as e:
             logger.error(f"Error updating database progress: {str(e)}")

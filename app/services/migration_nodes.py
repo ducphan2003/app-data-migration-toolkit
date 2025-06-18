@@ -267,13 +267,6 @@ class MigrationNodes:
                     }
                 })
             
-            # Cập nhật metadata
-            mapped_data["metadata"].update({
-                "total_parts": len(mapped_data["parts"]),
-                "total_question_sets": total_question_sets,
-                "total_questions": total_questions
-            })
-            
             # Cập nhật state
             state["mapped_data"] = mapped_data
             state["progress_percentage"] = 75.0
@@ -338,14 +331,14 @@ class MigrationNodes:
             validation_warnings = []
             
             # Kiểm tra cấu trúc cơ bản
-            if not final_data.get("quiz", {}).get("title"):
+            if not final_result.get("quiz", {}).get("title"):
                 validation_errors.append("Quiz title is missing")
             
-            if not final_data.get("parts"):
+            if not final_result.get("quiz", {}).get("parts"):
                 validation_errors.append("No parts found in quiz")
             
             # Kiểm tra từng part
-            for part in final_data.get("parts", []):
+            for part in final_result.get("quiz", {}).get("parts", []):
                 if not part.get("title"):
                     validation_warnings.append(f"Part {part.get('sort', 'unknown')} has no title")
                 
@@ -361,8 +354,8 @@ class MigrationNodes:
                         validation_warnings.append(f"Question set {qs.get('sort', 'unknown')} in part {part.get('sort', 'unknown')} has no questions")
             
             # Cập nhật state
-            state["validated_data"] = final_data  # Thêm validated_data field
-            state["final_result"] = final_data
+            state["validated_data"] = final_result  # Sử dụng final_result với cấu trúc đúng
+            state["final_result"] = final_result    # Lưu final_result với cấu trúc đúng
             state["validation_errors"] = validation_errors
             state["validation_warnings"] = validation_warnings
             state["progress_percentage"] = 95.0
