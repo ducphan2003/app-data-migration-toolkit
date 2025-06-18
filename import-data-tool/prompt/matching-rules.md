@@ -4,7 +4,10 @@
 
   - Based on `question_type` in the old question
   - If it is "MATCHING_INFO" then create a new question_set with `question_type = "MATCHING"`
-
+  - If it is `type = "MULTIPLE"` and `question_type = "MATCHING_INFO"` then create a new question_set with `question_type = "MATCHING"`
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "MATCHING_HEADING"` then create a new question_set with `question_type = "MATCHING"`
+  - If it is `type = "SINGLE-RADIO"` and `question_type = "MATCHING_INFO"` then create a new question_set with `question_type = "MATCHING"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "MATCHING_HEADING"` then create a new question_set with `question_type = "MATCHING"`
 - **Old structure**:
 
   ```json

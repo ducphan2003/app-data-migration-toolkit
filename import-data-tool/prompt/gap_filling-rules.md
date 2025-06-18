@@ -3,7 +3,11 @@
 - **Determine type**:
 
   - Based on `question_type` in the old question
-  - If it is "GAP_FILLING" then create a new question_set with `question_type = "GAP_FILLING"`
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "FILL_BLANK"` then create a new question_set with `question_type = "GAP_FILLING"`
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "MAP_DIAGRAM_LABEL"` then create a new question_set with `question_type = "GAP_FILLING"`
+  - If it is `type = "FILL-IN-THE-BLANK"` and `question_type = "OTHERS"` then create a new question_set with `question_type = "GAP_FILLING"`
+  - If it is `type = "MULTIPLE"` and `question_type = "FILL_BLANK"` then create a new question_set with `question_type = "GAP_FILLING"`
+  - If it is `type = "SINGLE-SELECTION"` and `question_type = "MATCHING_HEADING"` then create a new question_set with `question_type = "MATCHING"`
 
 - **Old structure**:
 

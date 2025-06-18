@@ -4,7 +4,8 @@
 
   - Based on `type` and `question_type` in the old question
   - If it is `type = "MULTIPLE"` and `question_type = "MULTIPLE_CHOICE_MANY"` then create a new question_set with `question_type = "MULTIPLE_CHOICE_MANY"`
-
+  - If it is `type = "MULTIPLE"` and `question_type = None` then create a new question_set with `question_type = "MULTIPLE_CHOICE_MANY"`
+  
 - **Old structure**:
 
   ```json
